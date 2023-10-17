@@ -1,2 +1,5 @@
 Django
 requests
+# django-extensions
+# pandas
+# plotly
