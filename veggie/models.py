@@ -67,7 +67,6 @@ class Review(models.Model):
     review_title = models.CharField(verbose_name="review_title", max_length=255)
     review_description = models.CharField(verbose_name="review_description", max_length=255)
     review_rate = models.IntegerField(verbose_name="review_rate", default=0)
-    price_rate = models.CharField(verbose_name="price_rate", max_length=50)
     review_date = models.DateTimeField(verbose_name="review_date", auto_now_add=True)
 
     def __str__(self):
