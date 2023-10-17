@@ -1,5 +1,6 @@
 Django
 requests
+python-decouple
 # django-extensions
 # pandas
 # plotly
