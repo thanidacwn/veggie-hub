@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-&w1h3b=+372&ur_n3zs2__9ia9b4-!b0me%1cr9_v$4_6%r*t1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*.ku.th', 'localhost', '127.0.0.1', '::1']
 
 
 # Application definition
@@ -37,8 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'rest_framework',
-    "veggie",
+    "veggie.apps.VeggieConfig",
 ]
 
 MIDDLEWARE = [
