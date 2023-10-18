@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils import timezone
 
 
 class Category(models.Model):
@@ -67,7 +68,7 @@ class Review(models.Model):
     review_title = models.CharField(verbose_name="review_title", max_length=255)
     review_description = models.CharField(verbose_name="review_description", max_length=255)
     review_rate = models.IntegerField(verbose_name="review_rate", default=0)
-    review_date = models.DateTimeField(verbose_name="review_date", auto_now_add=True)
+    review_date = models.DateTimeField(verbose_name="review_date", default=timezone.now())
 
     def __str__(self):
         return f"{self.title} - {self.restaurant.restaurant_text} by {self.review_user.username}"
