@@ -50,7 +50,7 @@ class Restaurant(models.Model):
         total_rate = 0
         for review in reviews:
             total_rate += review.review_rate
-        return total_rate / self.get_reviews_amount
+        return round(total_rate / self.get_reviews_amount, 2)
 
     @property
     def get_reviews_amount(self):
