@@ -5,8 +5,12 @@ import ssl
 
 
 def index(request):
-    """Return the index page."""
-    return HttpResponse("Hello, world. You're at the index page.")
+    """Display all restaurants."""
+    all_restaurants = Restaurant.objects.all()
+    context = {
+        "all_restaurants": all_restaurants,
+    }
+    return render(request, "veggie/home.html", context)
 
 
 def home(request):
