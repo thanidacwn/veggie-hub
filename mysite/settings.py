@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "veggie.apps.VeggieConfig",
+    "tailwind",
+    "theme",
+    "django_browser_reload"
 ]
 
 MIDDLEWARE = [
@@ -51,6 +54,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 ROOT_URLCONF = "mysite.urls"
@@ -115,6 +119,15 @@ USE_I18N = True
 
 USE_TZ = True
 
+TAILWIND_APP_NAME = 'theme'
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+    "*",
+]
+
+# NPM_BIN_PATH = "C:/Users/User/AppData/Roaming/npm/"
+NPM_BIN_PATH = r"D:\nodejs\npm.cmd"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
