@@ -3,3 +3,4 @@ requests
 python-decouple
 pandas
 django-tailwind
+django_browser_reload
