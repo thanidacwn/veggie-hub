@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 from .models import Category, State, Restaurant
 import pandas as pd
 import ssl

@@ -1,3 +1,5 @@
 Django
 requests
 python-decouple
+pandas
+django-tailwind
