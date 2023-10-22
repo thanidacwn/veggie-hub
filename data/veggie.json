@@ -1,0 +1,3082 @@
+[
+    {
+        "model": "veggie.category",
+        "pk": 1,
+        "fields": {
+            "category_text": " Seafood, Vegetarian Friendly, Vegan Options"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 2,
+        "fields": {
+            "category_text": " Diner, American, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 3,
+        "fields": {
+            "category_text": " American, Diner, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 4,
+        "fields": {
+            "category_text": " American, Wine Bar, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 5,
+        "fields": {
+            "category_text": " Italian, Pizza, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 6,
+        "fields": {
+            "category_text": " Italian, Vegetarian Friendly, Gluten Free Options"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 7,
+        "fields": {
+            "category_text": " Cafe, American, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 8,
+        "fields": {
+            "category_text": " American, Bar, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 9,
+        "fields": {
+            "category_text": " American, Cajun & Creole, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 10,
+        "fields": {
+            "category_text": " Steakhouse, Mexican, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 11,
+        "fields": {
+            "category_text": " American, Vegetarian Friendly, Vegan Options"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 12,
+        "fields": {
+            "category_text": " American, European, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 13,
+        "fields": {
+            "category_text": " Latin, Spanish, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 14,
+        "fields": {
+            "category_text": " Chinese, Asian, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 15,
+        "fields": {
+            "category_text": " American, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 16,
+        "fields": {
+            "category_text": " Mexican, Southwestern, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 17,
+        "fields": {
+            "category_text": " Cajun & Creole, American, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 18,
+        "fields": {
+            "category_text": " Italian, Vegetarian Friendly, Vegan Options"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 19,
+        "fields": {
+            "category_text": " Pizza, Vegetarian Friendly, Vegan Options"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 20,
+        "fields": {
+            "category_text": " French, European, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 21,
+        "fields": {
+            "category_text": " American, Southwestern, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 22,
+        "fields": {
+            "category_text": " Indian, Asian, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 23,
+        "fields": {
+            "category_text": " American, Seafood, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 24,
+        "fields": {
+            "category_text": " Asian, Thai, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 25,
+        "fields": {
+            "category_text": " American, Steakhouse, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 26,
+        "fields": {
+            "category_text": " American, Cafe, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 27,
+        "fields": {
+            "category_text": " Thai, Asian, Vegan Options"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 28,
+        "fields": {
+            "category_text": " Pizza, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 29,
+        "fields": {
+            "category_text": " Indian, Vegetarian Friendly, Vegan Options"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 30,
+        "fields": {
+            "category_text": " American, Contemporary, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 31,
+        "fields": {
+            "category_text": " Italian, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 32,
+        "fields": {
+            "category_text": " American, Vegetarian Friendly, Gluten Free Options"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 33,
+        "fields": {
+            "category_text": " Indonesian, American, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 34,
+        "fields": {
+            "category_text": " American, Deli, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 35,
+        "fields": {
+            "category_text": " Mexican, Latin, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.state",
+        "pk": 1,
+        "fields": {
+            "state_text": "CA"
+        }
+    },
+    {
+        "model": "veggie.state",
+        "pk": 2,
+        "fields": {
+            "state_text": "NJ"
+        }
+    },
+    {
+        "model": "veggie.state",
+        "pk": 3,
+        "fields": {
+            "state_text": "NY"
+        }
+    },
+    {
+        "model": "veggie.state",
+        "pk": 4,
+        "fields": {
+            "state_text": "TX"
+        }
+    },
+    {
+        "model": "veggie.state",
+        "pk": 5,
+        "fields": {
+            "state_text": "WA"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 1,
+        "fields": {
+            "restaurant_text": "Betty Lou's Seafood and Grill",
+            "category": 1,
+            "state": 1,
+            "city": "San Francisco",
+            "location": "San Francisco, CA 94133-3908",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60713-d11862449-Reviews-Betty_Lou_s_Seafood_and_Grill-San_Francisco_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 2,
+        "fields": {
+            "restaurant_text": "Coach House Diner",
+            "category": 2,
+            "state": 2,
+            "city": "Hackensack",
+            "location": "Hackensack, NJ 07601-6337",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46480-d4632054-Reviews-Coach_House_Diner-Hackensack_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 3,
+        "fields": {
+            "restaurant_text": "Table Talk Diner",
+            "category": 3,
+            "state": 3,
+            "city": "Poughkeepsie",
+            "location": "Poughkeepsie, NY 12601-5476",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48443-d2105702-Reviews-Table_Talk_Diner-Poughkeepsie_New_York.html",
+            "menu_link": "http://tabletalkdiner.com/menu/breakfast/",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 4,
+        "fields": {
+            "restaurant_text": "Sixty Vines",
+            "category": 4,
+            "state": 4,
+            "city": "Plano",
+            "location": "Plano, TX 75093-7777",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56463-d10793449-Reviews-Sixty_Vines-Plano_Texas.html",
+            "menu_link": "https://sixtyvines.com/menu/plano-tx/",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 5,
+        "fields": {
+            "restaurant_text": "Vince's Italian Restaurant & Pizzeria",
+            "category": 5,
+            "state": 5,
+            "city": "Renton",
+            "location": "Renton, WA 98056-3105",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58704-d464246-Reviews-Vince_s_Italian_Restaurant_Pizzeria-Renton_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 6,
+        "fields": {
+            "restaurant_text": "ZaZa's Cucina",
+            "category": 6,
+            "state": 3,
+            "city": "Ithaca",
+            "location": "Ithaca, NY 14850-4049",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g47958-d475546-Reviews-ZaZa_s_Cucina-Ithaca_Finger_Lakes_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 7,
+        "fields": {
+            "restaurant_text": "Dulin's Cafe",
+            "category": 7,
+            "state": 5,
+            "city": "Vancouver",
+            "location": "Vancouver, WA 98660-2608",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d440680-Reviews-Dulin_s_Cafe-Vancouver_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 8,
+        "fields": {
+            "restaurant_text": "New World Bistro Bar",
+            "category": 8,
+            "state": 3,
+            "city": "Albany",
+            "location": "Albany, NY 12209-1627",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29786-d1515170-Reviews-New_World_Bistro_Bar-Albany_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 9,
+        "fields": {
+            "restaurant_text": "Mimi's Cafe",
+            "category": 9,
+            "state": 1,
+            "city": "Anaheim",
+            "location": "Anaheim, CA 92802-2311",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29092-d507253-Reviews-Mimi_s_Cafe-Anaheim_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 10,
+        "fields": {
+            "restaurant_text": "La Hacienda Ranch",
+            "category": 10,
+            "state": 4,
+            "city": "Frisco",
+            "location": "Frisco, TX 75034-8508",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g55870-d495433-Reviews-La_Hacienda_Ranch-Frisco_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 11,
+        "fields": {
+            "restaurant_text": "Breadsticks Cafe & Grill",
+            "category": 11,
+            "state": 2,
+            "city": "Atlantic City",
+            "location": "Atlantic City, NJ 08401-7329",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29750-d541345-Reviews-Breadsticks_Cafe_Grill-Atlantic_City_New_Jersey.html",
+            "menu_link": "https://resortsac.com/wp-content/uploads/2018/08/Breadsticks_BreakfastMenu_Winter-2017-2018.pdf",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 12,
+        "fields": {
+            "restaurant_text": "Tilikum Place Cafe",
+            "category": 12,
+            "state": 5,
+            "city": "Seattle",
+            "location": "Seattle, WA 98121-1519",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60878-d1516303-Reviews-Tilikum_Place_Cafe-Seattle_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 13,
+        "fields": {
+            "restaurant_text": "BV Tuscany Italian Restaurant",
+            "category": 6,
+            "state": 2,
+            "city": "Teaneck",
+            "location": "Teaneck, NJ 07666-3411",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46862-d1473658-Reviews-BV_Tuscany_Italian_Restaurant-Teaneck_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 14,
+        "fields": {
+            "restaurant_text": "Beso",
+            "category": 13,
+            "state": 3,
+            "city": "Staten Island",
+            "location": "Staten Island, NY 10301-1952",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48682-d1125099-Reviews-Beso-Staten_Island_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 15,
+        "fields": {
+            "restaurant_text": "Ristorante Paradiso",
+            "category": 6,
+            "state": 5,
+            "city": "Kirkland",
+            "location": "Kirkland, WA 98033-3717",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d464228-Reviews-Ristorante_Paradiso-Kirkland_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 16,
+        "fields": {
+            "restaurant_text": "Buddakan",
+            "category": 14,
+            "state": 2,
+            "city": "Atlantic City",
+            "location": "Atlantic City, NJ 08401-6689",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29750-d637123-Reviews-Buddakan-Atlantic_City_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 17,
+        "fields": {
+            "restaurant_text": "Hodel's Country Dining",
+            "category": 11,
+            "state": 1,
+            "city": "Bakersfield",
+            "location": "Bakersfield, CA 93308-2946",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32037-d1053094-Reviews-Hodel_s_Country_Dining-Bakersfield_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 18,
+        "fields": {
+            "restaurant_text": "Magic Castle",
+            "category": 15,
+            "state": 1,
+            "city": "Los Angeles",
+            "location": "Los Angeles, CA 90028-8600",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32655-d941518-Reviews-Magic_Castle-Los_Angeles_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 19,
+        "fields": {
+            "restaurant_text": "Jorge's Mexican Restaurant",
+            "category": 16,
+            "state": 4,
+            "city": "Amarillo",
+            "location": "Amarillo, TX 79109-6618",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g30165-d1504576-Reviews-Jorge_s_Mexican_Restaurant-Amarillo_Texas.html",
+            "menu_link": "http://jorgesmexican.com/index.php?page=menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 20,
+        "fields": {
+            "restaurant_text": "The Attic",
+            "category": 17,
+            "state": 1,
+            "city": "Long Beach",
+            "location": "Long Beach, CA 90803-5906",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32648-d3834363-Reviews-The_Attic-Long_Beach_California.html",
+            "menu_link": "http://www.theatticonbroadway.com/pages/menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 21,
+        "fields": {
+            "restaurant_text": "Del Posto",
+            "category": 18,
+            "state": 3,
+            "city": "New York City",
+            "location": "New York City, NY 10011",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d598053-Reviews-Del_Posto-New_York_City_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 22,
+        "fields": {
+            "restaurant_text": "The Cheesecake Factory",
+            "category": 11,
+            "state": 1,
+            "city": "Fresno",
+            "location": "Fresno, CA 93710-7729",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32414-d813700-Reviews-The_Cheesecake_Factory-Fresno_California.html",
+            "menu_link": "https://order.thecheesecakefactory.com/menu/fresno-ca",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 23,
+        "fields": {
+            "restaurant_text": "Pizzeria Credo",
+            "category": 5,
+            "state": 5,
+            "city": "Seattle",
+            "location": "Seattle, WA 98116-4111",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60878-d4765938-Reviews-Pizzeria_Credo-Seattle_Washington.html",
+            "menu_link": "http://pizzeriacredo.com/#our-menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 24,
+        "fields": {
+            "restaurant_text": "Cheeseboard Pizza",
+            "category": 19,
+            "state": 1,
+            "city": "Berkeley",
+            "location": "Berkeley, CA 94709-1517",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32066-d371485-Reviews-Cheeseboard_Pizza-Berkeley_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Cheap"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 25,
+        "fields": {
+            "restaurant_text": "Jeanne D'Arc Restaurant",
+            "category": 20,
+            "state": 1,
+            "city": "San Francisco",
+            "location": "San Francisco, CA 94108-3402",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60713-d379131-Reviews-Jeanne_D_Arc_Restaurant-San_Francisco_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 26,
+        "fields": {
+            "restaurant_text": "Lonesome Dove Western Bistro",
+            "category": 21,
+            "state": 4,
+            "city": "Fort Worth",
+            "location": "Fort Worth, TX 76164-8519",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g55857-d518186-Reviews-Lonesome_Dove_Western_Bistro-Fort_Worth_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 27,
+        "fields": {
+            "restaurant_text": "KathaKali Indian Eatery",
+            "category": 22,
+            "state": 5,
+            "city": "Kirkland",
+            "location": "Kirkland, WA 98033-4325",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d12448278-Reviews-KathaKali_Indian_Eatery-Kirkland_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 28,
+        "fields": {
+            "restaurant_text": "Eddie V's Wildfish",
+            "category": 23,
+            "state": 1,
+            "city": "Newport Beach",
+            "location": "Newport Beach, CA 92660-9071",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32780-d1862747-Reviews-Eddie_V_s_Wildfish-Newport_Beach_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 29,
+        "fields": {
+            "restaurant_text": "Anthony's HomePort",
+            "category": 23,
+            "state": 5,
+            "city": "Kirkland",
+            "location": "Kirkland, WA 98033-6468",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d463622-Reviews-Anthony_s_HomePort-Kirkland_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 30,
+        "fields": {
+            "restaurant_text": "Kwan Tip Thai",
+            "category": 24,
+            "state": 5,
+            "city": "Federal Way",
+            "location": "Federal Way, WA 98003-3829",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58471-d2394676-Reviews-Kwan_Tip_Thai-Federal_Way_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 31,
+        "fields": {
+            "restaurant_text": "The Capital Grille",
+            "category": 25,
+            "state": 3,
+            "city": "New York City",
+            "location": "New York City, NY 10017-5608",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d1018334-Reviews-The_Capital_Grille-New_York_City_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 32,
+        "fields": {
+            "restaurant_text": "The Cheesecake Factory",
+            "category": 11,
+            "state": 2,
+            "city": "Hackensack",
+            "location": "Hackensack, NJ 07601-6310",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46480-d4102201-Reviews-The_Cheesecake_Factory-Hackensack_New_Jersey.html",
+            "menu_link": "https://order.thecheesecakefactory.com/menu/hackensack-nj",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 33,
+        "fields": {
+            "restaurant_text": "Bareburger",
+            "category": 11,
+            "state": 3,
+            "city": "Forest Hills",
+            "location": "Forest Hills, NY 11375-4728",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g47732-d3316200-Reviews-Bareburger-Forest_Hills_Queens_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 34,
+        "fields": {
+            "restaurant_text": "Planet Thai",
+            "category": 24,
+            "state": 5,
+            "city": "Vancouver",
+            "location": "Vancouver, WA 98685-2837",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d2602217-Reviews-Planet_Thai-Vancouver_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 35,
+        "fields": {
+            "restaurant_text": "Red Apple Cafe",
+            "category": 26,
+            "state": 1,
+            "city": "Fresno",
+            "location": "Fresno, CA 93650-1329",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32414-d9750769-Reviews-Red_Apple_Cafe-Fresno_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 36,
+        "fields": {
+            "restaurant_text": "Ayothaya Thai Restaurant",
+            "category": 27,
+            "state": 5,
+            "city": "Puyallup",
+            "location": "Puyallup, WA 98375-9306",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58693-d8047813-Reviews-Ayothaya_Thai_Restaurant-Puyallup_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 37,
+        "fields": {
+            "restaurant_text": "Mulvaney's Building & Loan",
+            "category": 11,
+            "state": 1,
+            "city": "Sacramento",
+            "location": "Sacramento, CA 95811-4154",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32999-d602011-Reviews-Mulvaney_s_Building_Loan-Sacramento_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 38,
+        "fields": {
+            "restaurant_text": "Rutabegorz",
+            "category": 11,
+            "state": 1,
+            "city": "Tustin",
+            "location": "Tustin, CA 92780",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g33198-d680119-Reviews-Rutabegorz-Tustin_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 39,
+        "fields": {
+            "restaurant_text": "Brother's Office Pizzeria",
+            "category": 28,
+            "state": 5,
+            "city": "Spokane Valley",
+            "location": "Spokane Valley, WA 99216-0138",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g1784998-d7684552-Reviews-Brother_s_Office_Pizzeria-Spokane_Valley_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 40,
+        "fields": {
+            "restaurant_text": "Ajanta Distinctive Indian Cuisine",
+            "category": 29,
+            "state": 1,
+            "city": "Berkeley",
+            "location": "Berkeley, CA 94707-2309",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32066-d371490-Reviews-Ajanta_Distinctive_Indian_Cuisine-Berkeley_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 41,
+        "fields": {
+            "restaurant_text": "Off Vine",
+            "category": 30,
+            "state": 1,
+            "city": "Los Angeles",
+            "location": "Los Angeles, CA 90028-8207",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32655-d364726-Reviews-Off_Vine-Los_Angeles_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 42,
+        "fields": {
+            "restaurant_text": "Seasons 52",
+            "category": 4,
+            "state": 2,
+            "city": "Cherry Hill",
+            "location": "Cherry Hill, NJ 08002-2100",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46354-d1391520-Reviews-Seasons_52-Cherry_Hill_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 43,
+        "fields": {
+            "restaurant_text": "Pane e Vino",
+            "category": 5,
+            "state": 4,
+            "city": "Katy",
+            "location": "Katy, TX 77494",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56062-d7715917-Reviews-Pane_e_Vino-Katy_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 44,
+        "fields": {
+            "restaurant_text": "Capers + Olives",
+            "category": 31,
+            "state": 5,
+            "city": "Everett",
+            "location": "Everett, WA 98201-4010",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58466-d14932914-Reviews-Capers_Olives-Everett_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 45,
+        "fields": {
+            "restaurant_text": "Elements Restaurant",
+            "category": 32,
+            "state": 5,
+            "city": "Vancouver",
+            "location": "Vancouver, WA 98660",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d5532340-Reviews-Elements_Restaurant-Vancouver_Washington.html",
+            "menu_link": "http://www.elementsvancouver.com",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 46,
+        "fields": {
+            "restaurant_text": "Yono's Restaurant",
+            "category": 33,
+            "state": 3,
+            "city": "Albany",
+            "location": "Albany, NY 12210-2733",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29786-d420139-Reviews-Yono_s_Restaurant-Albany_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 47,
+        "fields": {
+            "restaurant_text": "Bill's Pizza",
+            "category": 5,
+            "state": 1,
+            "city": "Palm Springs",
+            "location": "Palm Springs, Greater Palm Springs, CA 92262-6603",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32847-d1978555-Reviews-Bill_s_Pizza-Palm_Springs_Greater_Palm_Springs_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Cheap"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 48,
+        "fields": {
+            "restaurant_text": "LuNello's Resturant",
+            "category": 18,
+            "state": 2,
+            "city": "Cedar Grove",
+            "location": "Cedar Grove, NJ 07009-1149",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46348-d6833248-Reviews-LuNello_s_Resturant-Cedar_Grove_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 49,
+        "fields": {
+            "restaurant_text": "Foxy's Restaurant",
+            "category": 34,
+            "state": 1,
+            "city": "Glendale",
+            "location": "Glendale, CA 91204-1306",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32431-d371841-Reviews-Foxy_s_Restaurant-Glendale_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 50,
+        "fields": {
+            "restaurant_text": "La Playita",
+            "category": 35,
+            "state": 1,
+            "city": "Hermosa Beach",
+            "location": "Hermosa Beach, CA 90254-3508",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32490-d2343392-Reviews-La_Playita-Hermosa_Beach_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Cheap"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 51,
+        "fields": {
+            "restaurant_text": "Betty Lou's Seafood and Grill",
+            "category": 1,
+            "state": 1,
+            "city": "San Francisco",
+            "location": "San Francisco, CA 94133-3908",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60713-d11862449-Reviews-Betty_Lou_s_Seafood_and_Grill-San_Francisco_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 52,
+        "fields": {
+            "restaurant_text": "Coach House Diner",
+            "category": 2,
+            "state": 2,
+            "city": "Hackensack",
+            "location": "Hackensack, NJ 07601-6337",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46480-d4632054-Reviews-Coach_House_Diner-Hackensack_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 53,
+        "fields": {
+            "restaurant_text": "Table Talk Diner",
+            "category": 3,
+            "state": 3,
+            "city": "Poughkeepsie",
+            "location": "Poughkeepsie, NY 12601-5476",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48443-d2105702-Reviews-Table_Talk_Diner-Poughkeepsie_New_York.html",
+            "menu_link": "http://tabletalkdiner.com/menu/breakfast/",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 54,
+        "fields": {
+            "restaurant_text": "Sixty Vines",
+            "category": 4,
+            "state": 4,
+            "city": "Plano",
+            "location": "Plano, TX 75093-7777",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56463-d10793449-Reviews-Sixty_Vines-Plano_Texas.html",
+            "menu_link": "https://sixtyvines.com/menu/plano-tx/",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 55,
+        "fields": {
+            "restaurant_text": "Vince's Italian Restaurant & Pizzeria",
+            "category": 5,
+            "state": 5,
+            "city": "Renton",
+            "location": "Renton, WA 98056-3105",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58704-d464246-Reviews-Vince_s_Italian_Restaurant_Pizzeria-Renton_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 56,
+        "fields": {
+            "restaurant_text": "ZaZa's Cucina",
+            "category": 6,
+            "state": 3,
+            "city": "Ithaca",
+            "location": "Ithaca, NY 14850-4049",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g47958-d475546-Reviews-ZaZa_s_Cucina-Ithaca_Finger_Lakes_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 57,
+        "fields": {
+            "restaurant_text": "Dulin's Cafe",
+            "category": 7,
+            "state": 5,
+            "city": "Vancouver",
+            "location": "Vancouver, WA 98660-2608",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d440680-Reviews-Dulin_s_Cafe-Vancouver_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 58,
+        "fields": {
+            "restaurant_text": "New World Bistro Bar",
+            "category": 8,
+            "state": 3,
+            "city": "Albany",
+            "location": "Albany, NY 12209-1627",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29786-d1515170-Reviews-New_World_Bistro_Bar-Albany_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 59,
+        "fields": {
+            "restaurant_text": "Mimi's Cafe",
+            "category": 9,
+            "state": 1,
+            "city": "Anaheim",
+            "location": "Anaheim, CA 92802-2311",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29092-d507253-Reviews-Mimi_s_Cafe-Anaheim_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 60,
+        "fields": {
+            "restaurant_text": "La Hacienda Ranch",
+            "category": 10,
+            "state": 4,
+            "city": "Frisco",
+            "location": "Frisco, TX 75034-8508",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g55870-d495433-Reviews-La_Hacienda_Ranch-Frisco_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 61,
+        "fields": {
+            "restaurant_text": "Breadsticks Cafe & Grill",
+            "category": 11,
+            "state": 2,
+            "city": "Atlantic City",
+            "location": "Atlantic City, NJ 08401-7329",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29750-d541345-Reviews-Breadsticks_Cafe_Grill-Atlantic_City_New_Jersey.html",
+            "menu_link": "https://resortsac.com/wp-content/uploads/2018/08/Breadsticks_BreakfastMenu_Winter-2017-2018.pdf",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 62,
+        "fields": {
+            "restaurant_text": "Tilikum Place Cafe",
+            "category": 12,
+            "state": 5,
+            "city": "Seattle",
+            "location": "Seattle, WA 98121-1519",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60878-d1516303-Reviews-Tilikum_Place_Cafe-Seattle_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 63,
+        "fields": {
+            "restaurant_text": "BV Tuscany Italian Restaurant",
+            "category": 6,
+            "state": 2,
+            "city": "Teaneck",
+            "location": "Teaneck, NJ 07666-3411",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46862-d1473658-Reviews-BV_Tuscany_Italian_Restaurant-Teaneck_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 64,
+        "fields": {
+            "restaurant_text": "Beso",
+            "category": 13,
+            "state": 3,
+            "city": "Staten Island",
+            "location": "Staten Island, NY 10301-1952",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48682-d1125099-Reviews-Beso-Staten_Island_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 65,
+        "fields": {
+            "restaurant_text": "Ristorante Paradiso",
+            "category": 6,
+            "state": 5,
+            "city": "Kirkland",
+            "location": "Kirkland, WA 98033-3717",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d464228-Reviews-Ristorante_Paradiso-Kirkland_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 66,
+        "fields": {
+            "restaurant_text": "Buddakan",
+            "category": 14,
+            "state": 2,
+            "city": "Atlantic City",
+            "location": "Atlantic City, NJ 08401-6689",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29750-d637123-Reviews-Buddakan-Atlantic_City_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 67,
+        "fields": {
+            "restaurant_text": "Hodel's Country Dining",
+            "category": 11,
+            "state": 1,
+            "city": "Bakersfield",
+            "location": "Bakersfield, CA 93308-2946",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32037-d1053094-Reviews-Hodel_s_Country_Dining-Bakersfield_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 68,
+        "fields": {
+            "restaurant_text": "Magic Castle",
+            "category": 15,
+            "state": 1,
+            "city": "Los Angeles",
+            "location": "Los Angeles, CA 90028-8600",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32655-d941518-Reviews-Magic_Castle-Los_Angeles_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 69,
+        "fields": {
+            "restaurant_text": "Jorge's Mexican Restaurant",
+            "category": 16,
+            "state": 4,
+            "city": "Amarillo",
+            "location": "Amarillo, TX 79109-6618",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g30165-d1504576-Reviews-Jorge_s_Mexican_Restaurant-Amarillo_Texas.html",
+            "menu_link": "http://jorgesmexican.com/index.php?page=menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 70,
+        "fields": {
+            "restaurant_text": "The Attic",
+            "category": 17,
+            "state": 1,
+            "city": "Long Beach",
+            "location": "Long Beach, CA 90803-5906",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32648-d3834363-Reviews-The_Attic-Long_Beach_California.html",
+            "menu_link": "http://www.theatticonbroadway.com/pages/menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 71,
+        "fields": {
+            "restaurant_text": "Del Posto",
+            "category": 18,
+            "state": 3,
+            "city": "New York City",
+            "location": "New York City, NY 10011",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d598053-Reviews-Del_Posto-New_York_City_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 72,
+        "fields": {
+            "restaurant_text": "The Cheesecake Factory",
+            "category": 11,
+            "state": 1,
+            "city": "Fresno",
+            "location": "Fresno, CA 93710-7729",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32414-d813700-Reviews-The_Cheesecake_Factory-Fresno_California.html",
+            "menu_link": "https://order.thecheesecakefactory.com/menu/fresno-ca",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 73,
+        "fields": {
+            "restaurant_text": "Pizzeria Credo",
+            "category": 5,
+            "state": 5,
+            "city": "Seattle",
+            "location": "Seattle, WA 98116-4111",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60878-d4765938-Reviews-Pizzeria_Credo-Seattle_Washington.html",
+            "menu_link": "http://pizzeriacredo.com/#our-menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 74,
+        "fields": {
+            "restaurant_text": "Cheeseboard Pizza",
+            "category": 19,
+            "state": 1,
+            "city": "Berkeley",
+            "location": "Berkeley, CA 94709-1517",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32066-d371485-Reviews-Cheeseboard_Pizza-Berkeley_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Cheap"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 75,
+        "fields": {
+            "restaurant_text": "Jeanne D'Arc Restaurant",
+            "category": 20,
+            "state": 1,
+            "city": "San Francisco",
+            "location": "San Francisco, CA 94108-3402",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60713-d379131-Reviews-Jeanne_D_Arc_Restaurant-San_Francisco_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 76,
+        "fields": {
+            "restaurant_text": "Lonesome Dove Western Bistro",
+            "category": 21,
+            "state": 4,
+            "city": "Fort Worth",
+            "location": "Fort Worth, TX 76164-8519",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g55857-d518186-Reviews-Lonesome_Dove_Western_Bistro-Fort_Worth_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 77,
+        "fields": {
+            "restaurant_text": "KathaKali Indian Eatery",
+            "category": 22,
+            "state": 5,
+            "city": "Kirkland",
+            "location": "Kirkland, WA 98033-4325",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d12448278-Reviews-KathaKali_Indian_Eatery-Kirkland_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 78,
+        "fields": {
+            "restaurant_text": "Eddie V's Wildfish",
+            "category": 23,
+            "state": 1,
+            "city": "Newport Beach",
+            "location": "Newport Beach, CA 92660-9071",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32780-d1862747-Reviews-Eddie_V_s_Wildfish-Newport_Beach_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 79,
+        "fields": {
+            "restaurant_text": "Anthony's HomePort",
+            "category": 23,
+            "state": 5,
+            "city": "Kirkland",
+            "location": "Kirkland, WA 98033-6468",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d463622-Reviews-Anthony_s_HomePort-Kirkland_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 80,
+        "fields": {
+            "restaurant_text": "Kwan Tip Thai",
+            "category": 24,
+            "state": 5,
+            "city": "Federal Way",
+            "location": "Federal Way, WA 98003-3829",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58471-d2394676-Reviews-Kwan_Tip_Thai-Federal_Way_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 81,
+        "fields": {
+            "restaurant_text": "The Capital Grille",
+            "category": 25,
+            "state": 3,
+            "city": "New York City",
+            "location": "New York City, NY 10017-5608",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d1018334-Reviews-The_Capital_Grille-New_York_City_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 82,
+        "fields": {
+            "restaurant_text": "The Cheesecake Factory",
+            "category": 11,
+            "state": 2,
+            "city": "Hackensack",
+            "location": "Hackensack, NJ 07601-6310",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46480-d4102201-Reviews-The_Cheesecake_Factory-Hackensack_New_Jersey.html",
+            "menu_link": "https://order.thecheesecakefactory.com/menu/hackensack-nj",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 83,
+        "fields": {
+            "restaurant_text": "Bareburger",
+            "category": 11,
+            "state": 3,
+            "city": "Forest Hills",
+            "location": "Forest Hills, NY 11375-4728",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g47732-d3316200-Reviews-Bareburger-Forest_Hills_Queens_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 84,
+        "fields": {
+            "restaurant_text": "Planet Thai",
+            "category": 24,
+            "state": 5,
+            "city": "Vancouver",
+            "location": "Vancouver, WA 98685-2837",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d2602217-Reviews-Planet_Thai-Vancouver_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 85,
+        "fields": {
+            "restaurant_text": "Red Apple Cafe",
+            "category": 26,
+            "state": 1,
+            "city": "Fresno",
+            "location": "Fresno, CA 93650-1329",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32414-d9750769-Reviews-Red_Apple_Cafe-Fresno_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 86,
+        "fields": {
+            "restaurant_text": "Ayothaya Thai Restaurant",
+            "category": 27,
+            "state": 5,
+            "city": "Puyallup",
+            "location": "Puyallup, WA 98375-9306",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58693-d8047813-Reviews-Ayothaya_Thai_Restaurant-Puyallup_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 87,
+        "fields": {
+            "restaurant_text": "Mulvaney's Building & Loan",
+            "category": 11,
+            "state": 1,
+            "city": "Sacramento",
+            "location": "Sacramento, CA 95811-4154",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32999-d602011-Reviews-Mulvaney_s_Building_Loan-Sacramento_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 88,
+        "fields": {
+            "restaurant_text": "Rutabegorz",
+            "category": 11,
+            "state": 1,
+            "city": "Tustin",
+            "location": "Tustin, CA 92780",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g33198-d680119-Reviews-Rutabegorz-Tustin_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 89,
+        "fields": {
+            "restaurant_text": "Brother's Office Pizzeria",
+            "category": 28,
+            "state": 5,
+            "city": "Spokane Valley",
+            "location": "Spokane Valley, WA 99216-0138",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g1784998-d7684552-Reviews-Brother_s_Office_Pizzeria-Spokane_Valley_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 90,
+        "fields": {
+            "restaurant_text": "Ajanta Distinctive Indian Cuisine",
+            "category": 29,
+            "state": 1,
+            "city": "Berkeley",
+            "location": "Berkeley, CA 94707-2309",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32066-d371490-Reviews-Ajanta_Distinctive_Indian_Cuisine-Berkeley_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 91,
+        "fields": {
+            "restaurant_text": "Off Vine",
+            "category": 30,
+            "state": 1,
+            "city": "Los Angeles",
+            "location": "Los Angeles, CA 90028-8207",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32655-d364726-Reviews-Off_Vine-Los_Angeles_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 92,
+        "fields": {
+            "restaurant_text": "Seasons 52",
+            "category": 4,
+            "state": 2,
+            "city": "Cherry Hill",
+            "location": "Cherry Hill, NJ 08002-2100",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46354-d1391520-Reviews-Seasons_52-Cherry_Hill_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 93,
+        "fields": {
+            "restaurant_text": "Pane e Vino",
+            "category": 5,
+            "state": 4,
+            "city": "Katy",
+            "location": "Katy, TX 77494",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56062-d7715917-Reviews-Pane_e_Vino-Katy_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 94,
+        "fields": {
+            "restaurant_text": "Capers + Olives",
+            "category": 31,
+            "state": 5,
+            "city": "Everett",
+            "location": "Everett, WA 98201-4010",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58466-d14932914-Reviews-Capers_Olives-Everett_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 95,
+        "fields": {
+            "restaurant_text": "Elements Restaurant",
+            "category": 32,
+            "state": 5,
+            "city": "Vancouver",
+            "location": "Vancouver, WA 98660",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d5532340-Reviews-Elements_Restaurant-Vancouver_Washington.html",
+            "menu_link": "http://www.elementsvancouver.com",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 96,
+        "fields": {
+            "restaurant_text": "Yono's Restaurant",
+            "category": 33,
+            "state": 3,
+            "city": "Albany",
+            "location": "Albany, NY 12210-2733",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29786-d420139-Reviews-Yono_s_Restaurant-Albany_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 97,
+        "fields": {
+            "restaurant_text": "Bill's Pizza",
+            "category": 5,
+            "state": 1,
+            "city": "Palm Springs",
+            "location": "Palm Springs, Greater Palm Springs, CA 92262-6603",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32847-d1978555-Reviews-Bill_s_Pizza-Palm_Springs_Greater_Palm_Springs_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Cheap"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 98,
+        "fields": {
+            "restaurant_text": "LuNello's Resturant",
+            "category": 18,
+            "state": 2,
+            "city": "Cedar Grove",
+            "location": "Cedar Grove, NJ 07009-1149",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46348-d6833248-Reviews-LuNello_s_Resturant-Cedar_Grove_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 99,
+        "fields": {
+            "restaurant_text": "Foxy's Restaurant",
+            "category": 34,
+            "state": 1,
+            "city": "Glendale",
+            "location": "Glendale, CA 91204-1306",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32431-d371841-Reviews-Foxy_s_Restaurant-Glendale_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 100,
+        "fields": {
+            "restaurant_text": "La Playita",
+            "category": 35,
+            "state": 1,
+            "city": "Hermosa Beach",
+            "location": "Hermosa Beach, CA 90254-3508",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32490-d2343392-Reviews-La_Playita-Hermosa_Beach_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Cheap"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 101,
+        "fields": {
+            "restaurant_text": "Betty Lou's Seafood and Grill",
+            "category": 1,
+            "state": 1,
+            "city": "San Francisco",
+            "location": "San Francisco, CA 94133-3908",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60713-d11862449-Reviews-Betty_Lou_s_Seafood_and_Grill-San_Francisco_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 102,
+        "fields": {
+            "restaurant_text": "Coach House Diner",
+            "category": 2,
+            "state": 2,
+            "city": "Hackensack",
+            "location": "Hackensack, NJ 07601-6337",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46480-d4632054-Reviews-Coach_House_Diner-Hackensack_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 103,
+        "fields": {
+            "restaurant_text": "Table Talk Diner",
+            "category": 3,
+            "state": 3,
+            "city": "Poughkeepsie",
+            "location": "Poughkeepsie, NY 12601-5476",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48443-d2105702-Reviews-Table_Talk_Diner-Poughkeepsie_New_York.html",
+            "menu_link": "http://tabletalkdiner.com/menu/breakfast/",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 104,
+        "fields": {
+            "restaurant_text": "Sixty Vines",
+            "category": 4,
+            "state": 4,
+            "city": "Plano",
+            "location": "Plano, TX 75093-7777",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56463-d10793449-Reviews-Sixty_Vines-Plano_Texas.html",
+            "menu_link": "https://sixtyvines.com/menu/plano-tx/",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 105,
+        "fields": {
+            "restaurant_text": "Vince's Italian Restaurant & Pizzeria",
+            "category": 5,
+            "state": 5,
+            "city": "Renton",
+            "location": "Renton, WA 98056-3105",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58704-d464246-Reviews-Vince_s_Italian_Restaurant_Pizzeria-Renton_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 106,
+        "fields": {
+            "restaurant_text": "ZaZa's Cucina",
+            "category": 6,
+            "state": 3,
+            "city": "Ithaca",
+            "location": "Ithaca, NY 14850-4049",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g47958-d475546-Reviews-ZaZa_s_Cucina-Ithaca_Finger_Lakes_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 107,
+        "fields": {
+            "restaurant_text": "Dulin's Cafe",
+            "category": 7,
+            "state": 5,
+            "city": "Vancouver",
+            "location": "Vancouver, WA 98660-2608",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d440680-Reviews-Dulin_s_Cafe-Vancouver_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 108,
+        "fields": {
+            "restaurant_text": "New World Bistro Bar",
+            "category": 8,
+            "state": 3,
+            "city": "Albany",
+            "location": "Albany, NY 12209-1627",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29786-d1515170-Reviews-New_World_Bistro_Bar-Albany_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 109,
+        "fields": {
+            "restaurant_text": "Mimi's Cafe",
+            "category": 9,
+            "state": 1,
+            "city": "Anaheim",
+            "location": "Anaheim, CA 92802-2311",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29092-d507253-Reviews-Mimi_s_Cafe-Anaheim_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 110,
+        "fields": {
+            "restaurant_text": "La Hacienda Ranch",
+            "category": 10,
+            "state": 4,
+            "city": "Frisco",
+            "location": "Frisco, TX 75034-8508",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g55870-d495433-Reviews-La_Hacienda_Ranch-Frisco_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 111,
+        "fields": {
+            "restaurant_text": "Breadsticks Cafe & Grill",
+            "category": 11,
+            "state": 2,
+            "city": "Atlantic City",
+            "location": "Atlantic City, NJ 08401-7329",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29750-d541345-Reviews-Breadsticks_Cafe_Grill-Atlantic_City_New_Jersey.html",
+            "menu_link": "https://resortsac.com/wp-content/uploads/2018/08/Breadsticks_BreakfastMenu_Winter-2017-2018.pdf",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 112,
+        "fields": {
+            "restaurant_text": "Tilikum Place Cafe",
+            "category": 12,
+            "state": 5,
+            "city": "Seattle",
+            "location": "Seattle, WA 98121-1519",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60878-d1516303-Reviews-Tilikum_Place_Cafe-Seattle_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 113,
+        "fields": {
+            "restaurant_text": "BV Tuscany Italian Restaurant",
+            "category": 6,
+            "state": 2,
+            "city": "Teaneck",
+            "location": "Teaneck, NJ 07666-3411",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46862-d1473658-Reviews-BV_Tuscany_Italian_Restaurant-Teaneck_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 114,
+        "fields": {
+            "restaurant_text": "Beso",
+            "category": 13,
+            "state": 3,
+            "city": "Staten Island",
+            "location": "Staten Island, NY 10301-1952",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48682-d1125099-Reviews-Beso-Staten_Island_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 115,
+        "fields": {
+            "restaurant_text": "Ristorante Paradiso",
+            "category": 6,
+            "state": 5,
+            "city": "Kirkland",
+            "location": "Kirkland, WA 98033-3717",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d464228-Reviews-Ristorante_Paradiso-Kirkland_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 116,
+        "fields": {
+            "restaurant_text": "Buddakan",
+            "category": 14,
+            "state": 2,
+            "city": "Atlantic City",
+            "location": "Atlantic City, NJ 08401-6689",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29750-d637123-Reviews-Buddakan-Atlantic_City_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 117,
+        "fields": {
+            "restaurant_text": "Hodel's Country Dining",
+            "category": 11,
+            "state": 1,
+            "city": "Bakersfield",
+            "location": "Bakersfield, CA 93308-2946",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32037-d1053094-Reviews-Hodel_s_Country_Dining-Bakersfield_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 118,
+        "fields": {
+            "restaurant_text": "Magic Castle",
+            "category": 15,
+            "state": 1,
+            "city": "Los Angeles",
+            "location": "Los Angeles, CA 90028-8600",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32655-d941518-Reviews-Magic_Castle-Los_Angeles_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 119,
+        "fields": {
+            "restaurant_text": "Jorge's Mexican Restaurant",
+            "category": 16,
+            "state": 4,
+            "city": "Amarillo",
+            "location": "Amarillo, TX 79109-6618",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g30165-d1504576-Reviews-Jorge_s_Mexican_Restaurant-Amarillo_Texas.html",
+            "menu_link": "http://jorgesmexican.com/index.php?page=menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 120,
+        "fields": {
+            "restaurant_text": "The Attic",
+            "category": 17,
+            "state": 1,
+            "city": "Long Beach",
+            "location": "Long Beach, CA 90803-5906",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32648-d3834363-Reviews-The_Attic-Long_Beach_California.html",
+            "menu_link": "http://www.theatticonbroadway.com/pages/menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 121,
+        "fields": {
+            "restaurant_text": "Del Posto",
+            "category": 18,
+            "state": 3,
+            "city": "New York City",
+            "location": "New York City, NY 10011",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d598053-Reviews-Del_Posto-New_York_City_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 122,
+        "fields": {
+            "restaurant_text": "The Cheesecake Factory",
+            "category": 11,
+            "state": 1,
+            "city": "Fresno",
+            "location": "Fresno, CA 93710-7729",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32414-d813700-Reviews-The_Cheesecake_Factory-Fresno_California.html",
+            "menu_link": "https://order.thecheesecakefactory.com/menu/fresno-ca",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 123,
+        "fields": {
+            "restaurant_text": "Pizzeria Credo",
+            "category": 5,
+            "state": 5,
+            "city": "Seattle",
+            "location": "Seattle, WA 98116-4111",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60878-d4765938-Reviews-Pizzeria_Credo-Seattle_Washington.html",
+            "menu_link": "http://pizzeriacredo.com/#our-menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 124,
+        "fields": {
+            "restaurant_text": "Cheeseboard Pizza",
+            "category": 19,
+            "state": 1,
+            "city": "Berkeley",
+            "location": "Berkeley, CA 94709-1517",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32066-d371485-Reviews-Cheeseboard_Pizza-Berkeley_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Cheap"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 125,
+        "fields": {
+            "restaurant_text": "Jeanne D'Arc Restaurant",
+            "category": 20,
+            "state": 1,
+            "city": "San Francisco",
+            "location": "San Francisco, CA 94108-3402",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60713-d379131-Reviews-Jeanne_D_Arc_Restaurant-San_Francisco_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 126,
+        "fields": {
+            "restaurant_text": "Lonesome Dove Western Bistro",
+            "category": 21,
+            "state": 4,
+            "city": "Fort Worth",
+            "location": "Fort Worth, TX 76164-8519",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g55857-d518186-Reviews-Lonesome_Dove_Western_Bistro-Fort_Worth_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 127,
+        "fields": {
+            "restaurant_text": "KathaKali Indian Eatery",
+            "category": 22,
+            "state": 5,
+            "city": "Kirkland",
+            "location": "Kirkland, WA 98033-4325",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d12448278-Reviews-KathaKali_Indian_Eatery-Kirkland_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 128,
+        "fields": {
+            "restaurant_text": "Eddie V's Wildfish",
+            "category": 23,
+            "state": 1,
+            "city": "Newport Beach",
+            "location": "Newport Beach, CA 92660-9071",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32780-d1862747-Reviews-Eddie_V_s_Wildfish-Newport_Beach_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 129,
+        "fields": {
+            "restaurant_text": "Anthony's HomePort",
+            "category": 23,
+            "state": 5,
+            "city": "Kirkland",
+            "location": "Kirkland, WA 98033-6468",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d463622-Reviews-Anthony_s_HomePort-Kirkland_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 130,
+        "fields": {
+            "restaurant_text": "Kwan Tip Thai",
+            "category": 24,
+            "state": 5,
+            "city": "Federal Way",
+            "location": "Federal Way, WA 98003-3829",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58471-d2394676-Reviews-Kwan_Tip_Thai-Federal_Way_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 131,
+        "fields": {
+            "restaurant_text": "The Capital Grille",
+            "category": 25,
+            "state": 3,
+            "city": "New York City",
+            "location": "New York City, NY 10017-5608",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d1018334-Reviews-The_Capital_Grille-New_York_City_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 132,
+        "fields": {
+            "restaurant_text": "The Cheesecake Factory",
+            "category": 11,
+            "state": 2,
+            "city": "Hackensack",
+            "location": "Hackensack, NJ 07601-6310",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46480-d4102201-Reviews-The_Cheesecake_Factory-Hackensack_New_Jersey.html",
+            "menu_link": "https://order.thecheesecakefactory.com/menu/hackensack-nj",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 133,
+        "fields": {
+            "restaurant_text": "Bareburger",
+            "category": 11,
+            "state": 3,
+            "city": "Forest Hills",
+            "location": "Forest Hills, NY 11375-4728",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g47732-d3316200-Reviews-Bareburger-Forest_Hills_Queens_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 134,
+        "fields": {
+            "restaurant_text": "Planet Thai",
+            "category": 24,
+            "state": 5,
+            "city": "Vancouver",
+            "location": "Vancouver, WA 98685-2837",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d2602217-Reviews-Planet_Thai-Vancouver_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 135,
+        "fields": {
+            "restaurant_text": "Red Apple Cafe",
+            "category": 26,
+            "state": 1,
+            "city": "Fresno",
+            "location": "Fresno, CA 93650-1329",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32414-d9750769-Reviews-Red_Apple_Cafe-Fresno_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 136,
+        "fields": {
+            "restaurant_text": "Ayothaya Thai Restaurant",
+            "category": 27,
+            "state": 5,
+            "city": "Puyallup",
+            "location": "Puyallup, WA 98375-9306",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58693-d8047813-Reviews-Ayothaya_Thai_Restaurant-Puyallup_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 137,
+        "fields": {
+            "restaurant_text": "Mulvaney's Building & Loan",
+            "category": 11,
+            "state": 1,
+            "city": "Sacramento",
+            "location": "Sacramento, CA 95811-4154",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32999-d602011-Reviews-Mulvaney_s_Building_Loan-Sacramento_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 138,
+        "fields": {
+            "restaurant_text": "Rutabegorz",
+            "category": 11,
+            "state": 1,
+            "city": "Tustin",
+            "location": "Tustin, CA 92780",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g33198-d680119-Reviews-Rutabegorz-Tustin_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 139,
+        "fields": {
+            "restaurant_text": "Brother's Office Pizzeria",
+            "category": 28,
+            "state": 5,
+            "city": "Spokane Valley",
+            "location": "Spokane Valley, WA 99216-0138",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g1784998-d7684552-Reviews-Brother_s_Office_Pizzeria-Spokane_Valley_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 140,
+        "fields": {
+            "restaurant_text": "Ajanta Distinctive Indian Cuisine",
+            "category": 29,
+            "state": 1,
+            "city": "Berkeley",
+            "location": "Berkeley, CA 94707-2309",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32066-d371490-Reviews-Ajanta_Distinctive_Indian_Cuisine-Berkeley_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 141,
+        "fields": {
+            "restaurant_text": "Off Vine",
+            "category": 30,
+            "state": 1,
+            "city": "Los Angeles",
+            "location": "Los Angeles, CA 90028-8207",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32655-d364726-Reviews-Off_Vine-Los_Angeles_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 142,
+        "fields": {
+            "restaurant_text": "Seasons 52",
+            "category": 4,
+            "state": 2,
+            "city": "Cherry Hill",
+            "location": "Cherry Hill, NJ 08002-2100",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46354-d1391520-Reviews-Seasons_52-Cherry_Hill_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 143,
+        "fields": {
+            "restaurant_text": "Pane e Vino",
+            "category": 5,
+            "state": 4,
+            "city": "Katy",
+            "location": "Katy, TX 77494",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56062-d7715917-Reviews-Pane_e_Vino-Katy_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 144,
+        "fields": {
+            "restaurant_text": "Capers + Olives",
+            "category": 31,
+            "state": 5,
+            "city": "Everett",
+            "location": "Everett, WA 98201-4010",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58466-d14932914-Reviews-Capers_Olives-Everett_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 145,
+        "fields": {
+            "restaurant_text": "Elements Restaurant",
+            "category": 32,
+            "state": 5,
+            "city": "Vancouver",
+            "location": "Vancouver, WA 98660",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d5532340-Reviews-Elements_Restaurant-Vancouver_Washington.html",
+            "menu_link": "http://www.elementsvancouver.com",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 146,
+        "fields": {
+            "restaurant_text": "Yono's Restaurant",
+            "category": 33,
+            "state": 3,
+            "city": "Albany",
+            "location": "Albany, NY 12210-2733",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29786-d420139-Reviews-Yono_s_Restaurant-Albany_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 147,
+        "fields": {
+            "restaurant_text": "Bill's Pizza",
+            "category": 5,
+            "state": 1,
+            "city": "Palm Springs",
+            "location": "Palm Springs, Greater Palm Springs, CA 92262-6603",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32847-d1978555-Reviews-Bill_s_Pizza-Palm_Springs_Greater_Palm_Springs_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Cheap"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 148,
+        "fields": {
+            "restaurant_text": "LuNello's Resturant",
+            "category": 18,
+            "state": 2,
+            "city": "Cedar Grove",
+            "location": "Cedar Grove, NJ 07009-1149",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46348-d6833248-Reviews-LuNello_s_Resturant-Cedar_Grove_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 149,
+        "fields": {
+            "restaurant_text": "Foxy's Restaurant",
+            "category": 34,
+            "state": 1,
+            "city": "Glendale",
+            "location": "Glendale, CA 91204-1306",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32431-d371841-Reviews-Foxy_s_Restaurant-Glendale_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 150,
+        "fields": {
+            "restaurant_text": "La Playita",
+            "category": 35,
+            "state": 1,
+            "city": "Hermosa Beach",
+            "location": "Hermosa Beach, CA 90254-3508",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32490-d2343392-Reviews-La_Playita-Hermosa_Beach_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Cheap"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 151,
+        "fields": {
+            "restaurant_text": "Betty Lou's Seafood and Grill",
+            "category": 1,
+            "state": 1,
+            "city": "San Francisco",
+            "location": "San Francisco, CA 94133-3908",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60713-d11862449-Reviews-Betty_Lou_s_Seafood_and_Grill-San_Francisco_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 152,
+        "fields": {
+            "restaurant_text": "Coach House Diner",
+            "category": 2,
+            "state": 2,
+            "city": "Hackensack",
+            "location": "Hackensack, NJ 07601-6337",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46480-d4632054-Reviews-Coach_House_Diner-Hackensack_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 153,
+        "fields": {
+            "restaurant_text": "Table Talk Diner",
+            "category": 3,
+            "state": 3,
+            "city": "Poughkeepsie",
+            "location": "Poughkeepsie, NY 12601-5476",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48443-d2105702-Reviews-Table_Talk_Diner-Poughkeepsie_New_York.html",
+            "menu_link": "http://tabletalkdiner.com/menu/breakfast/",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 154,
+        "fields": {
+            "restaurant_text": "Sixty Vines",
+            "category": 4,
+            "state": 4,
+            "city": "Plano",
+            "location": "Plano, TX 75093-7777",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56463-d10793449-Reviews-Sixty_Vines-Plano_Texas.html",
+            "menu_link": "https://sixtyvines.com/menu/plano-tx/",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 155,
+        "fields": {
+            "restaurant_text": "Vince's Italian Restaurant & Pizzeria",
+            "category": 5,
+            "state": 5,
+            "city": "Renton",
+            "location": "Renton, WA 98056-3105",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58704-d464246-Reviews-Vince_s_Italian_Restaurant_Pizzeria-Renton_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 156,
+        "fields": {
+            "restaurant_text": "ZaZa's Cucina",
+            "category": 6,
+            "state": 3,
+            "city": "Ithaca",
+            "location": "Ithaca, NY 14850-4049",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g47958-d475546-Reviews-ZaZa_s_Cucina-Ithaca_Finger_Lakes_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 157,
+        "fields": {
+            "restaurant_text": "Dulin's Cafe",
+            "category": 7,
+            "state": 5,
+            "city": "Vancouver",
+            "location": "Vancouver, WA 98660-2608",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d440680-Reviews-Dulin_s_Cafe-Vancouver_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 158,
+        "fields": {
+            "restaurant_text": "New World Bistro Bar",
+            "category": 8,
+            "state": 3,
+            "city": "Albany",
+            "location": "Albany, NY 12209-1627",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29786-d1515170-Reviews-New_World_Bistro_Bar-Albany_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 159,
+        "fields": {
+            "restaurant_text": "Mimi's Cafe",
+            "category": 9,
+            "state": 1,
+            "city": "Anaheim",
+            "location": "Anaheim, CA 92802-2311",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29092-d507253-Reviews-Mimi_s_Cafe-Anaheim_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 160,
+        "fields": {
+            "restaurant_text": "La Hacienda Ranch",
+            "category": 10,
+            "state": 4,
+            "city": "Frisco",
+            "location": "Frisco, TX 75034-8508",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g55870-d495433-Reviews-La_Hacienda_Ranch-Frisco_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 161,
+        "fields": {
+            "restaurant_text": "Breadsticks Cafe & Grill",
+            "category": 11,
+            "state": 2,
+            "city": "Atlantic City",
+            "location": "Atlantic City, NJ 08401-7329",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29750-d541345-Reviews-Breadsticks_Cafe_Grill-Atlantic_City_New_Jersey.html",
+            "menu_link": "https://resortsac.com/wp-content/uploads/2018/08/Breadsticks_BreakfastMenu_Winter-2017-2018.pdf",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 162,
+        "fields": {
+            "restaurant_text": "Tilikum Place Cafe",
+            "category": 12,
+            "state": 5,
+            "city": "Seattle",
+            "location": "Seattle, WA 98121-1519",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60878-d1516303-Reviews-Tilikum_Place_Cafe-Seattle_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 163,
+        "fields": {
+            "restaurant_text": "BV Tuscany Italian Restaurant",
+            "category": 6,
+            "state": 2,
+            "city": "Teaneck",
+            "location": "Teaneck, NJ 07666-3411",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46862-d1473658-Reviews-BV_Tuscany_Italian_Restaurant-Teaneck_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 164,
+        "fields": {
+            "restaurant_text": "Beso",
+            "category": 13,
+            "state": 3,
+            "city": "Staten Island",
+            "location": "Staten Island, NY 10301-1952",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48682-d1125099-Reviews-Beso-Staten_Island_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 165,
+        "fields": {
+            "restaurant_text": "Ristorante Paradiso",
+            "category": 6,
+            "state": 5,
+            "city": "Kirkland",
+            "location": "Kirkland, WA 98033-3717",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d464228-Reviews-Ristorante_Paradiso-Kirkland_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 166,
+        "fields": {
+            "restaurant_text": "Buddakan",
+            "category": 14,
+            "state": 2,
+            "city": "Atlantic City",
+            "location": "Atlantic City, NJ 08401-6689",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29750-d637123-Reviews-Buddakan-Atlantic_City_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 167,
+        "fields": {
+            "restaurant_text": "Hodel's Country Dining",
+            "category": 11,
+            "state": 1,
+            "city": "Bakersfield",
+            "location": "Bakersfield, CA 93308-2946",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32037-d1053094-Reviews-Hodel_s_Country_Dining-Bakersfield_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 168,
+        "fields": {
+            "restaurant_text": "Magic Castle",
+            "category": 15,
+            "state": 1,
+            "city": "Los Angeles",
+            "location": "Los Angeles, CA 90028-8600",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32655-d941518-Reviews-Magic_Castle-Los_Angeles_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 169,
+        "fields": {
+            "restaurant_text": "Jorge's Mexican Restaurant",
+            "category": 16,
+            "state": 4,
+            "city": "Amarillo",
+            "location": "Amarillo, TX 79109-6618",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g30165-d1504576-Reviews-Jorge_s_Mexican_Restaurant-Amarillo_Texas.html",
+            "menu_link": "http://jorgesmexican.com/index.php?page=menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 170,
+        "fields": {
+            "restaurant_text": "The Attic",
+            "category": 17,
+            "state": 1,
+            "city": "Long Beach",
+            "location": "Long Beach, CA 90803-5906",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32648-d3834363-Reviews-The_Attic-Long_Beach_California.html",
+            "menu_link": "http://www.theatticonbroadway.com/pages/menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 171,
+        "fields": {
+            "restaurant_text": "Del Posto",
+            "category": 18,
+            "state": 3,
+            "city": "New York City",
+            "location": "New York City, NY 10011",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d598053-Reviews-Del_Posto-New_York_City_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 172,
+        "fields": {
+            "restaurant_text": "The Cheesecake Factory",
+            "category": 11,
+            "state": 1,
+            "city": "Fresno",
+            "location": "Fresno, CA 93710-7729",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32414-d813700-Reviews-The_Cheesecake_Factory-Fresno_California.html",
+            "menu_link": "https://order.thecheesecakefactory.com/menu/fresno-ca",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 173,
+        "fields": {
+            "restaurant_text": "Pizzeria Credo",
+            "category": 5,
+            "state": 5,
+            "city": "Seattle",
+            "location": "Seattle, WA 98116-4111",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60878-d4765938-Reviews-Pizzeria_Credo-Seattle_Washington.html",
+            "menu_link": "http://pizzeriacredo.com/#our-menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 174,
+        "fields": {
+            "restaurant_text": "Cheeseboard Pizza",
+            "category": 19,
+            "state": 1,
+            "city": "Berkeley",
+            "location": "Berkeley, CA 94709-1517",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32066-d371485-Reviews-Cheeseboard_Pizza-Berkeley_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Cheap"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 175,
+        "fields": {
+            "restaurant_text": "Jeanne D'Arc Restaurant",
+            "category": 20,
+            "state": 1,
+            "city": "San Francisco",
+            "location": "San Francisco, CA 94108-3402",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60713-d379131-Reviews-Jeanne_D_Arc_Restaurant-San_Francisco_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 176,
+        "fields": {
+            "restaurant_text": "Lonesome Dove Western Bistro",
+            "category": 21,
+            "state": 4,
+            "city": "Fort Worth",
+            "location": "Fort Worth, TX 76164-8519",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g55857-d518186-Reviews-Lonesome_Dove_Western_Bistro-Fort_Worth_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 177,
+        "fields": {
+            "restaurant_text": "KathaKali Indian Eatery",
+            "category": 22,
+            "state": 5,
+            "city": "Kirkland",
+            "location": "Kirkland, WA 98033-4325",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d12448278-Reviews-KathaKali_Indian_Eatery-Kirkland_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 178,
+        "fields": {
+            "restaurant_text": "Eddie V's Wildfish",
+            "category": 23,
+            "state": 1,
+            "city": "Newport Beach",
+            "location": "Newport Beach, CA 92660-9071",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32780-d1862747-Reviews-Eddie_V_s_Wildfish-Newport_Beach_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 179,
+        "fields": {
+            "restaurant_text": "Anthony's HomePort",
+            "category": 23,
+            "state": 5,
+            "city": "Kirkland",
+            "location": "Kirkland, WA 98033-6468",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d463622-Reviews-Anthony_s_HomePort-Kirkland_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 180,
+        "fields": {
+            "restaurant_text": "Kwan Tip Thai",
+            "category": 24,
+            "state": 5,
+            "city": "Federal Way",
+            "location": "Federal Way, WA 98003-3829",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58471-d2394676-Reviews-Kwan_Tip_Thai-Federal_Way_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 181,
+        "fields": {
+            "restaurant_text": "The Capital Grille",
+            "category": 25,
+            "state": 3,
+            "city": "New York City",
+            "location": "New York City, NY 10017-5608",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d1018334-Reviews-The_Capital_Grille-New_York_City_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 182,
+        "fields": {
+            "restaurant_text": "The Cheesecake Factory",
+            "category": 11,
+            "state": 2,
+            "city": "Hackensack",
+            "location": "Hackensack, NJ 07601-6310",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46480-d4102201-Reviews-The_Cheesecake_Factory-Hackensack_New_Jersey.html",
+            "menu_link": "https://order.thecheesecakefactory.com/menu/hackensack-nj",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 183,
+        "fields": {
+            "restaurant_text": "Bareburger",
+            "category": 11,
+            "state": 3,
+            "city": "Forest Hills",
+            "location": "Forest Hills, NY 11375-4728",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g47732-d3316200-Reviews-Bareburger-Forest_Hills_Queens_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 184,
+        "fields": {
+            "restaurant_text": "Planet Thai",
+            "category": 24,
+            "state": 5,
+            "city": "Vancouver",
+            "location": "Vancouver, WA 98685-2837",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d2602217-Reviews-Planet_Thai-Vancouver_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 185,
+        "fields": {
+            "restaurant_text": "Red Apple Cafe",
+            "category": 26,
+            "state": 1,
+            "city": "Fresno",
+            "location": "Fresno, CA 93650-1329",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32414-d9750769-Reviews-Red_Apple_Cafe-Fresno_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 186,
+        "fields": {
+            "restaurant_text": "Ayothaya Thai Restaurant",
+            "category": 27,
+            "state": 5,
+            "city": "Puyallup",
+            "location": "Puyallup, WA 98375-9306",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58693-d8047813-Reviews-Ayothaya_Thai_Restaurant-Puyallup_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 187,
+        "fields": {
+            "restaurant_text": "Mulvaney's Building & Loan",
+            "category": 11,
+            "state": 1,
+            "city": "Sacramento",
+            "location": "Sacramento, CA 95811-4154",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32999-d602011-Reviews-Mulvaney_s_Building_Loan-Sacramento_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 188,
+        "fields": {
+            "restaurant_text": "Rutabegorz",
+            "category": 11,
+            "state": 1,
+            "city": "Tustin",
+            "location": "Tustin, CA 92780",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g33198-d680119-Reviews-Rutabegorz-Tustin_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 189,
+        "fields": {
+            "restaurant_text": "Brother's Office Pizzeria",
+            "category": 28,
+            "state": 5,
+            "city": "Spokane Valley",
+            "location": "Spokane Valley, WA 99216-0138",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g1784998-d7684552-Reviews-Brother_s_Office_Pizzeria-Spokane_Valley_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 190,
+        "fields": {
+            "restaurant_text": "Ajanta Distinctive Indian Cuisine",
+            "category": 29,
+            "state": 1,
+            "city": "Berkeley",
+            "location": "Berkeley, CA 94707-2309",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32066-d371490-Reviews-Ajanta_Distinctive_Indian_Cuisine-Berkeley_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 191,
+        "fields": {
+            "restaurant_text": "Off Vine",
+            "category": 30,
+            "state": 1,
+            "city": "Los Angeles",
+            "location": "Los Angeles, CA 90028-8207",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32655-d364726-Reviews-Off_Vine-Los_Angeles_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 192,
+        "fields": {
+            "restaurant_text": "Seasons 52",
+            "category": 4,
+            "state": 2,
+            "city": "Cherry Hill",
+            "location": "Cherry Hill, NJ 08002-2100",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46354-d1391520-Reviews-Seasons_52-Cherry_Hill_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 193,
+        "fields": {
+            "restaurant_text": "Pane e Vino",
+            "category": 5,
+            "state": 4,
+            "city": "Katy",
+            "location": "Katy, TX 77494",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56062-d7715917-Reviews-Pane_e_Vino-Katy_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 194,
+        "fields": {
+            "restaurant_text": "Capers + Olives",
+            "category": 31,
+            "state": 5,
+            "city": "Everett",
+            "location": "Everett, WA 98201-4010",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58466-d14932914-Reviews-Capers_Olives-Everett_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 195,
+        "fields": {
+            "restaurant_text": "Elements Restaurant",
+            "category": 32,
+            "state": 5,
+            "city": "Vancouver",
+            "location": "Vancouver, WA 98660",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d5532340-Reviews-Elements_Restaurant-Vancouver_Washington.html",
+            "menu_link": "http://www.elementsvancouver.com",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 196,
+        "fields": {
+            "restaurant_text": "Yono's Restaurant",
+            "category": 33,
+            "state": 3,
+            "city": "Albany",
+            "location": "Albany, NY 12210-2733",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29786-d420139-Reviews-Yono_s_Restaurant-Albany_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 197,
+        "fields": {
+            "restaurant_text": "Bill's Pizza",
+            "category": 5,
+            "state": 1,
+            "city": "Palm Springs",
+            "location": "Palm Springs, Greater Palm Springs, CA 92262-6603",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32847-d1978555-Reviews-Bill_s_Pizza-Palm_Springs_Greater_Palm_Springs_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Cheap"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 198,
+        "fields": {
+            "restaurant_text": "LuNello's Resturant",
+            "category": 18,
+            "state": 2,
+            "city": "Cedar Grove",
+            "location": "Cedar Grove, NJ 07009-1149",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46348-d6833248-Reviews-LuNello_s_Resturant-Cedar_Grove_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 199,
+        "fields": {
+            "restaurant_text": "Foxy's Restaurant",
+            "category": 34,
+            "state": 1,
+            "city": "Glendale",
+            "location": "Glendale, CA 91204-1306",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32431-d371841-Reviews-Foxy_s_Restaurant-Glendale_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate"
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 200,
+        "fields": {
+            "restaurant_text": "La Playita",
+            "category": 35,
+            "state": 1,
+            "city": "Hermosa Beach",
+            "location": "Hermosa Beach, CA 90254-3508",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32490-d2343392-Reviews-La_Playita-Hermosa_Beach_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Cheap"
+        }
+    }
+]

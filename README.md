@@ -9,4 +9,4 @@ To be add.
 
 ## Project Documents
 
-All project documents are in the [Project Wiki]().
+All project documents are in the [Project Wiki](https://github.com/thanidacwn/veggie-hub/wiki).
