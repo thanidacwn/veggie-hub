@@ -26,9 +26,12 @@
 
         <div class="base-content">
             {% block base_content %}
+                <br><br>
                 <a href="{% provider_login_url 'github' %}">GitHub</a>
                 <a href="{% provider_login_url 'google' %}">Google</a>
                 <a href="{% provider_login_url 'line' %}">Line</a>
+                <br><br><br>
+                <a href="{% url "veggie:index" %}">Back to home page</a>
             {% endblock base_content %}
         </div>
     </div>
