@@ -1,0 +1,35 @@
+{% extends 'account/base.html' %}
+{% load socialaccount %}
+{% load static %}
+{% load i18n %}
+
+{% block head_title %} Sign in {% endblock head_title %}
+{% block extra_head %}
+    {{ block.super }}
+{% endblock extra_head %}
+
+{% block content %}
+    <div class="center-container">
+        <div class="login-container">
+            <h1>Login</h1>
+            <form class="login" method="POST" action="{% url 'account_login' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                {% if redirect_field_value %}
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+                <button class="primaryAction" type="submit" id="id_submit">{% trans "Login" %}</button>
+            </form>
+
+            <p>Don't have an account? <a href="{% url 'account_signup' %}"> Create Your Account</a>
+        </div>
+
+        <div class="base-content">
+            {% block base_content %}
+                <a href="{% provider_login_url 'github' %}">GitHub</a>
+                <a href="{% provider_login_url 'google' %}">Google</a>
+                <a href="{% provider_login_url 'line' %}">Line</a>
+            {% endblock base_content %}
+        </div>
+    </div>
+{% endblock content %}
