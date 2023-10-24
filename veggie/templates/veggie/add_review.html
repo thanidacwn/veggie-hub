@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'veggie/add_review.css' %}">
+</head>
+
+<body>
+    <form action="{% url 'veggie:add_review' restaurant.id %}" method="post">
+        {% csrf_token %}
+        {{ formset }}
+        <input type="submit" name="submit">
+    </form>
+    <a href="{% url 'veggie:detail' restaurant.id %}">Back to restaurant</a>
+</body>
+
+{% endblock %}
