@@ -172,8 +172,7 @@ INTERNAL_IPS = [
     "*",
 ]
 
-# NPM_BIN_PATH = "C:/Users/User/AppData/Roaming/npm/"
-NPM_BIN_PATH = r"D:\nodejs\npm.cmd"
+NPM_BIN_PATH = config('NPM_BIN_PATH', cast=str, default='/usr/local/bin/npm')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
