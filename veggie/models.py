@@ -37,7 +37,7 @@ class Restaurant(models.Model):
     restaurant_link = models.CharField(verbose_name="restaurant_link", max_length=255)
     menu_link = models.CharField(verbose_name="menu_link", max_length=255)
     price_rate = models.CharField(verbose_name="price_rate", max_length=255)
-    image = models.URLField(verbose_name="image", max_length=255, default="https://www.analyticdesign.com/wp-content/uploads/2018/07/unnamed.gif")
+    image = models.URLField(verbose_name="image", max_length=255)
 
     @property
     def get_average_rate(self):
