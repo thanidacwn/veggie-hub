@@ -1,25 +1,66 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
+from django.urls import reverse
 from django.views import generic
 from .models import Category, State, Restaurant
 import pandas as pd
 import ssl
 
 
-class IndexView(generic.ListView):
+def filtered_categories() -> list:
+    all_categories = ["All"]
+    for category in Category.objects.all():
+        # print([category.strip() for category in category.category_text.split(', ')]) 
+        for cat in [category.strip() for category in category.category_text.split(', ')]:
+            if cat not in all_categories:
+                all_categories.append(cat)
+    print(all_categories)
+    return all_categories
+
+
+def filtered_states() -> list:
+    all_states = ['All']
+    for state in State.objects.all():
+        if state not in all_states:
+            all_states.append(state)
+    print(all_states) # print to check state
+    return all_states
+
+
+class RestaurantsView(generic.ListView):
     template_name = 'veggie/home.html'
-    context_object_name = 'all_restaurants'
+    
+    def get(self, request):
+        return render(request, 'veggie/home.html', 
+            {
+                'all_restaurants': Restaurant.objects.all(), 
+                'all_categories': filtered_categories(),
+                'all_states': filtered_states()
+            }
+        )
 
-    def get_queryset(self):
-        return Restaurant.objects.all()
 
-# def index(request):
-#     """Display all restaurants."""
-#     all_restaurants = Restaurant.objects.all()
-#     context = {
-#         "all_restaurants": all_restaurants,
-#     }
-#     return render(request, "veggie/home.html", context)
+class GetRestaurantByCategory(generic.ListView):
+    model = Restaurant
+    template_name = 'veggie/home.html'
+
+    def get(self, request, category_name):
+        if category_name == 'All':
+            return HttpResponseRedirect(reverse('veggie:index'))
+        all_restaurants = Restaurant.objects.filter(category__category_text__icontains=category_name)
+        print(len(all_restaurants))
+        print(all_restaurants)
+        return render(request, 'veggie/home.html', 
+            {
+                'all_restaurants': all_restaurants,
+                'all_categories': filtered_categories(),
+                'all_states': filtered_states()
+            }
+        )
+
+
+class GetRestaurantByState(generic.ListView):
+    pass
 
 
 def home(request):

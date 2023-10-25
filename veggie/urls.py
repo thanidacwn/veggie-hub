@@ -4,6 +4,7 @@ from . import views
 app_name = 'veggie'
 
 urlpatterns = [
-    path("", views.IndexView.as_view(), name="index"),
-    path("home", views.home, name="home")
+    path("", views.RestaurantsView.as_view(), name="index"),
+    path("<str:category_name>/filtered/", views.GetRestaurantByCategory.as_view(), name="filtered_category"),
+    path("home/", views.home, name="home")
 ]
