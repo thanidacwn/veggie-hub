@@ -10,7 +10,7 @@ class IndexView(generic.ListView):
     template_name = 'veggie/home.html'
     context_object_name = 'all_restaurants'
 
-    def get(self):
+    def get_queryset(self):
         return Restaurant.objects.all()
 
 # def index(request):
