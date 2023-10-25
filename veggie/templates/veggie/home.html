@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
+
     <div>
         <div class="flex h-[150px] w-[100%] border-b-[2px] border-gray-300 items-center justify-center">
-            
             <div class="relative group">
                 <button class="px-4 py-2 bg-gray-300 rounded-md focus:outline-none focus:ring focus:ring-gray-500 hover:bg-gray-400">Toggle Dropdown</button>
                 <ul class="hidden absolute right-0 mt-2 space-y-2 bg-white border border-gray-300 rounded-md shadow-lg group-hover:block">
@@ -20,14 +20,7 @@
                   <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Item 2</a></li>
                   <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Item 3</a></li>
                 </ul>
-            </div> {% endcomment %}
-            <div class="relative-group">
-                <a href="{% url 'veggie:filtered_category' 'American' %}" class="border border-gray-300">
-                    <button>Test Button</button>
-                </a>
-            </div>
-            
-
+            </div> {% endcomment %}            
         </div>
         <div class="grid grid-cols-4 gap-5 text-center pt-10 pb-10 pl-5 pr-5 ">
             {% for restaurant in all_restaurants %}
@@ -36,14 +29,6 @@
                     <div class="text-lg">{{ restaurant.restaurant_text }}</div>
                 </span>
             {% endfor %}
-            {% comment %} <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res1</span>
-            <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res2</span>
-            <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res3</span>
-            <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res4</span>
-            <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res5</span>
-            <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res6</span>
-            <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res7</span>
-            <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res8</span> {% endcomment %}
         </div>
     </div>
 
