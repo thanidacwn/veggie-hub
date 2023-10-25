@@ -47,9 +47,9 @@ def add_review(request: HttpRequest, restaurant_id):
             restaurant.save()
             return redirect("veggie:review")
     else:
-        formset = ReviewForm(instance=restaurant)
+        formset = ReviewForm(initial={'restaurant': restaurant_id,})
         context = {
             'restaurant': restaurant,
-            'formset': formset
+            'formset': formset,
         }
     return render(request, 'veggie/add_review.html', context)
