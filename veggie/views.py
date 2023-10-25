@@ -1,17 +1,25 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.views import generic
 from .models import Category, State, Restaurant
 import pandas as pd
 import ssl
 
 
-def index(request):
-    """Display all restaurants."""
-    all_restaurants = Restaurant.objects.all()
-    context = {
-        "all_restaurants": all_restaurants,
-    }
-    return render(request, "veggie/home.html", context)
+class IndexView(generic.ListView):
+    template_name = 'veggie/home.html'
+    context_object_name = 'all_restaurants'
+
+    def get(self):
+        return Restaurant.objects.all()
+
+# def index(request):
+#     """Display all restaurants."""
+#     all_restaurants = Restaurant.objects.all()
+#     context = {
+#         "all_restaurants": all_restaurants,
+#     }
+#     return render(request, "veggie/home.html", context)
 
 
 def home(request):
