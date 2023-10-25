@@ -24,14 +24,20 @@
 
         </div>
         <div class="grid grid-cols-4 gap-5 text-center pt-10 pb-10 pl-5 pr-5 ">
-            <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res1</span>
+            {% for restaurant in all_restaurants %}
+                <span class="inline-block mx-5 my-5 aspect-[1/1] rounded-xl shadow-lg">
+                    <img src="{{ restaurant.image }}" alt="{{ restaurant.restaurant_text }}" class="rounded-xl">
+                    <div class="text-lg">{{ restaurant.restaurant_text }}</div>
+                </span>
+            {% endfor %}
+            {% comment %} <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res1</span>
             <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res2</span>
             <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res3</span>
             <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res4</span>
             <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res5</span>
             <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res6</span>
             <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res7</span>
-            <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res8</span>
+            <span class="inline-block mx-5 my-5 text-2xl border border-gray-500 aspect-[1/1] rounded-xl">Res8</span> {% endcomment %}
         </div>
     </div>
 
