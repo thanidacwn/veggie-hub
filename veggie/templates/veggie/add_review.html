@@ -2,22 +2,63 @@
 {% load static %}
 
 {% block content %}
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'veggie/add_review.css' %}">
-</head>
 
 <body>
-    <form action="{% url 'veggie:add_review' restaurant.id %}" method="post">
-        {% csrf_token %}
-        {{ formset }}
-        <input type="submit" name="submit">
-    </form>
-    <a href="{% url 'veggie:detail' restaurant.id %}">Back to restaurant</a>
-</body>
+    <link rel="stylesheet" href="{% static 'veggie/add_review.css' %}">
 
+
+    <form action="{% url 'veggie:add_review' restaurant.id %}" method="post" style="font-family: Inter; hi">
+        <div style="color: black; font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word;">{{restaurant.restaurant_text}}</div>
+        <div style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word;">- {{restaurant.category}} -</div>
+        <br>
+        {% csrf_token %}
+        <p style="font-weight: 500;">Restaurant link:</p>
+        <div style="color: blue; font-family: Inter; font-weight: 100; word-wrap: break-word;">
+            {{restaurant.restaurant_link}}
+        </div>
+        <br>
+        <div>
+            <label for="id_review_rate">Review rate:<br>
+                <input type="radio" name="review_rate" value="1" checked>
+            </label>            
+            <label for="id_review_rate">
+                <input type="radio" name="review_rate" value="2">
+            </label>
+            <label for="id_review_rate">
+                <input type="radio" name="review_rate" value="3">
+            </label>
+            <label for="id_review_rate">
+                <input type="radio" name="review_rate" value="4">
+            </label>
+            <label for="id_review_rate">
+                <input type="radio" name="review_rate" value="5">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="id_review_title">Review title:
+                <input type="text" name="review_title">
+            </label>
+        </div>
+        <div>
+            <label for="id_review_description">Review description:
+                <input type="text" name="review_description">
+            </label>
+        </div>
+        <button type="submit" name="submit" 
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none
+            focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center
+            dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Submit review
+        </button>
+
+        <a href="{% url "veggie:index" %}" type="button" 
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none
+            focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center
+            dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Back to restaurant
+        </a>
+    </form>
+
+</body>
 {% endblock %}
