@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<body>
+    <link rel="stylesheet" href="{% static 'veggie/add_review.css' %}">
+    <div class="center-top">Add your review</div>
+
+    <form action="{% url 'veggie:add_review' restaurant.id %}" method="post" style="font-family: Inter; hi">
+        <div style="color: black; font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word;">{{restaurant.restaurant_text}}</div>
+        <div style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word;">- {{restaurant.category}} -</div>
+        {% comment %} <img src="{{restaurant.image}}" alt="Restaurant Image" width="30%" height="50%" ></image> {% endcomment %}
+        <br>
+        {% csrf_token %}
+        <div>
+            Restaurant link:
+            <a href={{restaurant.restaurant_link}} 
+            style="color: blue; font-family: Inter; font-weight: 100; word-wrap: break-word;">Tripadvisor</a>
+        </div>
+        <br>
+        <div>
+            <label for="id_review_rate">Review rate:<br>
+                <input type="radio" name="review_rate" value="1" checked>
+            </label>            
+            <label for="id_review_rate">
+                <input type="radio" name="review_rate" value="2">
+            </label>
+            <label for="id_review_rate">
+                <input type="radio" name="review_rate" value="3">
+            </label>
+            <label for="id_review_rate">
+                <input type="radio" name="review_rate" value="4">
+            </label>
+            <label for="id_review_rate">
+                <input type="radio" name="review_rate" value="5">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="id_review_title">Review title:
+                <input type="text" name="review_title">
+            </label>
+        </div>
+        <div>
+            <label for="id_review_description">Review description:
+                <input type="text" name="review_description">
+            </label>
+        </div>
+        <button type="submit" name="submit" 
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none
+            focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center
+            dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Submit review
+        </button>
+
+        <a href="{% url "veggie:index" %}" type="button" 
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none
+            focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center
+            dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Back to restaurant
+        </a>
+    </form>
+
+</body>
+{% endblock %}
