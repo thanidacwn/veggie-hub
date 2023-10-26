@@ -76,6 +76,57 @@ class GetRestaurantByState(generic.ListView):
         )
 
 
+class GetRestaurantByCategoryAndState(generic.ListView):
+    # model = Restaurant
+    # template_name = 'veggie/home.html'
+
+    # def get(self, request, category_name, state_name):
+    #     if category_name == 'All' and state_name == 'All':
+    #         return HttpResponseRedirect(reverse('veggie:index'))
+
+    #     all_restaurants = Restaurant.objects.all()
+
+    #     if category_name != 'All':
+    #         all_restaurants = all_restaurants.filter(category__category_text__icontains=category_name)
+
+    #     if state_name != 'All':
+    #         all_restaurants = all_restaurants.filter(state__state_text__icontains=state_name)
+
+    #     print(all_restaurants)
+
+    #     return render(request, 'veggie/home.html',
+    #         {
+    #             'all_restaurants': all_restaurants,
+    #             'all_categories': filtered_categories(),
+    #             'all_states': filtered_states()
+    #         }
+    #     )
+    model = Restaurant
+    template_name = 'veggie/filter.html'
+
+    def get(self, request):
+        category = request.GET.get('category')
+        state = request.GET.get('state')
+
+        all_restaurants = Restaurant.objects.all()
+
+        if category != "All":
+            all_restaurants = all_restaurants.filter(category__category_text__icontains=category)
+        all_restaurants = all_restaurants
+        
+        if state != "All":
+            all_restaurants = all_restaurants.filter(state__state_text__icontains=state)
+        all_restaurants = all_restaurants
+
+        return render(request, 'veggie/home.html', 
+            {
+                'all_restaurants': all_restaurants,
+                'all_categories': filtered_categories(),
+                'all_states': filtered_states(),
+            }
+        )
+
+
 def home(request):
     """Get data from csv file and save to database."""
     ssl._create_default_https_context = ssl._create_unverified_context

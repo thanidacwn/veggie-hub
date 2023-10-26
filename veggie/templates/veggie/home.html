@@ -4,7 +4,7 @@
 
     <div>
         <div class="flex h-[150px] w-[100%] border-b-[2px] border-gray-300 items-center justify-center">
-            <div class="relative group mx-5">
+            {% comment %} <div class="relative group mx-5">
                 <button class="flex px-4 py-2 bg-gray-300 rounded-md focus:outline-none focus:ring focus:ring-gray-500 hover:bg-gray-400">
                     <div>
                         Toggle Dropdown
@@ -34,7 +34,26 @@
                         <a href="{% url 'veggie:filtered-state' state %}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"><li>{{ state }}</li></a>
                     {% endfor %}
                 </ul>
-            </div>          
+            </div>           {% endcomment %}
+            <form method="get" action="{% url 'veggie:filtered_category_state' %}" class="flex items-center">
+                <label for="category" class="px-4 text-xl">Category:</label>
+                <select name="category" id="category" class="rounded-md">
+                    {% comment %} <option value="">All Categories</option> {% endcomment %}
+                    {% for category in all_categories %}
+                        <option value="{{ category }}">{{ category }}</option>
+                    {% endfor %}
+                </select>
+                <label for="state" class="px-4 text-xl">State:</label>
+                <select name="state" id="state" class="rounded-md">
+                    {% comment %} <option value="">All States</option> {% endcomment %}
+                    {% for state in all_states %}
+                        <option value="{{ state }}">{{ state }}</option>
+                    {% endfor %}
+                </select>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-4 py-2 px-4 rounded-md">
+                    Filter
+                </button>
+            </form>
         </div>
         <div class="grid grid-cols-4 gap-5 text-center pt-10 pb-10 pl-5 pr-5 ">
             {% for restaurant in all_restaurants %}
