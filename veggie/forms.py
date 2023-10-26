@@ -7,4 +7,3 @@ class ReviewForm(ModelForm):
         model = Review
         fields = ["restaurant", "review_user", "review_title",
                 "review_description", "review_rate", "review_date"]
-
