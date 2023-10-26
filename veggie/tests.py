@@ -1,7 +1,7 @@
-from django.test import TestCase, Client
+from django.test import TestCase, Client, RequestFactory
 from django.urls import reverse
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate, login, logout
+from .views import RestaurantsView
 from .models import Category, State, Restaurant, Review
 
 class RestaurantModelTest(TestCase):
@@ -72,5 +72,7 @@ class UserAuthenticationTest(TestCase):
 
     
 class RestaurantViewTest(TestCase):
-    def setUp(self) -> None:
-        return 
+    def test_template_used_of_homepage(self):
+        response = self.client.get(reverse('veggie:index'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'veggie/home.html')
