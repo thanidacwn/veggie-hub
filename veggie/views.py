@@ -1,5 +1,6 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
+from django.contrib import messages
 from django.urls import reverse
 from django.views import generic
 from .models import Category, State, Restaurant
@@ -47,7 +48,6 @@ class GetRestaurantByCategoryAndState(generic.ListView):
     def get(self, request):
         selected_category = request.GET.get('category')
         selected_state = request.GET.get('state')
-        print(selected_state)
 
         all_restaurants = Restaurant.objects.all()
 
@@ -56,6 +56,12 @@ class GetRestaurantByCategoryAndState(generic.ListView):
         
         if selected_state != "All":
             all_restaurants = all_restaurants.filter(state__state_text__icontains=selected_state)
+
+        if not all_restaurants:
+            messages.info(request, f'There are no restaurants in {selected_category} Category and {selected_state} State.')
+        
+        if selected_category == "All" and selected_state == "All":
+            return HttpResponseRedirect(reverse('veggie:index'))
 
         return render(request, 'veggie/home.html', 
             {

@@ -3,7 +3,7 @@
 {% block content %}
 
     <div>
-        <div class="flex h-[150px] w-[100%] border-b-[2px] border-gray-300 items-center justify-center">
+        <div class="flex flex-col h-[150px] w-[100%] border-b-[2px] border-gray-300 items-center justify-center">
             <form method="get" action="{% url 'veggie:filtered_category_state' %}" class="flex items-center">
                 <label for="category" class="px-4 text-xl">Category:</label>
                 <select name="category" id="category" class="rounded-md">
@@ -21,6 +21,11 @@
                     Filter
                 </button>
             </form>
+            {% if messages %}
+                {% for message in messages %}
+                    <p class="text-red-600 text-center mt-5"><strong>{{ message }}</strong></p>
+                {% endfor %}
+            {% endif %}
         </div>
         <div class="grid grid-cols-4 gap-5 text-center pt-10 pb-10 pl-5 pr-5 ">
             {% for restaurant in all_restaurants %}
