@@ -54,17 +54,23 @@ class RestaurantModelTest(TestCase):
 
 class UserAuthenticationTest(TestCase):
     def setUp(self):
-        self.username = "testuser"
-        self.password = "testpassword"
-        self.user = User.objects.create_user(username=self.username, password=self.password)
+        self.credentials = {
+            'username': 'test_user',
+            'password': 'secret_password'
+        }
+        self.user = User.objects.create_user(**self.credentials)
 
     def test_user_login_redirect(self):
-        response = self.client.post(reverse("veggie:index"), {'username': self.username, 'password': self.password})
+        self.client.login(username='test_user', password='secret_password')
+        response = self.client.get(reverse("veggie:index"))
         self.assertEqual(response.status_code, 200)
 
-    def test_user_loggout_redirect(self):
-        self.client.login(username=self.username, password=self.password)
+    def test_user_logout_redirect(self):
+        self.client.logout()
         response = self.client.get(reverse("veggie:index"))
         self.assertEqual(response.status_code, 200)
 
     
+class RestaurantViewTest(TestCase):
+    def setUp(self) -> None:
+        return 
