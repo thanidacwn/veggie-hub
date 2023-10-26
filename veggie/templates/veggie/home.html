@@ -25,6 +25,8 @@
                 {% for message in messages %}
                     <p class="text-red-600 text-center mt-5"><strong>{{ message }}</strong></p>
                 {% endfor %}
+            {% else %}
+                <p class="text-xl mt-5">Category: {{selected_category}} State: {{selected_state}}</p>
             {% endif %}
         </div>
         <div class="grid grid-cols-4 gap-5 text-center pt-10 pb-10 pl-5 pr-5 ">
