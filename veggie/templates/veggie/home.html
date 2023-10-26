@@ -41,7 +41,8 @@
             {% for restaurant in all_restaurants %}
                 <span class="inline-block mx-5 my-5 aspect-[1/1] rounded-xl shadow-lg">
                     <img src="{{ restaurant.image }}" alt="{{ restaurant.restaurant_text }}" class="rounded-t-lg h-[70%] w-[100%]">
-                    <div class="text-lg">{{ restaurant.restaurant_text }}</div>
+                    <div class="text-lg font-semibold">{{ restaurant.restaurant_text }}</div>
+                    <div>{{ restaurant.location }}</div>
                 </span>
             {% endfor %}
         </div>
