@@ -48,7 +48,6 @@ class GetRestaurantByCategory(generic.ListView):
         if category_name == 'All':
             return HttpResponseRedirect(reverse('veggie:index'))
         all_restaurants = Restaurant.objects.filter(category__category_text__icontains=category_name)
-        print(len(all_restaurants))
         print(all_restaurants)
         return render(request, 'veggie/home.html', 
             {
@@ -67,7 +66,6 @@ class GetRestaurantByState(generic.ListView):
         if state_name == "All":
             return HttpResponseRedirect(reverse('veggie:index'))
         all_restaurants = Restaurant.objects.filter(state__state_text__icontains=state_name)
-        print(len(all_restaurants))
         print(all_restaurants)
         return render(request, 'veggie/home.html', 
             {
