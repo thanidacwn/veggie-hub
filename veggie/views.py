@@ -53,11 +53,9 @@ class GetRestaurantByCategoryAndState(generic.ListView):
 
         if selected_category != "All":
             all_restaurants = all_restaurants.filter(category__category_text__icontains=selected_category)
-        # all_restaurants = all_restaurants
         
         if selected_state != "All":
             all_restaurants = all_restaurants.filter(state__state_text__icontains=selected_state)
-        # all_restaurants = all_restaurants
 
         return render(request, 'veggie/home.html', 
             {
