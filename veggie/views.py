@@ -97,15 +97,6 @@ def home(request):
     return HttpResponse("Hello, veggie!")
 
 
-def index(request):
-    """Display all restaurants."""
-    all_restaurants = Restaurant.objects.all()
-    context = {
-        "all_restaurants": all_restaurants,
-    }
-    return render(request, "veggie/home.html", context)
-
-
 @login_required
 def add_review(request: HttpRequest, restaurant_id):
     restaurant = get_object_or_404(Restaurant, id=restaurant_id)
