@@ -60,7 +60,22 @@ class GetRestaurantByCategory(generic.ListView):
 
 
 class GetRestaurantByState(generic.ListView):
-    pass
+    model = Restaurant
+    template_name = 'veggie/home.html'
+
+    def get(self, request, state_name):
+        if state_name == "All":
+            return HttpResponseRedirect(reverse('veggie:index'))
+        all_restaurants = Restaurant.objects.filter(state__state_text__icontains=state_name)
+        print(len(all_restaurants))
+        print(all_restaurants)
+        return render(request, 'veggie/home.html', 
+            {
+                'all_restaurants': all_restaurants,
+                'all_categories': filtered_categories(),
+                'all_states': filtered_states()
+            }
+        )
 
 
 def home(request):
