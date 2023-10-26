@@ -48,6 +48,8 @@ class GetRestaurantByCategoryAndState(generic.ListView):
     def get(self, request):
         selected_category = request.GET.get('category')
         selected_state = request.GET.get('state')
+        print(selected_category)
+        print(selected_state)
 
         all_restaurants = Restaurant.objects.all()
 
