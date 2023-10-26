@@ -7,16 +7,14 @@
             <form method="get" action="{% url 'veggie:filtered_category_state' %}" class="flex items-center">
                 <label for="category" class="px-4 text-xl">Category:</label>
                 <select name="category" id="category" class="rounded-md">
-                    {% comment %} <option value="">All Categories</option> {% endcomment %}
                     {% for category in all_categories %}
-                        <option value="{{ category }}">{{ category }}</option>
+                        <option value="{{ category }}" {% if category == selected_category %}selected{% endif %}>{{ category }}</option>
                     {% endfor %}
                 </select>
                 <label for="state" class="px-4 text-xl">State:</label>
                 <select name="state" id="state" class="rounded-md">
-                    {% comment %} <option value="">All States</option> {% endcomment %}
                     {% for state in all_states %}
-                        <option value="{{ state }}">{{ state }}</option>
+                        <option value="{{ state }}" {% if state == selected_state %}selected{% endif %}>{{ state }}</option>
                     {% endfor %}
                 </select>
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-4 py-2 px-4 rounded-md">

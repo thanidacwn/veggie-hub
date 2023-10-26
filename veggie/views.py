@@ -22,7 +22,7 @@ def filtered_states() -> list:
     all_states = ['All']
     for state in State.objects.all():
         if state not in all_states:
-            all_states.append(state)
+            all_states.append(state.state_text)
     print(all_states) # print to check state
     return all_states
 
@@ -40,89 +40,32 @@ class RestaurantsView(generic.ListView):
         )
 
 
-class GetRestaurantByCategory(generic.ListView):
-    model = Restaurant
-    template_name = 'veggie/home.html'
-
-    def get(self, request, category_name):
-        if category_name == 'All':
-            return HttpResponseRedirect(reverse('veggie:index'))
-        all_restaurants = Restaurant.objects.filter(category__category_text__icontains=category_name)
-        print(all_restaurants)
-        return render(request, 'veggie/home.html', 
-            {
-                'all_restaurants': all_restaurants,
-                'all_categories': filtered_categories(),
-                'all_states': filtered_states()
-            }
-        )
-
-
-class GetRestaurantByState(generic.ListView):
-    model = Restaurant
-    template_name = 'veggie/home.html'
-
-    def get(self, request, state_name):
-        if state_name == "All":
-            return HttpResponseRedirect(reverse('veggie:index'))
-        all_restaurants = Restaurant.objects.filter(state__state_text__icontains=state_name)
-        print(all_restaurants)
-        return render(request, 'veggie/home.html', 
-            {
-                'all_restaurants': all_restaurants,
-                'all_categories': filtered_categories(),
-                'all_states': filtered_states()
-            }
-        )
-
-
 class GetRestaurantByCategoryAndState(generic.ListView):
-    # model = Restaurant
-    # template_name = 'veggie/home.html'
-
-    # def get(self, request, category_name, state_name):
-    #     if category_name == 'All' and state_name == 'All':
-    #         return HttpResponseRedirect(reverse('veggie:index'))
-
-    #     all_restaurants = Restaurant.objects.all()
-
-    #     if category_name != 'All':
-    #         all_restaurants = all_restaurants.filter(category__category_text__icontains=category_name)
-
-    #     if state_name != 'All':
-    #         all_restaurants = all_restaurants.filter(state__state_text__icontains=state_name)
-
-    #     print(all_restaurants)
-
-    #     return render(request, 'veggie/home.html',
-    #         {
-    #             'all_restaurants': all_restaurants,
-    #             'all_categories': filtered_categories(),
-    #             'all_states': filtered_states()
-    #         }
-    #     )
     model = Restaurant
-    template_name = 'veggie/filter.html'
+    template_name = 'veggie/home.html'
 
     def get(self, request):
-        category = request.GET.get('category')
-        state = request.GET.get('state')
+        selected_category = request.GET.get('category')
+        selected_state = request.GET.get('state')
+        print(selected_state)
 
         all_restaurants = Restaurant.objects.all()
 
-        if category != "All":
-            all_restaurants = all_restaurants.filter(category__category_text__icontains=category)
-        all_restaurants = all_restaurants
+        if selected_category != "All":
+            all_restaurants = all_restaurants.filter(category__category_text__icontains=selected_category)
+        # all_restaurants = all_restaurants
         
-        if state != "All":
-            all_restaurants = all_restaurants.filter(state__state_text__icontains=state)
-        all_restaurants = all_restaurants
+        if selected_state != "All":
+            all_restaurants = all_restaurants.filter(state__state_text__icontains=selected_state)
+        # all_restaurants = all_restaurants
 
         return render(request, 'veggie/home.html', 
             {
                 'all_restaurants': all_restaurants,
                 'all_categories': filtered_categories(),
                 'all_states': filtered_states(),
+                'selected_category': selected_category,
+                'selected_state': selected_state
             }
         )
 
