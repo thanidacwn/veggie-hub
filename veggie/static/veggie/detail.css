@@ -2,6 +2,7 @@
 
 .restaurant-container {
     position: sticky;
+    left: 20px;
     width: 450px;
     height: 550px;
     border: 2px solid #ccc;
@@ -28,6 +29,7 @@
 
 .back-button {
     position: sticky;
+    left: 20px;
     width: 150px;
     height: 25px;
     border: 2px solid #ccc;
