@@ -1,19 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
 
-<html lang="en">
+{% block content %}
+
     <body>
+        <link rel="stylesheet" href="{% static 'veggie/detail.css' %}">
         {% if messages %}
             {% for message in messages %}
                 <p style="color: orangered;"><strong>{{ message }}</strong></p>
             {% endfor %}
         {% endif %}
-        <h2>Average Rating: {{ restaurant.get_average_rate }}</h2>
-        <h1>{{ restaurant }}</h1>
-        <img src="{{ restaurant.image }}" alt="Restaurant Image" width="25%" height="35%">
-        <h3>Location: {{ restaurant.location }}</h3>
-        <h3>Category: {{ restaurant.category }}</h3>
-        <h3>Link: <a href={{restaurant.restaurant_link}}>Tripadvisor</a></h3>
 
+        <div class="restaurant-container">
+            <div class="avg-star-rating-container">
+                Avg Star Rating: {{ restaurant.get_average_rate }}
+            </div>
+            <h1>{{ restaurant }}</h1>
+            <img src="{{ restaurant.image }}" alt="Restaurant Image" width="80%" height="45%">
+            <h3>Location: {{ restaurant.location }}</h3>
+            <h3>Category: {{ restaurant.category }}</h3>
+            <h3>Link: <a href={{restaurant.restaurant_link}}>Tripadvisor</a></h3>
+        </div>
+        <div class="back-button">
+            <a href="{% url 'veggie:home' %}">Back to Home</a>
+        </div>
 
-        <a href="{% url 'veggie:home' %}"><button>Back to Home</button></a>
     </body>
-</html>
+{% endblock %}
