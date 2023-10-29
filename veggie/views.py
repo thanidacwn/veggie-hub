@@ -17,7 +17,6 @@ def filtered_categories() -> list:
         for cat in [category.strip() for category in category.category_text.split(', ')]:
             if cat not in all_categories:
                 all_categories.append(cat)
-    print(all_categories)
     return all_categories
 
 
@@ -26,7 +25,6 @@ def filtered_states() -> list:
     for state in State.objects.all():
         if state not in all_states:
             all_states.append(state.state_text)
-    print(all_states) # print to check state
     return all_states
 
 
