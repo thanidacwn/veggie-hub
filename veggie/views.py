@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.urls import reverse
 from django.views import generic
-from .models import Category, State, Restaurant
+from .models import Category, State, Restaurant, Review
 from .forms import ReviewForm
 import pandas as pd
 import ssl
@@ -108,11 +108,14 @@ class DetailView(generic.DetailView):
         except (KeyError, Restaurant.DoesNotExist):
             messages.error(request, 'Requested restaurant does not exist')
             return HttpResponseRedirect(reverse('veggie:index'))
+        try:
+            review = Review.objects.get(restaurant=restaurant)
+        except Review.DoesNotExist:
+            review = ''
         return render(request, 'veggie/detail.html', {
-            'restaurant': restaurant})
+            'restaurant': restaurant, 'review': review})
 
-        restaurant.save()
-        return HttpResponse("Hello, veggie!")
+
 
 
 @login_required

@@ -19,13 +19,18 @@
             <img src="{{ restaurant.image }}" alt="Restaurant Image" width="80%" height="45%">
             <h3>Location: {{ restaurant.location }}</h3>
             <h3>Category: {{ restaurant.category }}</h3>
+            <h3>Price Rate: {{ restaurant.price_rate }}</h3>
             <h3>Link: <a href={{restaurant.restaurant_link}}>Tripadvisor</a></h3>
         </div>
-        <div class="back-button">
+        <div class="button">
             <a href="{% url 'veggie:home' %}">Back to Home</a>
         </div>
 
-        <div class="back-button">
+        <div class="button">
+            <a href="{% url 'veggie:add_review' pk=restaurant.pk  %}">Add review</a>
+        </div>
+
+        <div class="review-container">
             <a href="{% url 'veggie:add_review' pk=restaurant.pk  %}">Add review</a>
         </div>
 

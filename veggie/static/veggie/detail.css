@@ -13,6 +13,19 @@
     padding: 30px;
 }
 
+.review-container {
+    position: sticky;
+    left: 20px;
+    width: 1500px;
+    height: 550px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
 .avg-star-rating-container {
     position: sticky;
     left: 300px;
@@ -27,7 +40,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.back-button {
+.button {
     position: sticky;
     left: 20px;
     width: 150px;
