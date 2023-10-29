@@ -112,7 +112,7 @@ class DetailView(generic.DetailView):
             'restaurant': restaurant})
 
         restaurant.save()
-    return HttpResponse("Hello, veggie!")
+        return HttpResponse("Hello, veggie!")
 
 
 @login_required
