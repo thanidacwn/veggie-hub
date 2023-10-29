@@ -128,6 +128,7 @@ def add_review(request: HttpRequest, pk):
         else:
             # Form is not valid, display error messages
             messages.error(request, 'You did not review yet! Please add your review.')
+            return HttpResponseRedirect(reverse("veggie:add_review", kwargs={'pk': pk}))
         return HttpResponseRedirect(reverse("veggie:detail", kwargs={'pk': pk}))
     else:
         formset = ReviewForm(initial={'restaurant': pk, })

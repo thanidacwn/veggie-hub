@@ -6,7 +6,11 @@
 <body>
     <link rel="stylesheet" href="{% static 'veggie/add_review.css' %}">
     <div class="center-top">Add your review</div>
-
+    {% if messages %}
+        {% for message in messages %}
+            <p style="color: orangered;"><strong>{{ message }}</strong></p>
+        {% endfor %}
+    {% endif %}
     <form action="{% url 'veggie:add_review' pk=restaurant.pk %}" method="post" style="font-family: Inter; hi">
         <div style="color: black; font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word;">{{restaurant.restaurant_text}}</div>
         <div style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word;">- {{restaurant.category}} -</div>
