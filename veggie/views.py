@@ -30,15 +30,15 @@ def filtered_states() -> list:
 
 class RestaurantsView(generic.ListView):
     template_name = 'veggie/home.html'
-    
+
     def get(self, request):
-        return render(request, 'veggie/home.html', 
-            {
-                'all_restaurants': Restaurant.objects.all(), 
-                'all_categories': filtered_categories(),
-                'all_states': filtered_states()
-            }
-        )
+        return render(request, 'veggie/home.html',
+                      {
+                          'all_restaurants': Restaurant.objects.all(),
+                          'all_categories': filtered_categories(),
+                          'all_states': filtered_states()
+                      }
+                      )
 
 
 class GetRestaurantByCategoryAndState(generic.ListView):
@@ -53,25 +53,26 @@ class GetRestaurantByCategoryAndState(generic.ListView):
 
         if selected_category != "All":
             all_restaurants = all_restaurants.filter(category__category_text__icontains=selected_category)
-        
+
         if selected_state != "All":
             all_restaurants = all_restaurants.filter(state__state_text__icontains=selected_state)
 
         if not all_restaurants:
-            messages.info(request, f'There are no restaurants in {selected_category} Category and {selected_state} State.')
-        
+            messages.info(request,
+                          f'There are no restaurants in {selected_category} Category and {selected_state} State.')
+
         if selected_category == "All" and selected_state == "All":
             return HttpResponseRedirect(reverse('veggie:index'))
 
-        return render(request, 'veggie/home.html', 
-            {
-                'all_restaurants': all_restaurants,
-                'all_categories': filtered_categories(),
-                'all_states': filtered_states(),
-                'selected_category': selected_category,
-                'selected_state': selected_state
-            }
-        )
+        return render(request, 'veggie/home.html',
+                      {
+                          'all_restaurants': all_restaurants,
+                          'all_categories': filtered_categories(),
+                          'all_states': filtered_states(),
+                          'selected_category': selected_category,
+                          'selected_state': selected_state
+                      }
+                      )
 
 
 def home(request):
@@ -84,14 +85,14 @@ def home(request):
             category = Category.objects.get_or_create(category_text=row["category"])[0]
             state = State.objects.get_or_create(state_text=row["state"])[0]
             restaurant = Restaurant(restaurant_text=row["restaurant_text"],
-                        category=category,
-                        state=state, city=row["city"],
-                        location=row["location"],
-                        restaurant_link=row["restaurant_link"],
-                        menu_link=row["menu_link"],
-                        price_rate=row["price_rate"],
-                        image=row["image"])
-            
+                                    category=category,
+                                    state=state, city=row["city"],
+                                    location=row["location"],
+                                    restaurant_link=row["restaurant_link"],
+                                    menu_link=row["menu_link"],
+                                    price_rate=row["price_rate"],
+                                    image=row["image"])
+
             restaurant.save()
     return HttpResponse("Hello, world. You're at the home page.")
 
@@ -109,13 +110,11 @@ class DetailView(generic.DetailView):
             messages.error(request, 'Requested restaurant does not exist')
             return HttpResponseRedirect(reverse('veggie:index'))
         try:
-            review = Review.objects.get(restaurant=restaurant)
+            reviews = Review.objects.filter(restaurant=restaurant)
         except Review.DoesNotExist:
-            review = ''
+            reviews = []
         return render(request, 'veggie/detail.html', {
-            'restaurant': restaurant, 'review': review})
-
-
+            'restaurant': restaurant, 'reviews': reviews})
 
 
 @login_required
@@ -131,7 +130,7 @@ def add_review(request: HttpRequest, pk):
             messages.error(request, 'You did not review yet! Please add your review.')
         return HttpResponseRedirect(reverse("veggie:detail", kwargs={'pk': pk}))
     else:
-        formset = ReviewForm(initial={'restaurant': pk,})
+        formset = ReviewForm(initial={'restaurant': pk, })
         context = {
             'restaurant': restaurant,
             'formset': formset,
