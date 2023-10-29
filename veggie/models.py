@@ -37,6 +37,7 @@ class Restaurant(models.Model):
     restaurant_link = models.CharField(verbose_name="restaurant_link", max_length=255)
     menu_link = models.CharField(verbose_name="menu_link", max_length=255)
     price_rate = models.CharField(verbose_name="price_rate", max_length=255)
+    image = models.URLField(verbose_name="image", max_length=255)
 
     @property
     def get_average_rate(self):
@@ -68,7 +69,7 @@ class Review(models.Model):
     review_title = models.CharField(verbose_name="review_title", max_length=255)
     review_description = models.CharField(verbose_name="review_description", max_length=255)
     review_rate = models.IntegerField(verbose_name="review_rate", default=0)
-    review_date = models.DateTimeField(verbose_name="review_date", default=timezone.now())
+    review_date = models.DateTimeField(verbose_name="review_date", default=timezone.now)
 
     def __str__(self):
         return f"{self.title} - {self.restaurant.restaurant_text} by {self.review_user.username}"

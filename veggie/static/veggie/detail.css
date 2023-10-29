@@ -1,0 +1,42 @@
+/* detail.css */
+
+.restaurant-container {
+    position: sticky;
+    left: 20px;
+    width: 450px;
+    height: 550px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.avg-star-rating-container {
+    position: sticky;
+    left: 300px;
+    width: 200px;
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #B6B6B4;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    position: sticky;
+    left: 20px;
+    width: 150px;
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #B6B6B4;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

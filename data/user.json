@@ -3,8 +3,8 @@
         "model": "auth.user",
         "pk": 1,
         "fields": {
-            "password": "pbkdf2_sha256$600000$ZHVIye2vNmmsbwAOVHdLoo$8VXpaFnRLoGn2zmKhsba8lomPU/4HwayqoUgon9S/FE=",
-            "last_login": null,
+            "password": "pbkdf2_sha256$390000$LDdnTFamYuywdsiyvV1OI4$ibgZEWjdiwmLq7XAuJXYB1a90lTTqzo84DFPDPj+eg4=",
+            "last_login": "2023-10-24T15:50:28.099Z",
             "is_superuser": true,
             "username": "veggie123",
             "first_name": "",
@@ -13,6 +13,114 @@
             "is_staff": true,
             "is_active": true,
             "date_joined": "2023-10-17T17:34:09.869Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "!ovkmwUeuXMWUm8EL63H3TpkD2KKwfuDmOX3dPflS",
+            "last_login": "2023-10-23T08:37:34.830Z",
+            "is_superuser": false,
+            "username": "thanidacwn",
+            "first_name": "Thanida",
+            "last_name": "Chaiwongnon",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-10-23T08:37:34.809Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "password": "!3prqlUCVHUeNzFVGxXz90yUxajHXa61BQVKeocBs",
+            "last_login": "2023-10-23T11:03:54.898Z",
+            "is_superuser": false,
+            "username": "thanida",
+            "first_name": "Thanida",
+            "last_name": "CHAIWONGNON",
+            "email": "thanida.chai@ku.th",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-10-23T10:53:22.484Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "password": "!vHdrMySwITijkc8iroYvWl3OEFIcEEGvSD0xb2az",
+            "last_login": "2023-10-23T11:05:52.657Z",
+            "is_superuser": false,
+            "username": "Ued979011ae7485c8bf7b860daef4f0fd",
+            "first_name": "tha",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-10-23T11:05:52.638Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$U7PdJWiezvsvpPpYNl2mLm$GOJGxG7WzE3TFa6tK9krx6dpAy5SNi1W+VRPCuS46Sw=",
+            "last_login": "2023-10-24T02:43:19.929Z",
+            "is_superuser": true,
+            "username": "god",
+            "first_name": "",
+            "last_name": "",
+            "email": "godjangg@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2023-10-24T02:43:00.863Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 6,
+        "fields": {
+            "password": "!9lTPlY9voaFiBWLzxPkNLdPDBXXFRXqJskQ5PhVe",
+            "last_login": "2023-10-24T02:46:18.191Z",
+            "is_superuser": false,
+            "username": "preawpan",
+            "first_name": "Preawpan",
+            "last_name": "THAMAPIPOL",
+            "email": "preawpan.t@ku.th",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-10-24T02:46:18.159Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 7,
+        "fields": {
+            "password": "!6kLktp8R48zr3tgVg8WtsWlBtJIsbWwErmKxtfgh",
+            "last_login": "2023-10-24T03:36:53.060Z",
+            "is_superuser": false,
+            "username": "thanida3",
+            "first_name": "Thanida",
+            "last_name": "CHAIWONGNON",
+            "email": "thanida.chai@ku.th",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-10-24T03:36:53.043Z",
             "groups": [],
             "user_permissions": []
         }

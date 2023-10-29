@@ -1,0 +1,40 @@
+{% extends 'account/base.html' %}
+{% load socialaccount %}
+{% load static %}
+{% load i18n %}
+
+{% block head_title %} Sign Up {% endblock head_title %}
+
+{% block extra_head %}
+    {{ block.super }}
+{% endblock extra_head %}
+
+{% block content %}
+    <div class="center-container">
+        <div class="login-container">
+            <h1>Sign Up</h1>
+            <form class="login" method="post" action="{% url 'account_signup' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                {% if redirect_field_value %}
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+                <button class="primaryAction" type="submit">{% trans "Sign Up" %}</button>
+            </form>
+
+            <p>Already have an account? <a href="{% url 'account_login' %}">Login</a></p>
+        </div>
+
+        <div class="base-content">
+            {% block base_content %}
+            <br><br>
+            <a href="{% provider_login_url 'github' %}">GitHub</a>
+            <a href="{% provider_login_url 'google' %}">Google</a>
+            <a href="{% provider_login_url 'line' %}">Line</a> 
+            <br><br><br>
+            <a href="{% url "veggie:index" %}">Back to home page</a>
+            {% endblock base_content %}
+        </div>
+    </div>
+{% endblock content %}
+

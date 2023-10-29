@@ -1,6 +1,8 @@
-from django.test import TestCase
-from .models import Category, State, Restaurant, Review
+from django.test import TestCase, Client
+from django.urls import reverse
 from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login, logout
+from .models import Category, State, Restaurant, Review
 
 class RestaurantModelTest(TestCase):
     """Test Restaurant model"""
@@ -48,3 +50,20 @@ class RestaurantModelTest(TestCase):
     def test_reviews_amount(self):
         """Test reviews amount"""
         self.assertEqual(self.restaurant.get_reviews_amount, 3)
+
+
+class UserAuthenticationTest(TestCase):
+    def setUp(self):
+        self.username = "testuser"
+        self.password = "testpassword"
+        self.user = User.objects.create_user(username=self.username, password=self.password)
+
+    def test_user_login_redirect(self):
+        pass
+
+    def test_user_loggout_redirect(self):
+        self.client.login(username=self.username, password=self.password)
+        response = self.client.get(reverse("veggie:index"))
+        self.assertEqual(response.status_code, 200)
+
+    
