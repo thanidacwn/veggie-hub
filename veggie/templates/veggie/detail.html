@@ -25,5 +25,9 @@
             <a href="{% url 'veggie:home' %}">Back to Home</a>
         </div>
 
+        <div class="back-button">
+            <a href="{% url 'veggie:add_review' pk=restaurant.pk  %}">Add review</a>
+        </div>
+
     </body>
 {% endblock %}

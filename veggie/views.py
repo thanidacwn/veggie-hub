@@ -116,16 +116,19 @@ class DetailView(generic.DetailView):
 
 
 @login_required
-def add_review(request: HttpRequest, restaurant_id):
-    restaurant = get_object_or_404(Restaurant, id=restaurant_id)
+def add_review(request: HttpRequest, pk):
+    restaurant = get_object_or_404(Restaurant, pk=pk)
     if request.method == "POST":
         formset = ReviewForm(request.POST, instance=restaurant)
         if formset.is_valid():
             formset.save()
-            restaurant.save()
-            return redirect("veggie:detail")
+            messages.success(request, "review save!")
+        else:
+            # Form is not valid, display error messages
+            messages.error(request, 'You did not review yet! Please add your review.')
+        return HttpResponseRedirect(reverse("veggie:detail", kwargs={'pk': pk}))
     else:
-        formset = ReviewForm(initial={'restaurant': restaurant_id,})
+        formset = ReviewForm(initial={'restaurant': pk,})
         context = {
             'restaurant': restaurant,
             'formset': formset,
