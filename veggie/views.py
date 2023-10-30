@@ -134,3 +134,25 @@ def add_review(request: HttpRequest, pk):
             'formset': formset,
         }
     return render(request, 'veggie/add_review.html', context)
+
+
+@login_required
+def delete_review(request: HttpRequest, pk):
+    try:
+        restaurant = Restaurant.objects.get(pk=pk)
+    except (Restaurant.DoesNotExist, ValueError):
+        return HttpResponseBadRequest(f"{pk} does not exist!")
+
+    try:
+        redirect_url = reverse('veggie:myreviews')
+    except (Review.DoesNotExist, ValueError):
+        redirect_url = request.META.get('HTTP_REFERER', reverse('veggie:index'))
+        return HttpResponseBadRequest("Review does not exist.")
+
+    user_review = Review.objects.get(restaurant=restaurant, review_user=request.user)
+    if not vote:
+        messages.error(request, "You did not review this restaurant yet!")
+        return redirect(redirect_url)
+    user_review.delete()
+    messages.info(request, f"Your review at {restaurant.restaurant_text} has been deleted.")
+    return redirect(redirect_url)
