@@ -1,4 +1,4 @@
-from django.http import HttpResponse, HttpResponseRedirect, HttpRequest
+from django.http import HttpResponse, HttpResponseRedirect, HttpRequest, HttpResponseBadRequest
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
@@ -11,6 +11,9 @@ import ssl
 
 
 def filtered_categories() -> list:
+    """Returns
+        assert  list: A list of filtered categories.
+    """
     all_categories = ["All"]
     for category in Category.objects.all():
         # print([category.strip() for category in category.category_text.split(', ')]) 
@@ -21,6 +24,12 @@ def filtered_categories() -> list:
 
 
 def filtered_states() -> list:
+    """
+    Returns a list of filtered states.
+
+    Returns:
+        list: A list of filtered states.
+    """
     all_states = ['All']
     for state in State.objects.all():
         if state not in all_states:
@@ -29,8 +38,20 @@ def filtered_states() -> list:
 
 
 class RestaurantsView(generic.ListView):
+    """
+    A view for rendering the restaurants page.
+
+    This view extends the generic ListView provided by Django.
+    It renders the 'veggie/home.html' template and passes the context data
+    containing all restaurants, categories, and states to the template.
+
+    Args:
+        request: The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered HTTP response.
+    """
     template_name = 'veggie/home.html'
-    
     def get(self, request):
         return render(request, 'veggie/home.html', 
             {
@@ -42,10 +63,39 @@ class RestaurantsView(generic.ListView):
 
 
 class GetRestaurantByCategoryAndState(generic.ListView):
+    """
+    A view for retrieving and rendering restaurants based on selected category and state.
+
+    This view extends the generic ListView provided by Django.
+    It retrieves the selected category and state from the request's GET parameters.
+    It filters the restaurants based on the selected category and state, and renders the 'veggie/home.html' template
+    with the filtered restaurants and other necessary context data.
+
+    Args:
+        request: The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered HTTP response.
+    """
     model = Restaurant
     template_name = 'veggie/home.html'
 
     def get(self, request):
+        """
+        Handles the GET request for retrieving and rendering restaurants based on selected category and state.
+
+        This method retrieves the selected category and state from the request's GET parameters.
+        It filters the restaurants based on the selected category and state.
+        If there are no restaurants matching the selected category and state, it displays a message to the user.
+        If both the category and state are set to "All", it redirects to the 'veggie:index' URL.
+        Otherwise, it renders the 'veggie/home.html' template with the filtered restaurants and other necessary context data.
+
+        Args:
+            request: The HTTP request object.
+
+        Returns:
+            HttpResponse: The rendered HTTP response.
+        """
         selected_category = request.GET.get('category')
         selected_state = request.GET.get('state')
 
@@ -138,6 +188,24 @@ def add_review(request: HttpRequest, pk):
 
 @login_required
 def delete_review(request: HttpRequest, pk):
+    """
+    Deletes a review for a restaurant.
+
+    This view function is decorated with `@login_required` to ensure that only authenticated users can delete reviews.
+    It retrieves the restaurant object based on the provided primary key.
+    If the restaurant does not exist or the primary key is invalid, it returns a bad request response.
+    It then attempts to retrieve the redirect URL for the user's reviews page.
+    If the redirect URL cannot be obtained or the user's review for the restaurant does not exist, it returns a bad request response.
+    If the user's review exists, it deletes the review and displays a success message.
+    Finally, it redirects the user to the appropriate page.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+        pk: The primary key of the restaurant.
+
+    Returns:
+        HttpResponse: The redirected HTTP response.
+    """
     try:
         restaurant = Restaurant.objects.get(pk=pk)
     except (Restaurant.DoesNotExist, ValueError):
