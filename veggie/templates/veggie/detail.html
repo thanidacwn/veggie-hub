@@ -2,7 +2,6 @@
 {% load static %}
 
 {% block content %}
-
     <body>
         <link rel="stylesheet" href="{% static 'veggie/detail.css' %}">
         {% if messages %}
@@ -10,7 +9,6 @@
                 <p style="color: orangered;"><strong>{{ message }}</strong></p>
             {% endfor %}
         {% endif %}
-
         <div class="restaurant-container">
             <div class="avg-star-rating-container">
                 Avg Star Rating: {{ restaurant.get_average_rate }}
@@ -19,15 +17,31 @@
             <img src="{{ restaurant.image }}" alt="Restaurant Image" width="80%" height="45%">
             <h3>Location: {{ restaurant.location }}</h3>
             <h3>Category: {{ restaurant.category }}</h3>
+            <h3>Price Rate: {{ restaurant.price_rate }}</h3>
             <h3>Link: <a href={{restaurant.restaurant_link}}>Tripadvisor</a></h3>
         </div>
-        <div class="back-button">
+        <div class="button">
             <a href="{% url 'veggie:home' %}">Back to Home</a>
         </div>
-
-        <div class="back-button">
-            <a href="{% url 'veggie:add_review' pk=restaurant.pk  %}">Add review</a>
+        <div class="reviews-container">
+            <div class="button">
+                <a href="{% url 'veggie:add_review' pk=restaurant.pk  %}">Add review</a>
+            </div>
+            <h1>Reviews ({{ restaurant.get_reviews_amount }} reviews)</h1>
+            {% for review in reviews %}
+                {% if review %}
+                    <div class="review-block">
+                        <h4>Rating: {{ review.review_rate }}</h4>
+                        <h2>{{ review.review_user }}</h2>
+                        <i>Reviewed on {{ review.review_date }}</i>
+                        <h3>{{ review.review_title }}</h3>
+                        <p>{{ review.review_description }}</p>
+                    </div>
+                {% else %}
+                    <h2>There are currently no review for this restaurant,
+                        <a href="{% url 'veggie:add_review' pk=restaurant.pk  %}">Be first!</a></h2>
+                {% endif %}
+            {% endfor %}
         </div>
-
     </body>
 {% endblock %}

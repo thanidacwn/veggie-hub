@@ -6,17 +6,20 @@
 <body>
     <link rel="stylesheet" href="{% static 'veggie/add_review.css' %}">
     <div class="center-top">Add your review</div>
-
-    <form action="{% url 'veggie:add_review' pk=restaurant.pk %}" method="post" style="font-family: Inter; hi">
-        <div style="color: black; font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word;">{{restaurant.restaurant_text}}</div>
-        <div style="color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word;">- {{restaurant.category}} -</div>
+    {% if messages %}
+        {% for message in messages %}
+            <p style="color: orangered;"><strong>{{ message }}</strong></p>
+        {% endfor %}
+    {% endif %}
+    <form action="{% url 'veggie:add_review' pk=restaurant.pk %}" method="post" style="font-family: Inter,serif">
+        <div style="color: black; font-size: 30px; font-family: Inter,serif; font-weight: 700; word-wrap: break-word;">{{restaurant.restaurant_text}}</div>
+        <div style="color: black; font-size: 18px; font-family: Inter,serif; font-weight: 400; word-wrap: break-word;">- {{restaurant.category}} -</div>
         {% comment %} <img src="{{restaurant.image}}" alt="Restaurant Image" width="30%" height="50%" ></image> {% endcomment %}
         <br>
         {% csrf_token %}
         <div>
             Restaurant link:
-            <a href={{restaurant.restaurant_link}} 
-            style="color: blue; font-family: Inter; font-weight: 100; word-wrap: break-word;">Tripadvisor</a>
+            <a href={{restaurant.restaurant_link}}>Tripadvisor</a>
         </div>
         <br>
         <div>

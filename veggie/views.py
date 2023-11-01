@@ -147,6 +147,7 @@ def get_data(request):
     return HttpResponse("Hello, world. You got the data!")
 
 
+
 class DetailView(generic.DetailView):
     """Detail view page of this application."""
     model = Restaurant
@@ -159,11 +160,12 @@ class DetailView(generic.DetailView):
         except (KeyError, Restaurant.DoesNotExist):
             messages.error(request, 'Requested restaurant does not exist')
             return HttpResponseRedirect(reverse('veggie:index'))
+        try:
+            reviews = Review.objects.filter(restaurant=restaurant)
+        except Review.DoesNotExist:
+            reviews = []
         return render(request, 'veggie/detail.html', {
-            'restaurant': restaurant})
-
-        restaurant.save()
-        return HttpResponse("Hello, veggie!")
+            'restaurant': restaurant, 'reviews': reviews})
 
 
 class MyReviews(generic.ListView):
@@ -183,19 +185,15 @@ def add_review(request: HttpRequest, pk):
     restaurant = get_object_or_404(Restaurant, pk=pk)
     if request.method == "POST":
         formset = ReviewForm(request.POST, instance=restaurant)
-        if formset.is_valid():
-            formset.save()
-            messages.success(request, "review save!")
-        else:
-            # Form is not valid, display error messages
+        if not formset.is_valid():
             messages.error(request, 'You did not review yet! Please add your review.')
+            return HttpResponseRedirect(reverse("veggie:add_review", kwargs={'pk': pk}))
+        formset.save()
+        messages.success(request, "Review save!")
         return HttpResponseRedirect(reverse("veggie:detail", kwargs={'pk': pk}))
     else:
         formset = ReviewForm(initial={'restaurant': pk, })
-        context = {
-            'restaurant': restaurant,
-            'formset': formset,
-        }
+        context = {'restaurant': restaurant, 'formset': formset}
     return render(request, 'veggie/add_review.html', context)
 
 
