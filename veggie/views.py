@@ -175,7 +175,7 @@ class MyReviews(generic.ListView):
         """
         Return all votes.
         """
-        return Review.objects.filter(review_user_id=self.request.user).order_by('restaurant')
+        return Review.objects.filter(review_user_id=self.request.user).order_by('-review_date')
 
 
 @login_required
@@ -225,13 +225,13 @@ def delete_review(request: HttpRequest, pk):
         return HttpResponseBadRequest(f"{pk} does not exist!")
 
     try:
-        redirect_url = reverse('veggie:myreviews')
+        redirect_url = reverse('veggie:my_reviews', kwargs={'pk': pk})
     except (Review.DoesNotExist, ValueError):
         redirect_url = request.META.get('HTTP_REFERER', reverse('veggie:index'))
         return HttpResponseBadRequest("Review does not exist.")
 
     user_review = Review.objects.get(restaurant=restaurant, review_user=request.user)
-    if not vote:
+    if not user_review:
         messages.error(request, "You did not review this restaurant yet!")
         return redirect(redirect_url)
     user_review.delete()
