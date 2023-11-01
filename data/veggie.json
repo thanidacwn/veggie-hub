@@ -245,6 +245,111 @@
         }
     },
     {
+        "model": "veggie.category",
+        "pk": 36,
+        "fields": {
+            "category_text": " Chinese, Vegan Options"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 37,
+        "fields": {
+            "category_text": " Deli, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 38,
+        "fields": {
+            "category_text": " Italian, Pizza, Vegan Options"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 39,
+        "fields": {
+            "category_text": " Italian, Vegan Options, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 40,
+        "fields": {
+            "category_text": " Asian, Vietnamese, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 41,
+        "fields": {
+            "category_text": " Mediterranean, Middle Eastern, Vegan Options"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 42,
+        "fields": {
+            "category_text": " Mexican, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 43,
+        "fields": {
+            "category_text": " American, International, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 44,
+        "fields": {
+            "category_text": " German, European, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 45,
+        "fields": {
+            "category_text": " Mediterranean, Greek, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 46,
+        "fields": {
+            "category_text": " French, Gluten Free Options, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 47,
+        "fields": {
+            "category_text": " French, Vegetarian Friendly, Vegan Options"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 48,
+        "fields": {
+            "category_text": " Vegetarian Friendly, Vegan Options, Gluten Free Options"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 49,
+        "fields": {
+            "category_text": " Indian, Pakistani, Vegetarian Friendly"
+        }
+    },
+    {
+        "model": "veggie.category",
+        "pk": 50,
+        "fields": {
+            "category_text": " Mediterranean, Vegetarian Friendly, Vegan Options"
+        }
+    },
+    {
         "model": "veggie.state",
         "pk": 1,
         "fields": {
@@ -291,7 +396,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60713-d11862449-Reviews-Betty_Lou_s_Seafood_and_Grill-San_Francisco_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/1.jpeg"
+            "image": ""
         }
     },
     {
@@ -306,7 +411,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46480-d4632054-Reviews-Coach_House_Diner-Hackensack_New_Jersey.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/2.jpeg"
+            "image": ""
         }
     },
     {
@@ -321,7 +426,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48443-d2105702-Reviews-Table_Talk_Diner-Poughkeepsie_New_York.html",
             "menu_link": "http://tabletalkdiner.com/menu/breakfast/",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/3.jpeg"
+            "image": ""
         }
     },
     {
@@ -336,7 +441,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56463-d10793449-Reviews-Sixty_Vines-Plano_Texas.html",
             "menu_link": "https://sixtyvines.com/menu/plano-tx/",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/4.jpeg"
+            "image": ""
         }
     },
     {
@@ -351,7 +456,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58704-d464246-Reviews-Vince_s_Italian_Restaurant_Pizzeria-Renton_Washington.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/5.jpeg"
+            "image": ""
         }
     },
     {
@@ -366,7 +471,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g47958-d475546-Reviews-ZaZa_s_Cucina-Ithaca_Finger_Lakes_New_York.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/6.jpeg"
+            "image": ""
         }
     },
     {
@@ -381,7 +486,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d440680-Reviews-Dulin_s_Cafe-Vancouver_Washington.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/7.jpeg"
+            "image": ""
         }
     },
     {
@@ -396,7 +501,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29786-d1515170-Reviews-New_World_Bistro_Bar-Albany_New_York.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/8.jpeg"
+            "image": ""
         }
     },
     {
@@ -411,7 +516,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29092-d507253-Reviews-Mimi_s_Cafe-Anaheim_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/9.jpeg"
+            "image": ""
         }
     },
     {
@@ -426,7 +531,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g55870-d495433-Reviews-La_Hacienda_Ranch-Frisco_Texas.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/10.jpeg"
+            "image": ""
         }
     },
     {
@@ -441,7 +546,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29750-d541345-Reviews-Breadsticks_Cafe_Grill-Atlantic_City_New_Jersey.html",
             "menu_link": "https://resortsac.com/wp-content/uploads/2018/08/Breadsticks_BreakfastMenu_Winter-2017-2018.pdf",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/11.jpeg"
+            "image": ""
         }
     },
     {
@@ -456,7 +561,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60878-d1516303-Reviews-Tilikum_Place_Cafe-Seattle_Washington.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/12.jpeg"
+            "image": ""
         }
     },
     {
@@ -471,7 +576,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46862-d1473658-Reviews-BV_Tuscany_Italian_Restaurant-Teaneck_New_Jersey.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/13.jpeg"
+            "image": ""
         }
     },
     {
@@ -486,7 +591,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48682-d1125099-Reviews-Beso-Staten_Island_New_York.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/14.jpeg"
+            "image": ""
         }
     },
     {
@@ -501,7 +606,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d464228-Reviews-Ristorante_Paradiso-Kirkland_Washington.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/15.jpeg"
+            "image": ""
         }
     },
     {
@@ -516,7 +621,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29750-d637123-Reviews-Buddakan-Atlantic_City_New_Jersey.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Expensive",
-            "image": "https://thanidacwn.github.io/veggie-data/images/16.jpeg"
+            "image": ""
         }
     },
     {
@@ -531,7 +636,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32037-d1053094-Reviews-Hodel_s_Country_Dining-Bakersfield_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/17.jpeg"
+            "image": ""
         }
     },
     {
@@ -546,7 +651,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32655-d941518-Reviews-Magic_Castle-Los_Angeles_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Expensive",
-            "image": "https://thanidacwn.github.io/veggie-data/images/18.jpeg"
+            "image": ""
         }
     },
     {
@@ -561,7 +666,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g30165-d1504576-Reviews-Jorge_s_Mexican_Restaurant-Amarillo_Texas.html",
             "menu_link": "http://jorgesmexican.com/index.php?page=menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/19.jpeg"
+            "image": ""
         }
     },
     {
@@ -576,7 +681,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32648-d3834363-Reviews-The_Attic-Long_Beach_California.html",
             "menu_link": "http://www.theatticonbroadway.com/pages/menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/20.jpeg"
+            "image": ""
         }
     },
     {
@@ -591,7 +696,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d598053-Reviews-Del_Posto-New_York_City_New_York.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Expensive",
-            "image": "https://thanidacwn.github.io/veggie-data/images/21.jpeg"
+            "image": ""
         }
     },
     {
@@ -606,7 +711,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32414-d813700-Reviews-The_Cheesecake_Factory-Fresno_California.html",
             "menu_link": "https://order.thecheesecakefactory.com/menu/fresno-ca",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/22.jpeg"
+            "image": ""
         }
     },
     {
@@ -621,7 +726,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60878-d4765938-Reviews-Pizzeria_Credo-Seattle_Washington.html",
             "menu_link": "http://pizzeriacredo.com/#our-menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/23.jpeg"
+            "image": ""
         }
     },
     {
@@ -636,7 +741,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32066-d371485-Reviews-Cheeseboard_Pizza-Berkeley_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Cheap",
-            "image": "https://thanidacwn.github.io/veggie-data/images/24.jpeg"
+            "image": ""
         }
     },
     {
@@ -651,7 +756,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60713-d379131-Reviews-Jeanne_D_Arc_Restaurant-San_Francisco_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/25.jpeg"
+            "image": ""
         }
     },
     {
@@ -666,7 +771,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g55857-d518186-Reviews-Lonesome_Dove_Western_Bistro-Fort_Worth_Texas.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Expensive",
-            "image": "https://thanidacwn.github.io/veggie-data/images/26.jpeg"
+            "image": ""
         }
     },
     {
@@ -681,7 +786,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d12448278-Reviews-KathaKali_Indian_Eatery-Kirkland_Washington.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/27.jpeg"
+            "image": ""
         }
     },
     {
@@ -696,7 +801,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32780-d1862747-Reviews-Eddie_V_s_Wildfish-Newport_Beach_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Expensive",
-            "image": "https://thanidacwn.github.io/veggie-data/images/28.jpeg"
+            "image": ""
         }
     },
     {
@@ -711,7 +816,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d463622-Reviews-Anthony_s_HomePort-Kirkland_Washington.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/29.jpeg"
+            "image": ""
         }
     },
     {
@@ -726,7 +831,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58471-d2394676-Reviews-Kwan_Tip_Thai-Federal_Way_Washington.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/30.jpeg"
+            "image": ""
         }
     },
     {
@@ -741,7 +846,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d1018334-Reviews-The_Capital_Grille-New_York_City_New_York.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Expensive",
-            "image": "https://thanidacwn.github.io/veggie-data/images/31.jpeg"
+            "image": ""
         }
     },
     {
@@ -756,7 +861,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46480-d4102201-Reviews-The_Cheesecake_Factory-Hackensack_New_Jersey.html",
             "menu_link": "https://order.thecheesecakefactory.com/menu/hackensack-nj",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/32.jpeg"
+            "image": ""
         }
     },
     {
@@ -771,7 +876,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g47732-d3316200-Reviews-Bareburger-Forest_Hills_Queens_New_York.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/33.jpeg"
+            "image": ""
         }
     },
     {
@@ -786,7 +891,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d2602217-Reviews-Planet_Thai-Vancouver_Washington.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/34.jpeg"
+            "image": ""
         }
     },
     {
@@ -801,7 +906,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32414-d9750769-Reviews-Red_Apple_Cafe-Fresno_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/35.jpeg"
+            "image": ""
         }
     },
     {
@@ -816,7 +921,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58693-d8047813-Reviews-Ayothaya_Thai_Restaurant-Puyallup_Washington.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/36.jpeg"
+            "image": ""
         }
     },
     {
@@ -831,7 +936,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32999-d602011-Reviews-Mulvaney_s_Building_Loan-Sacramento_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Expensive",
-            "image": "https://thanidacwn.github.io/veggie-data/images/37.jpeg"
+            "image": ""
         }
     },
     {
@@ -846,7 +951,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g33198-d680119-Reviews-Rutabegorz-Tustin_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/38.jpeg"
+            "image": ""
         }
     },
     {
@@ -861,7 +966,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g1784998-d7684552-Reviews-Brother_s_Office_Pizzeria-Spokane_Valley_Washington.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/39.jpeg"
+            "image": ""
         }
     },
     {
@@ -876,7 +981,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32066-d371490-Reviews-Ajanta_Distinctive_Indian_Cuisine-Berkeley_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/40.jpeg"
+            "image": ""
         }
     },
     {
@@ -891,7 +996,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32655-d364726-Reviews-Off_Vine-Los_Angeles_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/41.jpeg"
+            "image": ""
         }
     },
     {
@@ -906,7 +1011,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46354-d1391520-Reviews-Seasons_52-Cherry_Hill_New_Jersey.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/42.jpeg"
+            "image": ""
         }
     },
     {
@@ -921,7 +1026,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56062-d7715917-Reviews-Pane_e_Vino-Katy_Texas.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/43.jpeg"
+            "image": ""
         }
     },
     {
@@ -936,7 +1041,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58466-d14932914-Reviews-Capers_Olives-Everett_Washington.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/44.jpeg"
+            "image": ""
         }
     },
     {
@@ -951,7 +1056,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d5532340-Reviews-Elements_Restaurant-Vancouver_Washington.html",
             "menu_link": "http://www.elementsvancouver.com",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/45.jpeg"
+            "image": ""
         }
     },
     {
@@ -966,7 +1071,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29786-d420139-Reviews-Yono_s_Restaurant-Albany_New_York.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Expensive",
-            "image": "https://thanidacwn.github.io/veggie-data/images/46.jpeg"
+            "image": ""
         }
     },
     {
@@ -981,7 +1086,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32847-d1978555-Reviews-Bill_s_Pizza-Palm_Springs_Greater_Palm_Springs_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Cheap",
-            "image": "https://thanidacwn.github.io/veggie-data/images/47.jpeg"
+            "image": ""
         }
     },
     {
@@ -996,7 +1101,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46348-d6833248-Reviews-LuNello_s_Resturant-Cedar_Grove_New_Jersey.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Expensive",
-            "image": "https://thanidacwn.github.io/veggie-data/images/48.jpeg"
+            "image": ""
         }
     },
     {
@@ -1011,7 +1116,7 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32431-d371841-Reviews-Foxy_s_Restaurant-Glendale_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Moderate",
-            "image": "https://thanidacwn.github.io/veggie-data/images/49.jpeg"
+            "image": ""
         }
     },
     {
@@ -1026,7 +1131,757 @@
             "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32490-d2343392-Reviews-La_Playita-Hermosa_Beach_California.html",
             "menu_link": "Check The Website for a Menu",
             "price_rate": "Cheap",
-            "image": "https://thanidacwn.github.io/veggie-data/images/50.jpeg"
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 51,
+        "fields": {
+            "restaurant_text": "Din Tai Fung",
+            "category": 36,
+            "state": 1,
+            "city": "Costa Mesa",
+            "location": "Costa Mesa, CA 92626-1873",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32253-d7002210-Reviews-Din_Tai_Fung-Costa_Mesa_California.html",
+            "menu_link": "https://dintaifungusa.com/menu/appetizers/",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 52,
+        "fields": {
+            "restaurant_text": "Murray's Cheese",
+            "category": 37,
+            "state": 3,
+            "city": "New York City",
+            "location": "New York City, NY 10014-4101",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d4101382-Reviews-Murray_s_Cheese-New_York_City_New_York.html",
+            "menu_link": "http://Www.murrayscheese.com/catering-menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 53,
+        "fields": {
+            "restaurant_text": "INC Restaurant",
+            "category": 8,
+            "state": 2,
+            "city": "New Brunswick",
+            "location": "New Brunswick, NJ 08901-2039",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46664-d7616386-Reviews-INC_Restaurant-New_Brunswick_New_Jersey.html",
+            "menu_link": "http://increstaurant.com/menus/",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 54,
+        "fields": {
+            "restaurant_text": "Ciao Wood-Fired Pizza & Pasta",
+            "category": 38,
+            "state": 3,
+            "city": "Ithaca",
+            "location": "Ithaca, NY 14850-1015",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g47958-d1958749-Reviews-Ciao_Wood_Fired_Pizza_Pasta-Ithaca_Finger_Lakes_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 55,
+        "fields": {
+            "restaurant_text": "Utopia",
+            "category": 39,
+            "state": 1,
+            "city": "Long Beach",
+            "location": "Long Beach, CA 90802-4905",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32648-d504403-Reviews-Utopia-Long_Beach_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 56,
+        "fields": {
+            "restaurant_text": "Jon & Patty's Coffee Bar & Bistro",
+            "category": 26,
+            "state": 2,
+            "city": "Ocean City",
+            "location": "Ocean City, NJ 08226-3859",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46696-d864694-Reviews-Jon_Patty_s_Coffee_Bar_Bistro-Ocean_City_Cape_May_County_New_Jersey.html",
+            "menu_link": "https://jonandpattys.com/menu/",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 57,
+        "fields": {
+            "restaurant_text": "La Cucina Di Mamma",
+            "category": 18,
+            "state": 3,
+            "city": "Niagara Falls",
+            "location": "Niagara Falls, NY 14303-1313",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48261-d1988467-Reviews-La_Cucina_Di_Mamma-Niagara_Falls_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 58,
+        "fields": {
+            "restaurant_text": "Bob's Burgers & Brew",
+            "category": 11,
+            "state": 5,
+            "city": "Yakima",
+            "location": "Yakima, WA 98901-4514",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58838-d1916766-Reviews-Bob_s_Burgers_Brew-Yakima_Washington.html",
+            "menu_link": "https://www.bobsburgersandbrew.com/content/menu/menu.asp",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 59,
+        "fields": {
+            "restaurant_text": "Marianna Ristorante",
+            "category": 5,
+            "state": 5,
+            "city": "Renton",
+            "location": "Renton, WA 98057-2714",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58704-d4291372-Reviews-Marianna_Ristorante-Renton_Washington.html",
+            "menu_link": "https://www.mariannaristorante.com/menus/",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 60,
+        "fields": {
+            "restaurant_text": "What The Pho",
+            "category": 40,
+            "state": 5,
+            "city": "Bothell",
+            "location": "Bothell, WA 98021-8400",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58362-d5058489-Reviews-What_The_Pho-Bothell_Washington.html",
+            "menu_link": "http://whatthepho.net/menu/",
+            "price_rate": "Cheap",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 61,
+        "fields": {
+            "restaurant_text": "Antonia's Restaurant",
+            "category": 18,
+            "state": 4,
+            "city": "Katy",
+            "location": "Katy, TX 77494-4880",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56062-d1640094-Reviews-Antonia_s_Restaurant-Katy_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 62,
+        "fields": {
+            "restaurant_text": "True Food Kitchen",
+            "category": 30,
+            "state": 1,
+            "city": "Santa Monica",
+            "location": "Santa Monica, CA 90401-3471",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g33052-d2372190-Reviews-True_Food_Kitchen-Santa_Monica_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 63,
+        "fields": {
+            "restaurant_text": "Fadi's Mediterranean Grill",
+            "category": 41,
+            "state": 4,
+            "city": "Houston",
+            "location": "Houston, TX 77096-1637",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56003-d442413-Reviews-Fadi_s_Mediterranean_Grill-Houston_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 64,
+        "fields": {
+            "restaurant_text": "Italian Cafe",
+            "category": 31,
+            "state": 4,
+            "city": "Spring",
+            "location": "Spring, TX 77379-3400",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56701-d2058320-Reviews-Italian_Cafe-Spring_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 65,
+        "fields": {
+            "restaurant_text": "Cafe Veloce",
+            "category": 5,
+            "state": 5,
+            "city": "Kirkland",
+            "location": "Kirkland, WA 98034-7501",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d433214-Reviews-Cafe_Veloce-Kirkland_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 66,
+        "fields": {
+            "restaurant_text": "Frank Fat's Restaurant",
+            "category": 14,
+            "state": 1,
+            "city": "Sacramento",
+            "location": "Sacramento, CA 95814-3693",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32999-d339794-Reviews-Frank_Fat_s_Restaurant-Sacramento_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 67,
+        "fields": {
+            "restaurant_text": "Roma D Italia",
+            "category": 5,
+            "state": 1,
+            "city": "Tustin",
+            "location": "Tustin, CA 92780-4309",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g33198-d467960-Reviews-Roma_D_Italia-Tustin_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 68,
+        "fields": {
+            "restaurant_text": "Rancho Viejo",
+            "category": 42,
+            "state": 5,
+            "city": "Spokane Valley",
+            "location": "Spokane Valley, WA 99216-2108",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g1784998-d1778690-Reviews-Rancho_Viejo-Spokane_Valley_Washington.html",
+            "menu_link": "http://ranchoviejomexican.com/full-menu/3200123",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 69,
+        "fields": {
+            "restaurant_text": "Stella Barra Pizzeria",
+            "category": 5,
+            "state": 1,
+            "city": "Santa Monica",
+            "location": "Santa Monica, CA 90405-1010",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g33052-d2572023-Reviews-Stella_Barra_Pizzeria-Santa_Monica_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 70,
+        "fields": {
+            "restaurant_text": "30 Lake",
+            "category": 23,
+            "state": 3,
+            "city": "Saratoga Springs",
+            "location": "Saratoga Springs, NY 12866",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48562-d10475548-Reviews-30_Lake-Saratoga_Springs_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 71,
+        "fields": {
+            "restaurant_text": "Milt's Coffee Shop",
+            "category": 3,
+            "state": 1,
+            "city": "Bakersfield",
+            "location": "Bakersfield, CA 93308-2905",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32037-d808238-Reviews-Milt_s_Coffee_Shop-Bakersfield_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 72,
+        "fields": {
+            "restaurant_text": "Pj's Pancake House",
+            "category": 43,
+            "state": 2,
+            "city": "Princeton",
+            "location": "Princeton, NJ 08542-7006",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46756-d513540-Reviews-Pj_s_Pancake_House-Princeton_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 73,
+        "fields": {
+            "restaurant_text": "Old European Restaurant",
+            "category": 44,
+            "state": 5,
+            "city": "Spokane",
+            "location": "Spokane, WA 99208-5614",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58759-d413599-Reviews-Old_European_Restaurant-Spokane_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 74,
+        "fields": {
+            "restaurant_text": "PITHARI TAVERNA",
+            "category": 45,
+            "state": 2,
+            "city": "Highland Park",
+            "location": "Highland Park, NJ 08904-3234",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46508-d1051392-Reviews-PITHARI_TAVERNA-Highland_Park_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 75,
+        "fields": {
+            "restaurant_text": "Lombardi's Italian Restaurant & Wine Bar",
+            "category": 6,
+            "state": 5,
+            "city": "Everett",
+            "location": "Everett, WA 98201-2099",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58466-d464264-Reviews-Lombardi_s_Italian_Restaurant_Wine_Bar-Everett_Washington.html",
+            "menu_link": "https://www.lombardisitalian.com/everett-menu/",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 76,
+        "fields": {
+            "restaurant_text": "Denino's Pizzeria & Tavern",
+            "category": 5,
+            "state": 3,
+            "city": "Staten Island",
+            "location": "Staten Island, NY 10302-1721",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48682-d444317-Reviews-Denino_s_Pizzeria_Tavern-Staten_Island_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 77,
+        "fields": {
+            "restaurant_text": "Le Grand Bistro Americain",
+            "category": 46,
+            "state": 5,
+            "city": "Kirkland",
+            "location": "Kirkland, WA 98033-7446",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d2292707-Reviews-Le_Grand_Bistro_Americain-Kirkland_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 78,
+        "fields": {
+            "restaurant_text": "Daniel",
+            "category": 47,
+            "state": 3,
+            "city": "New York City",
+            "location": "New York City, NY 10065-7056",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d457808-Reviews-Daniel-New_York_City_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 79,
+        "fields": {
+            "restaurant_text": "Poppa Rollo's Pizza",
+            "category": 5,
+            "state": 4,
+            "city": "Waco",
+            "location": "Waco, TX 76710-4848",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56833-d1955079-Reviews-Poppa_Rollo_s_Pizza-Waco_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 80,
+        "fields": {
+            "restaurant_text": "Lobster Shop",
+            "category": 23,
+            "state": 5,
+            "city": "Tacoma",
+            "location": "Tacoma, WA 98402-5315",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58775-d495879-Reviews-Lobster_Shop-Tacoma_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 81,
+        "fields": {
+            "restaurant_text": "Ola Mexican Kitchen",
+            "category": 16,
+            "state": 1,
+            "city": "Huntington Beach",
+            "location": "Huntington Beach, CA 92648-5383",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32513-d9782237-Reviews-Ola_Mexican_Kitchen-Huntington_Beach_California.html",
+            "menu_link": "https://olamexicankitchen.com/menu/",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 82,
+        "fields": {
+            "restaurant_text": "Novellis Italian Restaurant",
+            "category": 18,
+            "state": 2,
+            "city": "Wayne",
+            "location": "Wayne, NJ 07470-6226",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46905-d2624819-Reviews-Novellis_Italian_Restaurant-Wayne_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 83,
+        "fields": {
+            "restaurant_text": "Andale Mexican Restaurant & Cantina",
+            "category": 35,
+            "state": 4,
+            "city": "El Paso",
+            "location": "El Paso, TX 79925-7039",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60768-d2651692-Reviews-Andale_Mexican_Restaurant_Cantina-El_Paso_Texas.html",
+            "menu_link": "http://www.andalemexicanrestaurant.com/#menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 84,
+        "fields": {
+            "restaurant_text": "Artisans",
+            "category": 46,
+            "state": 4,
+            "city": "Houston",
+            "location": "Houston, TX 77006-6644",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56003-d2550468-Reviews-Artisans-Houston_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 85,
+        "fields": {
+            "restaurant_text": "Gandolfo's New York Deli",
+            "category": 34,
+            "state": 5,
+            "city": "Bellingham",
+            "location": "Bellingham, WA 98226-8196",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58350-d2555861-Reviews-Gandolfo_s_New_York_Deli-Bellingham_Washington.html",
+            "menu_link": "https://gandolfosdeli.com/store-menus/",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 86,
+        "fields": {
+            "restaurant_text": "The Capital Grille",
+            "category": 25,
+            "state": 4,
+            "city": "Houston",
+            "location": "Houston, TX 77056-5402",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56003-d442191-Reviews-The_Capital_Grille-Houston_Texas.html",
+            "menu_link": "https://www.thecapitalgrille.com/menu-listing?cmpid=br:tcg_ag:ie_ch:dry_ca:TCGQ120LOCURL_dt:20190530_sn:tripadvisor_gt:houston-tx-8007_pl:menu_rd:1008",
+            "price_rate": "Expensive",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 87,
+        "fields": {
+            "restaurant_text": "Brazos Bar & Bistro",
+            "category": 8,
+            "state": 4,
+            "city": "Waco",
+            "location": "Waco, TX 76706-1039",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56833-d3247299-Reviews-Brazos_Bar_Bistro-Waco_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 88,
+        "fields": {
+            "restaurant_text": "Bahari Estiatorio",
+            "category": 45,
+            "state": 3,
+            "city": "Astoria",
+            "location": "Astoria, NY 11106-2585",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29837-d599674-Reviews-Bahari_Estiatorio-Astoria_Queens_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 89,
+        "fields": {
+            "restaurant_text": "618",
+            "category": 11,
+            "state": 2,
+            "city": "Freehold",
+            "location": "Freehold, NJ 07728-2352",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46453-d11802438-Reviews-618-Freehold_New_Jersey.html",
+            "menu_link": "http://618nj.com/menus/",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 90,
+        "fields": {
+            "restaurant_text": "Wool Growers",
+            "category": 48,
+            "state": 1,
+            "city": "Bakersfield",
+            "location": "Bakersfield, CA 93305-5619",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32037-d1077872-Reviews-Wool_Growers-Bakersfield_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 91,
+        "fields": {
+            "restaurant_text": "Antonello Ristorante",
+            "category": 18,
+            "state": 1,
+            "city": "Santa Ana",
+            "location": "Santa Ana, CA 92704",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g33043-d341601-Reviews-Antonello_Ristorante-Santa_Ana_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 92,
+        "fields": {
+            "restaurant_text": "Cafe Beach Club",
+            "category": 26,
+            "state": 2,
+            "city": "Ocean City",
+            "location": "Ocean City, NJ 08226-3241",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46696-d475191-Reviews-Cafe_Beach_Club-Ocean_City_Cape_May_County_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 93,
+        "fields": {
+            "restaurant_text": "Six Seven Restaurant",
+            "category": 1,
+            "state": 5,
+            "city": "Seattle",
+            "location": "Seattle, WA 98121-1313",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60878-d433088-Reviews-Six_Seven_Restaurant-Seattle_Washington.html",
+            "menu_link": "https://www.edgewaterhotel.com/seattle-six-seven-restaurant.aspx",
+            "price_rate": "Expensive",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 94,
+        "fields": {
+            "restaurant_text": "Ready's Coffee Shop & Restaurant",
+            "category": 26,
+            "state": 2,
+            "city": "Ocean City",
+            "location": "Ocean City, NJ 08226-3769",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46696-d448297-Reviews-Ready_s_Coffee_Shop_Restaurant-Ocean_City_Cape_May_County_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Cheap",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 95,
+        "fields": {
+            "restaurant_text": "Triangle Diner",
+            "category": 3,
+            "state": 3,
+            "city": "Saratoga Springs",
+            "location": "Saratoga Springs, NY 12866-5527",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48562-d413799-Reviews-Triangle_Diner-Saratoga_Springs_New_York.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Cheap",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 96,
+        "fields": {
+            "restaurant_text": "15 Church Restaurant",
+            "category": 11,
+            "state": 3,
+            "city": "Saratoga Springs",
+            "location": "Saratoga Springs, NY 12866-2108",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48562-d6541699-Reviews-15_Church_Restaurant-Saratoga_Springs_New_York.html",
+            "menu_link": "https://www.15churchrestaurant.com/saratoga-springs/dinner-menu/",
+            "price_rate": "Expensive",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 97,
+        "fields": {
+            "restaurant_text": "President Thai Restaurant",
+            "category": 24,
+            "state": 1,
+            "city": "Pasadena",
+            "location": "Pasadena, CA 91107-4940",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32859-d343380-Reviews-President_Thai_Restaurant-Pasadena_California.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 98,
+        "fields": {
+            "restaurant_text": "NAAN-N-CURRY",
+            "category": 49,
+            "state": 5,
+            "city": "Renton",
+            "location": "Renton, WA 98057-2543",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58704-d512405-Reviews-NAAN_N_CURRY-Renton_Washington.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 99,
+        "fields": {
+            "restaurant_text": "Mediterra Restaurant",
+            "category": 50,
+            "state": 2,
+            "city": "Princeton",
+            "location": "Princeton, NJ 08542-3741",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46756-d513535-Reviews-Mediterra_Restaurant-Princeton_New_Jersey.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Moderate",
+            "image": ""
+        }
+    },
+    {
+        "model": "veggie.restaurant",
+        "pk": 100,
+        "fields": {
+            "restaurant_text": "Reata Restaurant",
+            "category": 32,
+            "state": 4,
+            "city": "Fort Worth",
+            "location": "Fort Worth, TX 76102-7404",
+            "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g55857-d464826-Reviews-Reata_Restaurant-Fort_Worth_Texas.html",
+            "menu_link": "Check The Website for a Menu",
+            "price_rate": "Expensive",
+            "image": ""
         }
     }
 ]
