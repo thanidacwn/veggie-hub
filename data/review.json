@@ -1,0 +1,50 @@
+[
+    {
+        "model": "veggie.review",
+        "pk": 5,
+        "fields": {
+            "restaurant": 1,
+            "review_user": 7,
+            "review_title": "Good service and yummy!",
+            "review_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",
+            "review_rate": 4,
+            "review_date": "2023-11-01T15:48:59Z"
+        }
+    },
+    {
+        "model": "veggie.review",
+        "pk": 6,
+        "fields": {
+            "restaurant": 2,
+            "review_user": 7,
+            "review_title": "Very good choice for lunch",
+            "review_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",
+            "review_rate": 4,
+            "review_date": "2023-11-01T15:50:24Z"
+        }
+    },
+    {
+        "model": "veggie.review",
+        "pk": 7,
+        "fields": {
+            "restaurant": 36,
+            "review_user": 7,
+            "review_title": "Very delicious Thai food ever!!",
+            "review_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",
+            "review_rate": 5,
+            "review_date": "2023-11-01T15:50:55Z"
+        }
+    },
+    {
+        "model": "veggie.review",
+        "pk": 8,
+        "fields": {
+            "restaurant": 80,
+            "review_user": 7,
+            "review_title": "Normal Lobster",
+            "review_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",
+            "review_rate": 2,
+            "review_date": "2023-11-01T15:51:40Z"
+        }
+    }
+]

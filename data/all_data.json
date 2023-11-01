@@ -52,6 +52,110 @@
         }
     },
     {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2023-11-01T14:41:35.270Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "Good service and yummy!! - Betty Lou's Seafood and Grill by thanida3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2023-11-01T14:42:39.846Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "2",
+            "object_repr": "Best Dinner for me >< - Coach House Diner by thanida3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2023-11-01T14:43:46.864Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "3",
+            "object_repr": "Bad service but good food - Table Talk Diner by thanida3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2023-11-01T15:32:25.994Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "4",
+            "object_repr": "HAHAHA NOT BAD - Coach House Diner by thanida3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2023-11-01T15:50:22.016Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "5",
+            "object_repr": "Good service and yummy! - Betty Lou's Seafood and Grill by thanida3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2023-11-01T15:50:54.519Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "6",
+            "object_repr": "Very good choice for lunch - Coach House Diner by thanida3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2023-11-01T15:51:39.681Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "7",
+            "object_repr": "Very delicious Thai food ever!! - Ayothaya Thai Restaurant by thanida3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2023-11-01T15:52:04.805Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "8",
+            "object_repr": "Normal Lobster - Lobster Shop by thanida3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
         "model": "auth.permission",
         "pk": 1,
         "fields": {
@@ -632,7 +736,7 @@
         "pk": 1,
         "fields": {
             "password": "pbkdf2_sha256$600000$ZHVIye2vNmmsbwAOVHdLoo$8VXpaFnRLoGn2zmKhsba8lomPU/4HwayqoUgon9S/FE=",
-            "last_login": null,
+            "last_login": "2023-11-01T15:48:52.879Z",
             "is_superuser": true,
             "username": "veggie123",
             "first_name": "",
@@ -740,7 +844,7 @@
         "pk": 7,
         "fields": {
             "password": "!6kLktp8R48zr3tgVg8WtsWlBtJIsbWwErmKxtfgh",
-            "last_login": "2023-10-24T03:36:53.060Z",
+            "last_login": "2023-11-01T15:52:24.029Z",
             "is_superuser": false,
             "username": "thanida3",
             "first_name": "Thanida",
@@ -887,6 +991,14 @@
         "fields": {
             "session_data": "eyJzb2NpYWxhY2NvdW50X3N0YXRlIjpbeyJwcm9jZXNzIjoibG9naW4iLCJzY29wZSI6IiIsImF1dGhfcGFyYW1zIjoiIn0sIllGUWRCWk13T0hkRURZemIiXX0:1qv8G5:pjO5BXJcdTaSOqr8s2Xc0ccc2mOKIdiLLAYBOgRtG54",
             "expire_date": "2023-11-07T03:39:09.623Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "lse21br9tca2yt46unvrbmljmzevtmz6",
+        "fields": {
+            "session_data": ".eJxVjkkOwyAMRe_CukIQzODs2osgMylRIyI1ZFX17k0iFu3yD37-b-Zpb5Pft_zyc2Ijs-z26wWKz1zPgJbltDnFuO618avT443fD5VrmyO1ea2PfvWHmmibDk4oJtkoZEkQDWkUWgQsbpBIVjkK1iYNZEwwADpByAqlFLqgE8oWORzQPuFi96c5eWpslAad0woBuFADWPx8AaZfSdA:1qyDW4:nd6ZmnsuNFE0QZsg3tYfp9Kp0H87INKgIb2jc2Re3u8",
+            "expire_date": "2023-11-15T15:52:24.034Z"
         }
     },
     {
@@ -2783,6 +2895,54 @@
         }
     },
     {
+        "model": "veggie.review",
+        "pk": 5,
+        "fields": {
+            "restaurant": 1,
+            "review_user": 7,
+            "review_title": "Good service and yummy!",
+            "review_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",
+            "review_rate": 4,
+            "review_date": "2023-11-01T15:48:59Z"
+        }
+    },
+    {
+        "model": "veggie.review",
+        "pk": 6,
+        "fields": {
+            "restaurant": 2,
+            "review_user": 7,
+            "review_title": "Very good choice for lunch",
+            "review_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",
+            "review_rate": 4,
+            "review_date": "2023-11-01T15:50:24Z"
+        }
+    },
+    {
+        "model": "veggie.review",
+        "pk": 7,
+        "fields": {
+            "restaurant": 36,
+            "review_user": 7,
+            "review_title": "Very delicious Thai food ever!!",
+            "review_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",
+            "review_rate": 5,
+            "review_date": "2023-11-01T15:50:55Z"
+        }
+    },
+    {
+        "model": "veggie.review",
+        "pk": 8,
+        "fields": {
+            "restaurant": 80,
+            "review_user": 7,
+            "review_title": "Normal Lobster",
+            "review_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",
+            "review_rate": 2,
+            "review_date": "2023-11-01T15:51:40Z"
+        }
+    },
+    {
         "model": "account.emailaddress",
         "pk": 1,
         "fields": {
@@ -2869,9 +3029,9 @@
             "user": 7,
             "provider": "google",
             "uid": "100738132176527297656",
-            "last_login": "2023-10-24T03:36:53.052Z",
+            "last_login": "2023-11-01T15:52:24.016Z",
             "date_joined": "2023-10-24T03:36:53.052Z",
-            "extra_data": "{\"iss\": \"https://accounts.google.com\", \"azp\": \"615564316883-i3us8moppbo3usiu57o166rlm1re7ti2.apps.googleusercontent.com\", \"aud\": \"615564316883-i3us8moppbo3usiu57o166rlm1re7ti2.apps.googleusercontent.com\", \"sub\": \"100738132176527297656\", \"hd\": \"ku.th\", \"email\": \"thanida.chai@ku.th\", \"email_verified\": true, \"at_hash\": \"IBaV-doP93goUQP0nC2mIg\", \"name\": \"Thanida CHAIWONGNON\", \"picture\": \"https://lh3.googleusercontent.com/a/ACg8ocI9C5qOhWEpADoG5DnDgaXUuLY8ye10tJrRiCqQ9ltNEw=s96-c\", \"given_name\": \"Thanida\", \"family_name\": \"CHAIWONGNON\", \"locale\": \"en\", \"iat\": 1698118613, \"exp\": 1698122213}"
+            "extra_data": "{\"iss\": \"https://accounts.google.com\", \"azp\": \"615564316883-i3us8moppbo3usiu57o166rlm1re7ti2.apps.googleusercontent.com\", \"aud\": \"615564316883-i3us8moppbo3usiu57o166rlm1re7ti2.apps.googleusercontent.com\", \"sub\": \"100738132176527297656\", \"hd\": \"ku.th\", \"email\": \"thanida.chai@ku.th\", \"email_verified\": true, \"at_hash\": \"ZjY-kIcyisHwlnBOypKAIg\", \"name\": \"Thanida CHAIWONGNON\", \"picture\": \"https://lh3.googleusercontent.com/a/ACg8ocI9C5qOhWEpADoG5DnDgaXUuLY8ye10tJrRiCqQ9ltNEw=s96-c\", \"given_name\": \"Thanida\", \"family_name\": \"CHAIWONGNON\", \"locale\": \"en\", \"iat\": 1698853944, \"exp\": 1698857544}"
         }
     }
 ]
