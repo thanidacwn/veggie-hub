@@ -139,7 +139,8 @@ def get_data(request):
                         location=row["location"],
                         restaurant_link=row["restaurant_link"],
                         menu_link=row["menu_link"],
-                        price_rate=row["price_rate"])
+                        price_rate=row["price_rate"],
+                        image=row["image"])
         restaurant.save()
     return HttpResponse("Hello, world. You got the data!")
 
