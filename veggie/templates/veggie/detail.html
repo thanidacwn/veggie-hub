@@ -20,13 +20,14 @@
             <h3>Price Rate: {{ restaurant.price_rate }}</h3>
             <h3>Link: <a href={{restaurant.restaurant_link}}>Tripadvisor</a></h3>
         </div>
-        <div class="button">
-            <a href="{% url 'veggie:home' %}">Back to Home</a>
+        <div class="back-button">
+            <a href="{% url 'veggie:index' %}">Back to Home</a>
         </div>
         <div class="reviews-container">
+            <a href="{% url 'veggie:add_review' pk=restaurant.pk  %}">
             <div class="button">
-                <a href="{% url 'veggie:add_review' pk=restaurant.pk  %}">Add review</a>
-            </div>
+                Add review
+            </div></a>
             <h1>Reviews ({{ restaurant.get_reviews_amount }} reviews)</h1>
             {% for review in reviews %}
                 {% if review %}

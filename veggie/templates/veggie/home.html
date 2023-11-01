@@ -40,8 +40,10 @@
         <div class="grid grid-cols-4 gap-5 text-center pt-10 pb-10 pl-5 pr-5 ">
             {% for restaurant in all_restaurants %}
                 <span class="inline-block mx-5 my-5 aspect-[1/1] rounded-xl shadow-lg">
+                    <a href="{% url 'veggie:detail' restaurant.pk %}">
                     <img src="{{ restaurant.image }}" alt="{{ restaurant.restaurant_text }}" class="rounded-xl">
                     <div class="text-lg">{{ restaurant.restaurant_text }}</div>
+                    </a>
                 </span>
             {% endfor %}
         </div>
