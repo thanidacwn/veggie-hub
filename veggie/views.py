@@ -122,18 +122,13 @@ def add_review(request: HttpRequest, pk):
     restaurant = get_object_or_404(Restaurant, pk=pk)
     if request.method == "POST":
         formset = ReviewForm(request.POST, instance=restaurant)
-        if formset.is_valid():
-            formset.save()
-            messages.success(request, "review save!")
-        else:
-            # Form is not valid, display error messages
+        if not formset.is_valid():
             messages.error(request, 'You did not review yet! Please add your review.')
             return HttpResponseRedirect(reverse("veggie:add_review", kwargs={'pk': pk}))
+        formset.save()
+        messages.success(request, "Review save!")
         return HttpResponseRedirect(reverse("veggie:detail", kwargs={'pk': pk}))
     else:
         formset = ReviewForm(initial={'restaurant': pk, })
-        context = {
-            'restaurant': restaurant,
-            'formset': formset,
-        }
+        context = {'restaurant': restaurant, 'formset': formset}
     return render(request, 'veggie/add_review.html', context)
