@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.urls import reverse
 from django.views import generic
-from .models import Category, State, Restaurant
+from .models import Category, State, Restaurant, Review
 from .forms import ReviewForm
 import pandas as pd
 import ssl
@@ -52,14 +52,15 @@ class RestaurantsView(generic.ListView):
         HttpResponse: The rendered HTTP response.
     """
     template_name = 'veggie/home.html'
+
     def get(self, request):
-        return render(request, 'veggie/home.html', 
-            {
-                'all_restaurants': Restaurant.objects.all(), 
-                'all_categories': filtered_categories(),
-                'all_states': filtered_states()
-            }
-        )
+        return render(request, 'veggie/home.html',
+                      {
+                          'all_restaurants': Restaurant.objects.all(),
+                          'all_categories': filtered_categories(),
+                          'all_states': filtered_states()
+                      }
+                      )
 
 
 class GetRestaurantByCategoryAndState(generic.ListView):
@@ -103,25 +104,26 @@ class GetRestaurantByCategoryAndState(generic.ListView):
 
         if selected_category != "All":
             all_restaurants = all_restaurants.filter(category__category_text__icontains=selected_category)
-        
+
         if selected_state != "All":
             all_restaurants = all_restaurants.filter(state__state_text__icontains=selected_state)
 
         if not all_restaurants:
-            messages.info(request, f'There are no restaurants in {selected_category} Category and {selected_state} State.')
-        
+            messages.info(request,
+                          f'There are no restaurants in {selected_category} Category and {selected_state} State.')
+
         if selected_category == "All" and selected_state == "All":
             return HttpResponseRedirect(reverse('veggie:index'))
 
-        return render(request, 'veggie/home.html', 
-            {
-                'all_restaurants': all_restaurants,
-                'all_categories': filtered_categories(),
-                'all_states': filtered_states(),
-                'selected_category': selected_category,
-                'selected_state': selected_state
-            }
-        )
+        return render(request, 'veggie/home.html',
+                      {
+                          'all_restaurants': all_restaurants,
+                          'all_categories': filtered_categories(),
+                          'all_states': filtered_states(),
+                          'selected_category': selected_category,
+                          'selected_state': selected_state
+                      }
+                      )
 
 
 def get_data(request):
@@ -133,14 +135,14 @@ def get_data(request):
         for cate in all_category:
             category = Category.objects.get_or_create(category_text=row["category"])[0]
         state = State.objects.get_or_create(state_text=row["state"])[0]
-        restaurant = Restaurant(restaurant_text=row["restaurant_text"], 
-                        category=category,
-                        state=state, city=row["city"],
-                        location=row["location"],
-                        restaurant_link=row["restaurant_link"],
-                        menu_link=row["menu_link"],
-                        price_rate=row["price_rate"],
-                        image=row["image"])
+        restaurant = Restaurant(restaurant_text=row["restaurant_text"],
+                                category=category,
+                                state=state, city=row["city"],
+                                location=row["location"],
+                                restaurant_link=row["restaurant_link"],
+                                menu_link=row["menu_link"],
+                                price_rate=row["price_rate"],
+                                image=row["image"])
         restaurant.save()
     return HttpResponse("Hello, world. You got the data!")
 
@@ -164,6 +166,18 @@ class DetailView(generic.DetailView):
         return HttpResponse("Hello, veggie!")
 
 
+class MyReviews(generic.ListView):
+    """Show a list of user's votes."""
+    template_name = 'veggie/my_reviews.html'
+    context_object_name = 'reviews_list'
+
+    def get_queryset(self):
+        """
+        Return all votes.
+        """
+        return Review.objects.filter(review_user_id=self.request.user).order_by('-review_date')
+
+
 @login_required
 def add_review(request: HttpRequest, pk):
     restaurant = get_object_or_404(Restaurant, pk=pk)
@@ -177,7 +191,7 @@ def add_review(request: HttpRequest, pk):
             messages.error(request, 'You did not review yet! Please add your review.')
         return HttpResponseRedirect(reverse("veggie:detail", kwargs={'pk': pk}))
     else:
-        formset = ReviewForm(initial={'restaurant': pk,})
+        formset = ReviewForm(initial={'restaurant': pk, })
         context = {
             'restaurant': restaurant,
             'formset': formset,
@@ -211,13 +225,13 @@ def delete_review(request: HttpRequest, pk):
         return HttpResponseBadRequest(f"{pk} does not exist!")
 
     try:
-        redirect_url = reverse('veggie:myreviews')
+        redirect_url = reverse('veggie:my_reviews', kwargs={'pk': pk})
     except (Review.DoesNotExist, ValueError):
         redirect_url = request.META.get('HTTP_REFERER', reverse('veggie:index'))
         return HttpResponseBadRequest("Review does not exist.")
 
     user_review = Review.objects.get(restaurant=restaurant, review_user=request.user)
-    if not vote:
+    if not user_review:
         messages.error(request, "You did not review this restaurant yet!")
         return redirect(redirect_url)
     user_review.delete()

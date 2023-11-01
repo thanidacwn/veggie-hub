@@ -22,7 +22,7 @@
                     <a href="{% url "account_login" %}">Login</a>
                     <a href="{% url "account_signup" %}">Sign-up</a>
                 {% else %}
-                    <a href="#">My reviews</a>
+                    <a href="{% url "veggie:my_reviews" user.id %}">My reviews</a>
                     <a href="#">Username</a>
                     <a href="{% url "account_logout" %}">Logout</a>
                 {% endif %}
