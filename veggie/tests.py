@@ -59,9 +59,6 @@ class UserAuthenticationTest(TestCase):
         self.user = User.objects.create_user(username=self.username, password=self.password)
 
     def test_user_login_redirect(self):
-        pass
-
-    def test_user_loggout_redirect(self):
         self.client.login(username=self.username, password=self.password)
         response = self.client.get(reverse("veggie:index"))
         self.assertEqual(response.status_code, 200)
