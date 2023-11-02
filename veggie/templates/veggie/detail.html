@@ -24,9 +24,14 @@
                         <p class="text-xl mb-2">Link: <a href={{restaurant.restaurant_link}}>Tripadvisor</a></p>
                     </div>
                 </div>
-                <div class="absolute left-0 bottom-0 flex bg-gray-300 text-xl justify-center items-center mt-[30vh] rounded-2xl w-[30vh] h-[5.5vh] ml-5">
+                {% comment %} <div class="absolute left-0 bottom-0 flex bg-gray-300 text-xl justify-center items-center mt-[30vh] rounded-2xl w-[30vh] h-[5.5vh] ml-5">
                     <a href="{% url 'veggie:index' %}">Back to Home</a>
-                </div>
+                </div> {% endcomment %}
+                <a href="{% url 'veggie:index' %}">
+                    <button class="absolute left-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl  py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5">
+                        Back to Home
+                    </button>
+                </a>
             </div>
             <script>
                 function createStarRating(restaurant) {
