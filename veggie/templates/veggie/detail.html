@@ -28,27 +28,6 @@
                     <a href="{% url 'veggie:index' %}">Back to Home</a>
                 </div>
             </div>
-            {% comment %} <div class="reviews-container">
-                <a href="{% url 'veggie:add_review' pk=restaurant.pk  %}">
-                <div class="button">
-                    Add review
-                </div></a>
-                <h1>Reviews ({{ restaurant.get_reviews_amount }} reviews)</h1>
-                {% for review in reviews %}
-                    {% if review %}
-                        <div class="review-block">
-                            <h4>Rating: {{ review.review_rate }}</h4>
-                            <h2>{{ review.review_user }}</h2>
-                            <i>Reviewed on {{ review.review_date }}</i>
-                            <h3>{{ review.review_title }}</h3>
-                            <p>{{ review.review_description }}</p>
-                        </div>
-                    {% else %}
-                        <h2>There are currently no review for this restaurant,
-                            <a href="{% url 'veggie:add_review' pk=restaurant.pk  %}">Be first!</a></h2>
-                    {% endif %}
-                {% endfor %}
-            </div> {% endcomment %}
             <script>
                 function createStarRating(restaurant) {
                     let stars = [];
