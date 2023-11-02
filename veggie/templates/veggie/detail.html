@@ -24,11 +24,8 @@
                         <p class="text-xl mb-2">Link: <a href={{restaurant.restaurant_link}}>Tripadvisor</a></p>
                     </div>
                 </div>
-                {% comment %} <div class="absolute left-0 bottom-0 flex bg-gray-300 text-xl justify-center items-center mt-[30vh] rounded-2xl w-[30vh] h-[5.5vh] ml-5">
-                    <a href="{% url 'veggie:index' %}">Back to Home</a>
-                </div> {% endcomment %}
                 <a href="{% url 'veggie:index' %}">
-                    <button class="absolute left-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl  py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5">
+                    <button class="absolute left-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5">
                         Back to Home
                     </button>
                 </a>
@@ -48,9 +45,9 @@
             </script>
             <div class="relative border border-gray-800 mr-10 h-[82vh] w-[45vw]">
                 <a href="{% url 'veggie:add_review' pk=restaurant.pk  %}">
-                    <div class="absolute flex right-0 bg-gray-300 rounded-3xl w-[12vw] h-[5vh] mt-[2vh] mr-[1.5vw] justify-center items-center text-2xl">
+                    <button class="absolute right-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[12vw] h-[5vh] mt-[2vh] mr-[1.5vw]">
                         Add review
-                    </div>
+                    </button>
                 </a>
                 <h1 class="text-2xl mt-[2.5vh] ml-[2vw]">Reviews ({{ restaurant.get_reviews_amount }} reviews)</h1>
                 {% for review in reviews %}
