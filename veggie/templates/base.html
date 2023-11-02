@@ -8,7 +8,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         {% tailwind_css %}
     </head>
     <body style="font-family: Inter; hi">
@@ -23,7 +23,7 @@
                     <a href="{% url "account_signup" %}">Sign-up</a>
                 {% else %}
                     <a href="{% url "veggie:my_reviews" user.id %}">My reviews</a>
-                    <a href="#">Username</a>
+                    <a href="#">{{user.username}}</a>
                     <a href="{% url "account_logout" %}">Logout</a>
                 {% endif %}
             </div>
