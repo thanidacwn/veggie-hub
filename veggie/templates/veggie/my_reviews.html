@@ -39,11 +39,11 @@
                     <p class="excerpt mt-2 mx-2">{{ review.review_description }}</p>
                 </div>
                 <div class="top flex flex-row justify-between ml-2 mt-2 mb-4 font-semibold text-gray-600">
-                    <div class="star text-3xl mt-2" id="{{review.restaurant.pk}}"></div>
+                    <div class="star text-3xl mt-2" id="{{review.pk}}"></div>
                     <div class="date mt-4 mx-4">{{ review.review_date }}</div>
                     <script>
                         function renderStar() {
-                            let outputResult = document.getElementById('{{review.restaurant.pk}}');
+                            let outputResult = document.getElementById('{{review.pk}}');
                             outputResult.innerHTML = createStarRating({{review.restaurant.get_average_rate}}).join('');
                             console.log(createStarRating());
                         }
