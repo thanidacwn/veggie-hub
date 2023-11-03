@@ -179,21 +179,28 @@ class MyReviews(generic.ListView):
         """
         return Review.objects.filter(review_user_id=self.request.user).order_by('-review_date')
 
-
 @login_required
-def add_review(request: HttpRequest, pk):
+def add_review(request, pk):
     restaurant = get_object_or_404(Restaurant, pk=pk)
+
     if request.method == "POST":
-        formset = ReviewForm(request.POST, instance=restaurant)
-        if not formset.is_valid():
-            messages.error(request, 'You did not review yet! Please add your review.')
-            return HttpResponseRedirect(reverse("veggie:add_review", kwargs={'pk': pk}))
-        formset.save()
-        messages.success(request, "Review save!")
-        return HttpResponseRedirect(reverse("veggie:detail", kwargs={'pk': pk}))
+        form = ReviewForm(request.POST)
+        
+        if form.is_valid():
+            # Create a new review instance, set its fields, and save it
+            review = form.save(commit=False)
+            review.restaurant = restaurant
+            review.review_user = request.user  # Assuming you want to associate the current user
+            review.save()
+
+            messages.success(request, "Review saved!")
+            return HttpResponseRedirect(reverse("veggie:detail", kwargs={'pk': pk}))
+        else:
+            messages.error(request, 'Review form is not valid. Please check your input.')
     else:
-        formset = ReviewForm(initial={'restaurant': pk, })
-        context = {'restaurant': restaurant, 'formset': formset}
+        form = ReviewForm()
+
+    context = {'restaurant': restaurant, 'form': form}
     return render(request, 'veggie/add_review.html', context)
 
 
