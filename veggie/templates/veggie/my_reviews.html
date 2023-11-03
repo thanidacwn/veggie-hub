@@ -4,6 +4,19 @@
 {% block content %}
 <body class="" style="font-family: Inter; hi">
     <link rel="stylesheet" href="output-style.css">
+    <script>
+        function createStarRating(restaurant) {
+            let stars = [];
+            for (let i = 1; i <= 5; i++) {
+                if (i > parseInt(restaurant)) {
+                    stars.push('<span class="fa fa-star text-gray-400 text-3xl p-1"></span>')
+                } else {
+                    stars.push('<span class="fa fa-star text-yellow-400 text-3xl p-1"></span>')
+                }
+            }
+            return stars;
+        }
+    </script>
     
     <h1 class="text-5xl font-bold p-10 text-center">My Reviews</h1>
     {% if reviews_list %}
@@ -26,11 +39,18 @@
                     <p class="excerpt mt-2 mx-2">{{ review.review_description }}</p>
                 </div>
                 <div class="top flex flex-row justify-between ml-2 mt-2 mb-4 font-semibold text-gray-600">
-                    <div class="star text-xl mt-2 text-yellow-500">Star Rating: {{ review.review_rate }}</div>
+                    <div class="star text-3xl mt-2" id="{{review.restaurant.pk}}"></div>
                     <div class="date mt-4 mx-4">{{ review.review_date }}</div>
+                    <script>
+                        function renderStar() {
+                            let outputResult = document.getElementById('{{review.restaurant.pk}}');
+                            outputResult.innerHTML = createStarRating({{review.restaurant.get_average_rate}}).join('');
+                            console.log(createStarRating());
+                        }
+                        renderStar()
+                    </script>
                 </div>
             </div>
-
         </div>
         <br><br>
         {% endfor %}

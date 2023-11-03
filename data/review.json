@@ -34,17 +34,5 @@
             "review_rate": 5,
             "review_date": "2023-11-01T15:50:55Z"
         }
-    },
-    {
-        "model": "veggie.review",
-        "pk": 8,
-        "fields": {
-            "restaurant": 80,
-            "review_user": 7,
-            "review_title": "Normal Lobster",
-            "review_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",
-            "review_rate": 2,
-            "review_date": "2023-11-01T15:51:40Z"
-        }
     }
 ]
