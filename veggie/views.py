@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.urls import reverse
 from django.views import generic
+from django.utils import timezone
 from .models import Category, State, Restaurant, Review
 from .forms import ReviewForm
 import pandas as pd
@@ -147,7 +148,6 @@ def get_data(request):
     return HttpResponse("Hello, world. You got the data!")
 
 
-
 class DetailView(generic.DetailView):
     """Detail view page of this application."""
     model = Restaurant
@@ -183,18 +183,27 @@ class MyReviews(generic.ListView):
 @login_required
 def add_review(request: HttpRequest, pk):
     restaurant = get_object_or_404(Restaurant, pk=pk)
+    this_user = request.user
     if request.method == "POST":
         formset = ReviewForm(request.POST, instance=restaurant)
         if not formset.is_valid():
             messages.error(request, 'You did not review yet! Please add your review.')
             return HttpResponseRedirect(reverse("veggie:add_review", kwargs={'pk': pk}))
         formset.save()
+        review_rate = formset.cleaned_data["review_rate"]
+        review_title = formset.cleaned_data["review_title"]
+        review_description = formset.cleaned_data["review_description"]
+        current_datetime = timezone.localtime().strftime('%Y-%m-%d %H:%M:%S.%f%z')
+        new_review = Review(restaurant=restaurant, review_user=this_user, review_title=review_title,
+                            review_description=review_description, review_rate=review_rate,
+                            review_date=str(current_datetime))
+        new_review.save()
         messages.success(request, "Review save!")
         return HttpResponseRedirect(reverse("veggie:detail", kwargs={'pk': pk}))
     else:
         formset = ReviewForm(initial={'restaurant': pk, })
         context = {'restaurant': restaurant, 'formset': formset}
-    return render(request, 'veggie/add_review.html', context)
+        return render(request, 'veggie/add_review.html', context)
 
 
 @login_required
