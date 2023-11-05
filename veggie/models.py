@@ -72,4 +72,4 @@ class Review(models.Model):
     review_date = models.DateTimeField(verbose_name="review_date", default=timezone.now)
 
     def __str__(self):
-        return f"{self.title} - {self.restaurant.restaurant_text} by {self.review_user.username}"
+        return f"{self.review_title} - {self.restaurant.restaurant_text} by {self.review_user.username}"
