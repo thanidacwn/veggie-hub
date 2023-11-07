@@ -3,16 +3,16 @@
 
 {% block content %}
 
-<body>
+<body class="bg-yellow-50">
     <link rel="stylesheet" href="{% static 'veggie/add_review.css' %}">
-    <div class="center-top">Add your review</div>
+    <div class="center-top text-yellow-700">Add your review</div>
     {% if messages %}
         {% for message in messages %}
             <p style="color: orangered;"><strong>{{ message }}</strong></p>
         {% endfor %}
     {% endif %}
-    <form action="{% url 'veggie:add_review' pk=restaurant.pk %}" method="post" style="font-family: Inter,serif">
-        <div style="color: black; font-size: 30px; font-family: Inter,serif; font-weight: 700; word-wrap: break-word;">{{restaurant.restaurant_text}}</div>
+    <form action="{% url 'veggie:add_review' pk=restaurant.pk %}" method="post" style="font-family: Inter,serif" class="rounded-md">
+        <div style="font-size: 30px; font-family: Inter,serif; font-weight: 700; word-wrap: break-word;" class="text-yellow-600">{{restaurant.restaurant_text}}</div>
         <div style="color: black; font-size: 18px; font-family: Inter,serif; font-weight: 400; word-wrap: break-word;">- {{restaurant.category}} -</div>
         {% comment %} <img src="{{restaurant.image}}" alt="Restaurant Image" width="30%" height="50%" ></image> {% endcomment %}
         <br>
@@ -127,30 +127,33 @@
         <br>
         <div>
             <label for="id_review_title">Review title:
-                <input type="text" name="review_title">
+                <input type="text" name="review_title" placeholder="Write your title...">
             </label>
         </div>
         <div>
             <label for="id_review_description">Review description:
-                <input type="text" name="review_description">
+                <textarea id="id_review_description" rows="4" name="review_description"
+                class="w-full px-2 text-sm text-gray-900 bg-white border-1 rounded-md border-gray-300
+                dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" 
+                placeholder="Write description...">
+            </textarea>
             </label>
         </div>
 
-        <button type="submit" name="add_review" 
-            class="text-black bg-yellow-400 hover:bg-green-400 focus:ring-4 focus:outline-none
-            focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center
-            dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Submit review
-        </button>
 
         <a href="{% url "veggie:detail" pk=restaurant.pk %}" type="button" 
-            class="text-white bg-blue-700 hover:bg-gray-300 hover:text-black focus:ring-4 focus:outline-none
+            class="text-white bg-gray-400 hover:bg-gray-500 hover:text-white focus:ring-4 focus:outline-none
             focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center
             dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Back to restaurant
         </a> 
 
-
+        <button type="submit" name="add_review" 
+        class="text-black bg-yellow-400 hover:bg-gray-500 hover:text-white focus:ring-4 focus:outline-none
+        focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center
+        dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Submit review
+        </button>
     </form>
 
 </body>
