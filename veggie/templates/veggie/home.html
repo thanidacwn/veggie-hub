@@ -24,9 +24,11 @@
                 </button>
             </form>
             {% if messages %}
+            <div class="text-center mt-5 mx-6">
                 {% for message in messages %}
-                    <p class="text-red-600 text-center mt-5"><strong>{{ message }}</strong></p>
+                    <span class="text-red-600"><strong>{{ message }}</strong></span>
                 {% endfor %}
+            </div>
             {% else %}
                 {% if selected_category == None and selected_state == None %}
                     <p></p>
