@@ -165,11 +165,10 @@ class DetailView(generic.DetailView):
             reviews = Review.objects.filter(restaurant=restaurant)
         except Review.DoesNotExist:
             reviews = []
-        print(BookMark.objects.filter(bookmark_user=request.user))
         return render(request, 'veggie/detail.html', {
             'restaurant': restaurant, 
             'reviews': reviews,
-            'bookmarks': BookMark.objects.filter(bookmark_user=request.user)
+            'bookmarks': BookMark.objects.filter(restaurant=restaurant)
         })
 
 
@@ -266,4 +265,13 @@ def add_bookmark(request: HttpRequest, pk):
     this_user = request.user
     bookmark = BookMark.objects.create(bookmark_user=this_user, restaurant=restaurant)
     bookmark.save()
+    return HttpResponseRedirect(reverse('veggie:detail', args=(restaurant.pk, )))
+
+@login_required
+def delete_bookmark(request: HttpRequest, pk):
+    restaurant = get_object_or_404(Restaurant, pk=pk)
+    
+    this_user = request.user
+    bookmark = BookMark.objects.get(bookmark_user=this_user, restaurant=restaurant)
+    bookmark.delete()
     return HttpResponseRedirect(reverse('veggie:detail', args=(restaurant.pk, )))

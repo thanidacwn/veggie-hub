@@ -12,5 +12,6 @@ urlpatterns = [
     path('filter/', views.GetRestaurantByCategoryAndState.as_view(), name='filtered_category_state'),
     path('<int:pk>/my_reviews/delete/', views.delete_review, name="delete"),
     path("<int:pk>/bookmarks/", views.MyBookMarks.as_view(), name="my_bookmarks"),
-    path('add_bookmark/<int:pk>', views.add_bookmark, name='add_bookmark')
+    path('add_bookmark/<int:pk>', views.add_bookmark, name='add_bookmark'),
+    path('delete_bookmark/<int:pk>', views.delete_bookmark, name='delete_bookmark')
 ]
