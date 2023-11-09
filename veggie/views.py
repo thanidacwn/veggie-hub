@@ -1,10 +1,12 @@
+from typing import Any
+from django.db.models.query import QuerySet
 from django.http import HttpResponse, HttpResponseRedirect, HttpRequest, HttpResponseBadRequest
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.urls import reverse
 from django.views import generic
-from .models import Category, State, Restaurant, Review
+from .models import Category, State, Restaurant, Review, BookMark
 from .forms import ReviewForm
 import pandas as pd
 import ssl
@@ -147,7 +149,6 @@ def get_data(request):
     return HttpResponse("Hello, world. You got the data!")
 
 
-
 class DetailView(generic.DetailView):
     """Detail view page of this application."""
     model = Restaurant
@@ -178,6 +179,7 @@ class MyReviews(generic.ListView):
         Return all votes.
         """
         return Review.objects.filter(review_user_id=self.request.user).order_by('-review_date')
+    
 
 @login_required
 def add_review(request, pk):
@@ -242,3 +244,12 @@ def delete_review(request: HttpRequest, pk):
     user_review.delete()
     messages.info(request, f"Your review at {restaurant.restaurant_text} has been deleted.")
     return redirect(redirect_url)
+
+
+class MyBookMarks(generic.ListView):
+    """Show all restaurants user bookmark"""
+    template_name = 'veggie/bookmarks.html'
+    context_object_name = 'all_restaurants'
+
+    def get_queryset(self):
+        return BookMark.objects.filter(bookmark_user=self.request.user).order_by('-bookmark_date')

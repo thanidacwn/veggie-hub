@@ -73,3 +73,10 @@ class Review(models.Model):
 
     def __str__(self):
         return f"{self.review_title} - {self.restaurant.restaurant_text} by {self.review_user.username}"
+
+
+class BookMark(models.Model):
+    """BookMark model"""
+    bookmark_user = models.ForeignKey(User, on_delete=models.CASCADE)
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
+    bookmark_date = models.DateTimeField(verbose_name="bookmark_date", default=timezone.now)
