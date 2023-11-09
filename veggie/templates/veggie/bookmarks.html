@@ -2,5 +2,7 @@
 {% load static %}
 
 {% block content %}
-    
+    {% for restaurant in all_bookmarks %}
+        {{restaurant.restaurant.restaurant_text}}
+    {% endfor %}
 {% endblock %}

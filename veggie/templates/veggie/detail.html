@@ -28,6 +28,19 @@
                         Back to Home
                     </button>
                 </a>
+                {% if restaurant not in bookmarks %}
+                    <a href="{% url 'veggie:add_bookmark' restaurant.pk %}">
+                        <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
+                            Bookmark
+                        </button>
+                    </a>
+                {% else %}
+                    <a href="">
+                        <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
+                            Remove
+                        </button>
+                    </a>
+                {% endif %}
             </div>
             <script>
                 function createStarRating(restaurant) {
