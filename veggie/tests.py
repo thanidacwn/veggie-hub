@@ -3,6 +3,8 @@ from django.urls import reverse
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from .models import Category, State, Restaurant, Review
+from .forms import ReviewForm
+
 
 class RestaurantModelTest(TestCase):
     """Test Restaurant model"""
@@ -63,4 +65,39 @@ class UserAuthenticationTest(TestCase):
         response = self.client.get(reverse("veggie:index"))
         self.assertEqual(response.status_code, 200)
 
+
+def create_restaurant(restaurant_text):
     
+
+class AddReviewTestCase(TestCase):
+    def setUp(self):
+        self.client = Client()
+        self.user = User.objects.create_user(username='testuser')
+        self.user.set_password('testpass')
+        self.user.save()
+        self.client.login(username='testuser', password='testpass')
+
+    def test_add_review_is_valid(self):
+        """Test add review form is valid"""
+        form = ReviewForm(data={'review_title': "Test Review",
+                                'review_description': "This is a test review.",
+                                'review_rate': 4})
+        self.assertTrue(form.is_valid())
+
+    def test_can_review_is_authenticated(self):
+        """If user is already logged in, they can review"""
+        restaurant = create_restaurant("")
+        response = self.client.get(reverse('veggie:add_review', kwargs={'pk': restaurant.pk}))
+        self.assertEqual(response.status_code, 200)
+
+class DeleteReviewViewTest(TestCase):
+    def setUp(self):
+        pass
+
+    def test_delete_review(self):
+        pass
+
+    def test_can_not_delete_review_if_not_logged_in(self):
+        pass
+    def test_can_not_delete_review_if_not_review_user(self):
+        pass
