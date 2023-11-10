@@ -251,7 +251,7 @@ def delete_review(request: HttpRequest, pk):
 
 class MyBookMarks(generic.ListView):
     """Show all restaurants user bookmark"""
-    template_name = 'veggie/bookmarks.html'
+    template_name = 'veggie/my_bookmarks.html'
     context_object_name = 'all_bookmarks'
 
     def get_queryset(self):
@@ -266,6 +266,7 @@ def add_bookmark(request: HttpRequest, pk):
     bookmark = BookMark.objects.create(bookmark_user=this_user, restaurant=restaurant)
     bookmark.save()
     return HttpResponseRedirect(reverse('veggie:detail', args=(restaurant.pk, )))
+
 
 @login_required
 def delete_bookmark(request: HttpRequest, pk):

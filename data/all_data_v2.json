@@ -1,0 +1,3104 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-10-24T02:43:48.138Z",
+    "user": 5,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "127.0.0.1:8000",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-10-24T02:44:42.006Z",
+    "user": 5,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "github",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-10-24T02:45:17.598Z",
+    "user": 5,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "google",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-10-24T02:45:51.576Z",
+    "user": 5,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "line",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-11-01T14:41:35.270Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Good service and yummy!! - Betty Lou's Seafood and Grill by thanida3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-11-01T14:42:39.846Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Best Dinner for me >< - Coach House Diner by thanida3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-11-01T14:43:46.864Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "Bad service but good food - Table Talk Diner by thanida3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-11-01T15:32:25.994Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "HAHAHA NOT BAD - Coach House Diner by thanida3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-11-01T15:50:22.016Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "Good service and yummy! - Betty Lou's Seafood and Grill by thanida3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-11-01T15:50:54.519Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "6",
+    "object_repr": "Very good choice for lunch - Coach House Diner by thanida3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-11-01T15:51:39.681Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "Very delicious Thai food ever!! - Ayothaya Thai Restaurant by thanida3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-11-01T15:52:04.805Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "8",
+    "object_repr": "Normal Lobster - Lobster Shop by thanida3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 7,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 7,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 7,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view site",
+    "content_type": 7,
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 8,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 8,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 8,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 8,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add restaurant",
+    "content_type": 9,
+    "codename": "add_restaurant"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change restaurant",
+    "content_type": 9,
+    "codename": "change_restaurant"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete restaurant",
+    "content_type": 9,
+    "codename": "delete_restaurant"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view restaurant",
+    "content_type": 9,
+    "codename": "view_restaurant"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add state",
+    "content_type": 10,
+    "codename": "add_state"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change state",
+    "content_type": 10,
+    "codename": "change_state"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete state",
+    "content_type": 10,
+    "codename": "delete_state"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view state",
+    "content_type": 10,
+    "codename": "view_state"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add review",
+    "content_type": 11,
+    "codename": "add_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change review",
+    "content_type": 11,
+    "codename": "change_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete review",
+    "content_type": 11,
+    "codename": "delete_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view review",
+    "content_type": 11,
+    "codename": "view_review"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add email address",
+    "content_type": 12,
+    "codename": "add_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change email address",
+    "content_type": 12,
+    "codename": "change_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete email address",
+    "content_type": 12,
+    "codename": "delete_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view email address",
+    "content_type": 12,
+    "codename": "view_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add email confirmation",
+    "content_type": 13,
+    "codename": "add_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change email confirmation",
+    "content_type": 13,
+    "codename": "change_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete email confirmation",
+    "content_type": 13,
+    "codename": "delete_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view email confirmation",
+    "content_type": 13,
+    "codename": "view_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add social account",
+    "content_type": 14,
+    "codename": "add_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change social account",
+    "content_type": 14,
+    "codename": "change_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete social account",
+    "content_type": 14,
+    "codename": "delete_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view social account",
+    "content_type": 14,
+    "codename": "view_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add social application",
+    "content_type": 15,
+    "codename": "add_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change social application",
+    "content_type": 15,
+    "codename": "change_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete social application",
+    "content_type": 15,
+    "codename": "delete_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view social application",
+    "content_type": 15,
+    "codename": "view_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add social application token",
+    "content_type": 16,
+    "codename": "add_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change social application token",
+    "content_type": 16,
+    "codename": "change_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete social application token",
+    "content_type": 16,
+    "codename": "delete_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view social application token",
+    "content_type": 16,
+    "codename": "view_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add book mark",
+    "content_type": 17,
+    "codename": "add_bookmark"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change book mark",
+    "content_type": 17,
+    "codename": "change_bookmark"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete book mark",
+    "content_type": 17,
+    "codename": "delete_bookmark"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view book mark",
+    "content_type": 17,
+    "codename": "view_bookmark"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$VPolKktz9XsE112GkcObfH$vvLH5q0aYegFQ+aL85FfjpYx/ms8VydT529LX8f/IJI=",
+    "last_login": "2023-11-10T02:23:18.197Z",
+    "is_superuser": true,
+    "username": "veggie123",
+    "first_name": "",
+    "last_name": "",
+    "email": "veggieisp@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-10-17T17:34:09.869Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "!ovkmwUeuXMWUm8EL63H3TpkD2KKwfuDmOX3dPflS",
+    "last_login": "2023-10-23T08:37:34.830Z",
+    "is_superuser": false,
+    "username": "thanidacwn",
+    "first_name": "Thanida",
+    "last_name": "Chaiwongnon",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-10-23T08:37:34.809Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "!3prqlUCVHUeNzFVGxXz90yUxajHXa61BQVKeocBs",
+    "last_login": "2023-10-23T11:03:54.898Z",
+    "is_superuser": false,
+    "username": "thanida",
+    "first_name": "Thanida",
+    "last_name": "CHAIWONGNON",
+    "email": "thanida.chai@ku.th",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-10-23T10:53:22.484Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "!vHdrMySwITijkc8iroYvWl3OEFIcEEGvSD0xb2az",
+    "last_login": "2023-10-23T11:05:52.657Z",
+    "is_superuser": false,
+    "username": "Ued979011ae7485c8bf7b860daef4f0fd",
+    "first_name": "tha",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-10-23T11:05:52.638Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$U7PdJWiezvsvpPpYNl2mLm$GOJGxG7WzE3TFa6tK9krx6dpAy5SNi1W+VRPCuS46Sw=",
+    "last_login": "2023-10-24T02:43:19.929Z",
+    "is_superuser": true,
+    "username": "god",
+    "first_name": "",
+    "last_name": "",
+    "email": "godjangg@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-10-24T02:43:00.863Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "!9lTPlY9voaFiBWLzxPkNLdPDBXXFRXqJskQ5PhVe",
+    "last_login": "2023-10-24T02:46:18.191Z",
+    "is_superuser": false,
+    "username": "preawpan",
+    "first_name": "Preawpan",
+    "last_name": "THAMAPIPOL",
+    "email": "preawpan.t@ku.th",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-10-24T02:46:18.159Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 7,
+  "fields": {
+    "password": "!6kLktp8R48zr3tgVg8WtsWlBtJIsbWwErmKxtfgh",
+    "last_login": "2023-11-01T15:52:24.029Z",
+    "is_superuser": false,
+    "username": "thanida3",
+    "first_name": "Thanida",
+    "last_name": "CHAIWONGNON",
+    "email": "thanida.chai@ku.th",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-10-24T03:36:53.043Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 7,
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 8,
+  "fields": {
+    "app_label": "veggie",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 9,
+  "fields": {
+    "app_label": "veggie",
+    "model": "restaurant"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 10,
+  "fields": {
+    "app_label": "veggie",
+    "model": "state"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 11,
+  "fields": {
+    "app_label": "veggie",
+    "model": "review"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 12,
+  "fields": {
+    "app_label": "account",
+    "model": "emailaddress"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 13,
+  "fields": {
+    "app_label": "account",
+    "model": "emailconfirmation"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 14,
+  "fields": {
+    "app_label": "socialaccount",
+    "model": "socialaccount"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 15,
+  "fields": {
+    "app_label": "socialaccount",
+    "model": "socialapp"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 16,
+  "fields": {
+    "app_label": "socialaccount",
+    "model": "socialtoken"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "id": 17,
+  "fields": {
+    "app_label": "veggie",
+    "model": "bookmark"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1defv6umnfjfk9l6wfjxkkcuu2hc1a0q",
+  "fields": {
+    "session_data": "eyJzb2NpYWxhY2NvdW50X3N0YXRlIjpbeyJwcm9jZXNzIjoibG9naW4iLCJzY29wZSI6IiIsImF1dGhfcGFyYW1zIjoiIn0sIllGUWRCWk13T0hkRURZemIiXX0:1qv8G5:pjO5BXJcdTaSOqr8s2Xc0ccc2mOKIdiLLAYBOgRtG54",
+    "expire_date": "2023-11-07T03:39:09.623Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "g1id9uwtoswum3575bueg7fkckdqiqj0",
+  "fields": {
+    "session_data": ".eJxVjssOwiAUBf-FtSE8SgtduvcbyAUuFjVgCk00xn-3NV3o9sxkcl7EwtImu1ScbQpkJJwcfjcH_op5A-EC-VyoL7nNydFNoTut9FQC3o67-xeYoE5bdhBROtExI02HynnOWSdBaxd1z50RKmoIcYgDMieBBTEojDrI3mGnOaxR8L4suX3bmFvy0DBYaGTkvTFKC2M0FUzJfj1QsdZUssXHPc1PMrL3B3g1TOw:1r1HB0:EyC4oIxpallHbl_4JAR_rf8T2BqO8IvJAOzP1d-4VXw",
+    "expire_date": "2023-11-24T02:23:18.213Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lse21br9tca2yt46unvrbmljmzevtmz6",
+  "fields": {
+    "session_data": ".eJxVjkkOwyAMRe_CukIQzODs2osgMylRIyI1ZFX17k0iFu3yD37-b-Zpb5Pft_zyc2Ijs-z26wWKz1zPgJbltDnFuO618avT443fD5VrmyO1ea2PfvWHmmibDk4oJtkoZEkQDWkUWgQsbpBIVjkK1iYNZEwwADpByAqlFLqgE8oWORzQPuFi96c5eWpslAad0woBuFADWPx8AaZfSdA:1qyDW4:nd6ZmnsuNFE0QZsg3tYfp9Kp0H87INKgIb2jc2Re3u8",
+    "expire_date": "2023-11-15T15:52:24.034Z"
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 2,
+  "fields": {
+    "domain": "127.0.0.1:8000",
+    "name": "127"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 1,
+  "fields": {
+    "category_text": " Seafood, Vegetarian Friendly, Vegan Options"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 2,
+  "fields": {
+    "category_text": " Diner, American, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 3,
+  "fields": {
+    "category_text": " American, Diner, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 4,
+  "fields": {
+    "category_text": " American, Wine Bar, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 5,
+  "fields": {
+    "category_text": " Italian, Pizza, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 6,
+  "fields": {
+    "category_text": " Italian, Vegetarian Friendly, Gluten Free Options"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 7,
+  "fields": {
+    "category_text": " Cafe, American, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 8,
+  "fields": {
+    "category_text": " American, Bar, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 9,
+  "fields": {
+    "category_text": " American, Cajun & Creole, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 10,
+  "fields": {
+    "category_text": " Steakhouse, Mexican, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 11,
+  "fields": {
+    "category_text": " American, Vegetarian Friendly, Vegan Options"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 12,
+  "fields": {
+    "category_text": " American, European, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 13,
+  "fields": {
+    "category_text": " Latin, Spanish, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 14,
+  "fields": {
+    "category_text": " Chinese, Asian, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 15,
+  "fields": {
+    "category_text": " American, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 16,
+  "fields": {
+    "category_text": " Mexican, Southwestern, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 17,
+  "fields": {
+    "category_text": " Cajun & Creole, American, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 18,
+  "fields": {
+    "category_text": " Italian, Vegetarian Friendly, Vegan Options"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 19,
+  "fields": {
+    "category_text": " Pizza, Vegetarian Friendly, Vegan Options"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 20,
+  "fields": {
+    "category_text": " French, European, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 21,
+  "fields": {
+    "category_text": " American, Southwestern, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 22,
+  "fields": {
+    "category_text": " Indian, Asian, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 23,
+  "fields": {
+    "category_text": " American, Seafood, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 24,
+  "fields": {
+    "category_text": " Asian, Thai, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 25,
+  "fields": {
+    "category_text": " American, Steakhouse, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 26,
+  "fields": {
+    "category_text": " American, Cafe, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 27,
+  "fields": {
+    "category_text": " Thai, Asian, Vegan Options"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 28,
+  "fields": {
+    "category_text": " Pizza, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 29,
+  "fields": {
+    "category_text": " Indian, Vegetarian Friendly, Vegan Options"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 30,
+  "fields": {
+    "category_text": " American, Contemporary, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 31,
+  "fields": {
+    "category_text": " Italian, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 32,
+  "fields": {
+    "category_text": " American, Vegetarian Friendly, Gluten Free Options"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 33,
+  "fields": {
+    "category_text": " Indonesian, American, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 34,
+  "fields": {
+    "category_text": " American, Deli, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 35,
+  "fields": {
+    "category_text": " Mexican, Latin, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 36,
+  "fields": {
+    "category_text": " Chinese, Vegan Options"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 37,
+  "fields": {
+    "category_text": " Deli, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 38,
+  "fields": {
+    "category_text": " Italian, Pizza, Vegan Options"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 39,
+  "fields": {
+    "category_text": " Italian, Vegan Options, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 40,
+  "fields": {
+    "category_text": " Asian, Vietnamese, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 41,
+  "fields": {
+    "category_text": " Mediterranean, Middle Eastern, Vegan Options"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 42,
+  "fields": {
+    "category_text": " Mexican, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 43,
+  "fields": {
+    "category_text": " American, International, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 44,
+  "fields": {
+    "category_text": " German, European, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 45,
+  "fields": {
+    "category_text": " Mediterranean, Greek, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 46,
+  "fields": {
+    "category_text": " French, Gluten Free Options, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 47,
+  "fields": {
+    "category_text": " French, Vegetarian Friendly, Vegan Options"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 48,
+  "fields": {
+    "category_text": " Vegetarian Friendly, Vegan Options, Gluten Free Options"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 49,
+  "fields": {
+    "category_text": " Indian, Pakistani, Vegetarian Friendly"
+  }
+},
+{
+  "model": "veggie.category",
+  "pk": 50,
+  "fields": {
+    "category_text": " Mediterranean, Vegetarian Friendly, Vegan Options"
+  }
+},
+{
+  "model": "veggie.state",
+  "pk": 1,
+  "fields": {
+    "state_text": "CA"
+  }
+},
+{
+  "model": "veggie.state",
+  "pk": 2,
+  "fields": {
+    "state_text": "NJ"
+  }
+},
+{
+  "model": "veggie.state",
+  "pk": 3,
+  "fields": {
+    "state_text": "NY"
+  }
+},
+{
+  "model": "veggie.state",
+  "pk": 4,
+  "fields": {
+    "state_text": "TX"
+  }
+},
+{
+  "model": "veggie.state",
+  "pk": 5,
+  "fields": {
+    "state_text": "WA"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 1,
+  "fields": {
+    "restaurant_text": "Betty Lou's Seafood and Grill",
+    "category": 1,
+    "state": 1,
+    "city": "San Francisco",
+    "location": "San Francisco, CA 94133-3908",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60713-d11862449-Reviews-Betty_Lou_s_Seafood_and_Grill-San_Francisco_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/1.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 2,
+  "fields": {
+    "restaurant_text": "Coach House Diner",
+    "category": 2,
+    "state": 2,
+    "city": "Hackensack",
+    "location": "Hackensack, NJ 07601-6337",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46480-d4632054-Reviews-Coach_House_Diner-Hackensack_New_Jersey.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/2.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 3,
+  "fields": {
+    "restaurant_text": "Table Talk Diner",
+    "category": 3,
+    "state": 3,
+    "city": "Poughkeepsie",
+    "location": "Poughkeepsie, NY 12601-5476",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48443-d2105702-Reviews-Table_Talk_Diner-Poughkeepsie_New_York.html",
+    "menu_link": "http://tabletalkdiner.com/menu/breakfast/",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/3.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 4,
+  "fields": {
+    "restaurant_text": "Sixty Vines",
+    "category": 4,
+    "state": 4,
+    "city": "Plano",
+    "location": "Plano, TX 75093-7777",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56463-d10793449-Reviews-Sixty_Vines-Plano_Texas.html",
+    "menu_link": "https://sixtyvines.com/menu/plano-tx/",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/4.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 5,
+  "fields": {
+    "restaurant_text": "Vince's Italian Restaurant & Pizzeria",
+    "category": 5,
+    "state": 5,
+    "city": "Renton",
+    "location": "Renton, WA 98056-3105",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58704-d464246-Reviews-Vince_s_Italian_Restaurant_Pizzeria-Renton_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/5.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 6,
+  "fields": {
+    "restaurant_text": "ZaZa's Cucina",
+    "category": 6,
+    "state": 3,
+    "city": "Ithaca",
+    "location": "Ithaca, NY 14850-4049",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g47958-d475546-Reviews-ZaZa_s_Cucina-Ithaca_Finger_Lakes_New_York.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/6.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 7,
+  "fields": {
+    "restaurant_text": "Dulin's Cafe",
+    "category": 7,
+    "state": 5,
+    "city": "Vancouver",
+    "location": "Vancouver, WA 98660-2608",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d440680-Reviews-Dulin_s_Cafe-Vancouver_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/7.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 8,
+  "fields": {
+    "restaurant_text": "New World Bistro Bar",
+    "category": 8,
+    "state": 3,
+    "city": "Albany",
+    "location": "Albany, NY 12209-1627",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29786-d1515170-Reviews-New_World_Bistro_Bar-Albany_New_York.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/8.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 9,
+  "fields": {
+    "restaurant_text": "Mimi's Cafe",
+    "category": 9,
+    "state": 1,
+    "city": "Anaheim",
+    "location": "Anaheim, CA 92802-2311",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29092-d507253-Reviews-Mimi_s_Cafe-Anaheim_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/9.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 10,
+  "fields": {
+    "restaurant_text": "La Hacienda Ranch",
+    "category": 10,
+    "state": 4,
+    "city": "Frisco",
+    "location": "Frisco, TX 75034-8508",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g55870-d495433-Reviews-La_Hacienda_Ranch-Frisco_Texas.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/10.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 11,
+  "fields": {
+    "restaurant_text": "Breadsticks Cafe & Grill",
+    "category": 11,
+    "state": 2,
+    "city": "Atlantic City",
+    "location": "Atlantic City, NJ 08401-7329",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29750-d541345-Reviews-Breadsticks_Cafe_Grill-Atlantic_City_New_Jersey.html",
+    "menu_link": "https://resortsac.com/wp-content/uploads/2018/08/Breadsticks_BreakfastMenu_Winter-2017-2018.pdf",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/11.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 12,
+  "fields": {
+    "restaurant_text": "Tilikum Place Cafe",
+    "category": 12,
+    "state": 5,
+    "city": "Seattle",
+    "location": "Seattle, WA 98121-1519",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60878-d1516303-Reviews-Tilikum_Place_Cafe-Seattle_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/12.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 13,
+  "fields": {
+    "restaurant_text": "BV Tuscany Italian Restaurant",
+    "category": 6,
+    "state": 2,
+    "city": "Teaneck",
+    "location": "Teaneck, NJ 07666-3411",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46862-d1473658-Reviews-BV_Tuscany_Italian_Restaurant-Teaneck_New_Jersey.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/13.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 14,
+  "fields": {
+    "restaurant_text": "Beso",
+    "category": 13,
+    "state": 3,
+    "city": "Staten Island",
+    "location": "Staten Island, NY 10301-1952",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48682-d1125099-Reviews-Beso-Staten_Island_New_York.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/14.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 15,
+  "fields": {
+    "restaurant_text": "Ristorante Paradiso",
+    "category": 6,
+    "state": 5,
+    "city": "Kirkland",
+    "location": "Kirkland, WA 98033-3717",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d464228-Reviews-Ristorante_Paradiso-Kirkland_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/15.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 16,
+  "fields": {
+    "restaurant_text": "Buddakan",
+    "category": 14,
+    "state": 2,
+    "city": "Atlantic City",
+    "location": "Atlantic City, NJ 08401-6689",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29750-d637123-Reviews-Buddakan-Atlantic_City_New_Jersey.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/16.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 17,
+  "fields": {
+    "restaurant_text": "Hodel's Country Dining",
+    "category": 11,
+    "state": 1,
+    "city": "Bakersfield",
+    "location": "Bakersfield, CA 93308-2946",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32037-d1053094-Reviews-Hodel_s_Country_Dining-Bakersfield_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/17.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 18,
+  "fields": {
+    "restaurant_text": "Magic Castle",
+    "category": 15,
+    "state": 1,
+    "city": "Los Angeles",
+    "location": "Los Angeles, CA 90028-8600",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32655-d941518-Reviews-Magic_Castle-Los_Angeles_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/18.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 19,
+  "fields": {
+    "restaurant_text": "Jorge's Mexican Restaurant",
+    "category": 16,
+    "state": 4,
+    "city": "Amarillo",
+    "location": "Amarillo, TX 79109-6618",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g30165-d1504576-Reviews-Jorge_s_Mexican_Restaurant-Amarillo_Texas.html",
+    "menu_link": "http://jorgesmexican.com/index.php?page=menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/19.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 20,
+  "fields": {
+    "restaurant_text": "The Attic",
+    "category": 17,
+    "state": 1,
+    "city": "Long Beach",
+    "location": "Long Beach, CA 90803-5906",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32648-d3834363-Reviews-The_Attic-Long_Beach_California.html",
+    "menu_link": "http://www.theatticonbroadway.com/pages/menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/20.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 21,
+  "fields": {
+    "restaurant_text": "Del Posto",
+    "category": 18,
+    "state": 3,
+    "city": "New York City",
+    "location": "New York City, NY 10011",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d598053-Reviews-Del_Posto-New_York_City_New_York.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/21.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 22,
+  "fields": {
+    "restaurant_text": "The Cheesecake Factory",
+    "category": 11,
+    "state": 1,
+    "city": "Fresno",
+    "location": "Fresno, CA 93710-7729",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32414-d813700-Reviews-The_Cheesecake_Factory-Fresno_California.html",
+    "menu_link": "https://order.thecheesecakefactory.com/menu/fresno-ca",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/22.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 23,
+  "fields": {
+    "restaurant_text": "Pizzeria Credo",
+    "category": 5,
+    "state": 5,
+    "city": "Seattle",
+    "location": "Seattle, WA 98116-4111",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60878-d4765938-Reviews-Pizzeria_Credo-Seattle_Washington.html",
+    "menu_link": "http://pizzeriacredo.com/#our-menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/23.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 24,
+  "fields": {
+    "restaurant_text": "Cheeseboard Pizza",
+    "category": 19,
+    "state": 1,
+    "city": "Berkeley",
+    "location": "Berkeley, CA 94709-1517",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32066-d371485-Reviews-Cheeseboard_Pizza-Berkeley_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Cheap",
+    "image": "https://thanidacwn.github.io/veggie-data/images/24.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 25,
+  "fields": {
+    "restaurant_text": "Jeanne D'Arc Restaurant",
+    "category": 20,
+    "state": 1,
+    "city": "San Francisco",
+    "location": "San Francisco, CA 94108-3402",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60713-d379131-Reviews-Jeanne_D_Arc_Restaurant-San_Francisco_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/25.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 26,
+  "fields": {
+    "restaurant_text": "Lonesome Dove Western Bistro",
+    "category": 21,
+    "state": 4,
+    "city": "Fort Worth",
+    "location": "Fort Worth, TX 76164-8519",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g55857-d518186-Reviews-Lonesome_Dove_Western_Bistro-Fort_Worth_Texas.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/26.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 27,
+  "fields": {
+    "restaurant_text": "KathaKali Indian Eatery",
+    "category": 22,
+    "state": 5,
+    "city": "Kirkland",
+    "location": "Kirkland, WA 98033-4325",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d12448278-Reviews-KathaKali_Indian_Eatery-Kirkland_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/27.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 28,
+  "fields": {
+    "restaurant_text": "Eddie V's Wildfish",
+    "category": 23,
+    "state": 1,
+    "city": "Newport Beach",
+    "location": "Newport Beach, CA 92660-9071",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32780-d1862747-Reviews-Eddie_V_s_Wildfish-Newport_Beach_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/28.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 29,
+  "fields": {
+    "restaurant_text": "Anthony's HomePort",
+    "category": 23,
+    "state": 5,
+    "city": "Kirkland",
+    "location": "Kirkland, WA 98033-6468",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d463622-Reviews-Anthony_s_HomePort-Kirkland_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/29.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 30,
+  "fields": {
+    "restaurant_text": "Kwan Tip Thai",
+    "category": 24,
+    "state": 5,
+    "city": "Federal Way",
+    "location": "Federal Way, WA 98003-3829",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58471-d2394676-Reviews-Kwan_Tip_Thai-Federal_Way_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/30.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 31,
+  "fields": {
+    "restaurant_text": "The Capital Grille",
+    "category": 25,
+    "state": 3,
+    "city": "New York City",
+    "location": "New York City, NY 10017-5608",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d1018334-Reviews-The_Capital_Grille-New_York_City_New_York.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/31.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 32,
+  "fields": {
+    "restaurant_text": "The Cheesecake Factory",
+    "category": 11,
+    "state": 2,
+    "city": "Hackensack",
+    "location": "Hackensack, NJ 07601-6310",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46480-d4102201-Reviews-The_Cheesecake_Factory-Hackensack_New_Jersey.html",
+    "menu_link": "https://order.thecheesecakefactory.com/menu/hackensack-nj",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/32.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 33,
+  "fields": {
+    "restaurant_text": "Bareburger",
+    "category": 11,
+    "state": 3,
+    "city": "Forest Hills",
+    "location": "Forest Hills, NY 11375-4728",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g47732-d3316200-Reviews-Bareburger-Forest_Hills_Queens_New_York.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/33.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 34,
+  "fields": {
+    "restaurant_text": "Planet Thai",
+    "category": 24,
+    "state": 5,
+    "city": "Vancouver",
+    "location": "Vancouver, WA 98685-2837",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d2602217-Reviews-Planet_Thai-Vancouver_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/34.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 35,
+  "fields": {
+    "restaurant_text": "Red Apple Cafe",
+    "category": 26,
+    "state": 1,
+    "city": "Fresno",
+    "location": "Fresno, CA 93650-1329",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32414-d9750769-Reviews-Red_Apple_Cafe-Fresno_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/35.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 36,
+  "fields": {
+    "restaurant_text": "Ayothaya Thai Restaurant",
+    "category": 27,
+    "state": 5,
+    "city": "Puyallup",
+    "location": "Puyallup, WA 98375-9306",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58693-d8047813-Reviews-Ayothaya_Thai_Restaurant-Puyallup_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/36.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 37,
+  "fields": {
+    "restaurant_text": "Mulvaney's Building & Loan",
+    "category": 11,
+    "state": 1,
+    "city": "Sacramento",
+    "location": "Sacramento, CA 95811-4154",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32999-d602011-Reviews-Mulvaney_s_Building_Loan-Sacramento_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/37.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 38,
+  "fields": {
+    "restaurant_text": "Rutabegorz",
+    "category": 11,
+    "state": 1,
+    "city": "Tustin",
+    "location": "Tustin, CA 92780",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g33198-d680119-Reviews-Rutabegorz-Tustin_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/38.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 39,
+  "fields": {
+    "restaurant_text": "Brother's Office Pizzeria",
+    "category": 28,
+    "state": 5,
+    "city": "Spokane Valley",
+    "location": "Spokane Valley, WA 99216-0138",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g1784998-d7684552-Reviews-Brother_s_Office_Pizzeria-Spokane_Valley_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/39.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 40,
+  "fields": {
+    "restaurant_text": "Ajanta Distinctive Indian Cuisine",
+    "category": 29,
+    "state": 1,
+    "city": "Berkeley",
+    "location": "Berkeley, CA 94707-2309",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32066-d371490-Reviews-Ajanta_Distinctive_Indian_Cuisine-Berkeley_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/40.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 41,
+  "fields": {
+    "restaurant_text": "Off Vine",
+    "category": 30,
+    "state": 1,
+    "city": "Los Angeles",
+    "location": "Los Angeles, CA 90028-8207",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32655-d364726-Reviews-Off_Vine-Los_Angeles_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/41.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 42,
+  "fields": {
+    "restaurant_text": "Seasons 52",
+    "category": 4,
+    "state": 2,
+    "city": "Cherry Hill",
+    "location": "Cherry Hill, NJ 08002-2100",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46354-d1391520-Reviews-Seasons_52-Cherry_Hill_New_Jersey.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/42.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 43,
+  "fields": {
+    "restaurant_text": "Pane e Vino",
+    "category": 5,
+    "state": 4,
+    "city": "Katy",
+    "location": "Katy, TX 77494",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56062-d7715917-Reviews-Pane_e_Vino-Katy_Texas.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/43.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 44,
+  "fields": {
+    "restaurant_text": "Capers + Olives",
+    "category": 31,
+    "state": 5,
+    "city": "Everett",
+    "location": "Everett, WA 98201-4010",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58466-d14932914-Reviews-Capers_Olives-Everett_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/44.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 45,
+  "fields": {
+    "restaurant_text": "Elements Restaurant",
+    "category": 32,
+    "state": 5,
+    "city": "Vancouver",
+    "location": "Vancouver, WA 98660",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60820-d5532340-Reviews-Elements_Restaurant-Vancouver_Washington.html",
+    "menu_link": "http://www.elementsvancouver.com",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/45.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 46,
+  "fields": {
+    "restaurant_text": "Yono's Restaurant",
+    "category": 33,
+    "state": 3,
+    "city": "Albany",
+    "location": "Albany, NY 12210-2733",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29786-d420139-Reviews-Yono_s_Restaurant-Albany_New_York.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/46.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 47,
+  "fields": {
+    "restaurant_text": "Bill's Pizza",
+    "category": 5,
+    "state": 1,
+    "city": "Palm Springs",
+    "location": "Palm Springs, Greater Palm Springs, CA 92262-6603",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32847-d1978555-Reviews-Bill_s_Pizza-Palm_Springs_Greater_Palm_Springs_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Cheap",
+    "image": "https://thanidacwn.github.io/veggie-data/images/47.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 48,
+  "fields": {
+    "restaurant_text": "LuNello's Resturant",
+    "category": 18,
+    "state": 2,
+    "city": "Cedar Grove",
+    "location": "Cedar Grove, NJ 07009-1149",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46348-d6833248-Reviews-LuNello_s_Resturant-Cedar_Grove_New_Jersey.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/48.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 49,
+  "fields": {
+    "restaurant_text": "Foxy's Restaurant CA",
+    "category": 34,
+    "state": 1,
+    "city": "Glendale",
+    "location": "Glendale, CA 91204-1306",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32431-d371841-Reviews-Foxy_s_Restaurant-Glendale_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/49.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 50,
+  "fields": {
+    "restaurant_text": "La Playita",
+    "category": 35,
+    "state": 1,
+    "city": "Hermosa Beach",
+    "location": "Hermosa Beach, CA 90254-3508",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32490-d2343392-Reviews-La_Playita-Hermosa_Beach_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Cheap",
+    "image": "https://thanidacwn.github.io/veggie-data/images/50.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 51,
+  "fields": {
+    "restaurant_text": "Din Tai Fung",
+    "category": 36,
+    "state": 1,
+    "city": "Costa Mesa",
+    "location": "Costa Mesa, CA 92626-1873",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32253-d7002210-Reviews-Din_Tai_Fung-Costa_Mesa_California.html",
+    "menu_link": "https://dintaifungusa.com/menu/appetizers/",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/51.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 52,
+  "fields": {
+    "restaurant_text": "Murray's Cheese",
+    "category": 37,
+    "state": 3,
+    "city": "New York City",
+    "location": "New York City, NY 10014-4101",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d4101382-Reviews-Murray_s_Cheese-New_York_City_New_York.html",
+    "menu_link": "http://Www.murrayscheese.com/catering-menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/52.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 53,
+  "fields": {
+    "restaurant_text": "INC Restaurant",
+    "category": 8,
+    "state": 2,
+    "city": "New Brunswick",
+    "location": "New Brunswick, NJ 08901-2039",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46664-d7616386-Reviews-INC_Restaurant-New_Brunswick_New_Jersey.html",
+    "menu_link": "http://increstaurant.com/menus/",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/53.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 54,
+  "fields": {
+    "restaurant_text": "Ciao Wood-Fired Pizza & Pasta",
+    "category": 38,
+    "state": 3,
+    "city": "Ithaca",
+    "location": "Ithaca, NY 14850-1015",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g47958-d1958749-Reviews-Ciao_Wood_Fired_Pizza_Pasta-Ithaca_Finger_Lakes_New_York.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/54.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 55,
+  "fields": {
+    "restaurant_text": "Utopia",
+    "category": 39,
+    "state": 1,
+    "city": "Long Beach",
+    "location": "Long Beach, CA 90802-4905",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32648-d504403-Reviews-Utopia-Long_Beach_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/55.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 56,
+  "fields": {
+    "restaurant_text": "Jon & Patty's Coffee Bar & Bistro",
+    "category": 26,
+    "state": 2,
+    "city": "Ocean City",
+    "location": "Ocean City, NJ 08226-3859",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46696-d864694-Reviews-Jon_Patty_s_Coffee_Bar_Bistro-Ocean_City_Cape_May_County_New_Jersey.html",
+    "menu_link": "https://jonandpattys.com/menu/",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/56.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 57,
+  "fields": {
+    "restaurant_text": "La Cucina Di Mamma",
+    "category": 18,
+    "state": 3,
+    "city": "Niagara Falls",
+    "location": "Niagara Falls, NY 14303-1313",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48261-d1988467-Reviews-La_Cucina_Di_Mamma-Niagara_Falls_New_York.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/57.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 58,
+  "fields": {
+    "restaurant_text": "Bob's Burgers & Brew",
+    "category": 11,
+    "state": 5,
+    "city": "Yakima",
+    "location": "Yakima, WA 98901-4514",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58838-d1916766-Reviews-Bob_s_Burgers_Brew-Yakima_Washington.html",
+    "menu_link": "https://www.bobsburgersandbrew.com/content/menu/menu.asp",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/58.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 59,
+  "fields": {
+    "restaurant_text": "Marianna Ristorante",
+    "category": 5,
+    "state": 5,
+    "city": "Renton",
+    "location": "Renton, WA 98057-2714",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58704-d4291372-Reviews-Marianna_Ristorante-Renton_Washington.html",
+    "menu_link": "https://www.mariannaristorante.com/menus/",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/59.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 60,
+  "fields": {
+    "restaurant_text": "What The Pho",
+    "category": 40,
+    "state": 5,
+    "city": "Bothell",
+    "location": "Bothell, WA 98021-8400",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58362-d5058489-Reviews-What_The_Pho-Bothell_Washington.html",
+    "menu_link": "http://whatthepho.net/menu/",
+    "price_rate": "Cheap",
+    "image": "https://thanidacwn.github.io/veggie-data/images/60.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 61,
+  "fields": {
+    "restaurant_text": "Antonia's Restaurant",
+    "category": 18,
+    "state": 4,
+    "city": "Katy",
+    "location": "Katy, TX 77494-4880",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56062-d1640094-Reviews-Antonia_s_Restaurant-Katy_Texas.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/61.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 62,
+  "fields": {
+    "restaurant_text": "True Food Kitchen",
+    "category": 30,
+    "state": 1,
+    "city": "Santa Monica",
+    "location": "Santa Monica, CA 90401-3471",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g33052-d2372190-Reviews-True_Food_Kitchen-Santa_Monica_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/62.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 63,
+  "fields": {
+    "restaurant_text": "Fadi's Mediterranean Grill",
+    "category": 41,
+    "state": 4,
+    "city": "Houston",
+    "location": "Houston, TX 77096-1637",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56003-d442413-Reviews-Fadi_s_Mediterranean_Grill-Houston_Texas.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/63.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 64,
+  "fields": {
+    "restaurant_text": "Italian Cafe",
+    "category": 31,
+    "state": 4,
+    "city": "Spring",
+    "location": "Spring, TX 77379-3400",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56701-d2058320-Reviews-Italian_Cafe-Spring_Texas.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/64.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 65,
+  "fields": {
+    "restaurant_text": "Cafe Veloce",
+    "category": 5,
+    "state": 5,
+    "city": "Kirkland",
+    "location": "Kirkland, WA 98034-7501",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d433214-Reviews-Cafe_Veloce-Kirkland_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/65.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 66,
+  "fields": {
+    "restaurant_text": "Frank Fat's Restaurant",
+    "category": 14,
+    "state": 1,
+    "city": "Sacramento",
+    "location": "Sacramento, CA 95814-3693",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32999-d339794-Reviews-Frank_Fat_s_Restaurant-Sacramento_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/66.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 67,
+  "fields": {
+    "restaurant_text": "Roma D Italia",
+    "category": 5,
+    "state": 1,
+    "city": "Tustin",
+    "location": "Tustin, CA 92780-4309",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g33198-d467960-Reviews-Roma_D_Italia-Tustin_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/67.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 68,
+  "fields": {
+    "restaurant_text": "Rancho Viejo",
+    "category": 42,
+    "state": 5,
+    "city": "Spokane Valley",
+    "location": "Spokane Valley, WA 99216-2108",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g1784998-d1778690-Reviews-Rancho_Viejo-Spokane_Valley_Washington.html",
+    "menu_link": "http://ranchoviejomexican.com/full-menu/3200123",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/68.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 69,
+  "fields": {
+    "restaurant_text": "Stella Barra Pizzeria",
+    "category": 5,
+    "state": 1,
+    "city": "Santa Monica",
+    "location": "Santa Monica, CA 90405-1010",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g33052-d2572023-Reviews-Stella_Barra_Pizzeria-Santa_Monica_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/69.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 70,
+  "fields": {
+    "restaurant_text": "30 Lake",
+    "category": 23,
+    "state": 3,
+    "city": "Saratoga Springs",
+    "location": "Saratoga Springs, NY 12866",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48562-d10475548-Reviews-30_Lake-Saratoga_Springs_New_York.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/70.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 71,
+  "fields": {
+    "restaurant_text": "Milt's Coffee Shop",
+    "category": 3,
+    "state": 1,
+    "city": "Bakersfield",
+    "location": "Bakersfield, CA 93308-2905",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32037-d808238-Reviews-Milt_s_Coffee_Shop-Bakersfield_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/71.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 72,
+  "fields": {
+    "restaurant_text": "Pj's Pancake House",
+    "category": 43,
+    "state": 2,
+    "city": "Princeton",
+    "location": "Princeton, NJ 08542-7006",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46756-d513540-Reviews-Pj_s_Pancake_House-Princeton_New_Jersey.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/72.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 73,
+  "fields": {
+    "restaurant_text": "Old European Restaurant",
+    "category": 44,
+    "state": 5,
+    "city": "Spokane",
+    "location": "Spokane, WA 99208-5614",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58759-d413599-Reviews-Old_European_Restaurant-Spokane_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/73.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 74,
+  "fields": {
+    "restaurant_text": "PITHARI TAVERNA",
+    "category": 45,
+    "state": 2,
+    "city": "Highland Park",
+    "location": "Highland Park, NJ 08904-3234",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46508-d1051392-Reviews-PITHARI_TAVERNA-Highland_Park_New_Jersey.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/74.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 75,
+  "fields": {
+    "restaurant_text": "Lombardi's Italian Restaurant & Wine Bar",
+    "category": 6,
+    "state": 5,
+    "city": "Everett",
+    "location": "Everett, WA 98201-2099",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58466-d464264-Reviews-Lombardi_s_Italian_Restaurant_Wine_Bar-Everett_Washington.html",
+    "menu_link": "https://www.lombardisitalian.com/everett-menu/",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/75.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 76,
+  "fields": {
+    "restaurant_text": "Denino's Pizzeria & Tavern",
+    "category": 5,
+    "state": 3,
+    "city": "Staten Island",
+    "location": "Staten Island, NY 10302-1721",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48682-d444317-Reviews-Denino_s_Pizzeria_Tavern-Staten_Island_New_York.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/76.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 77,
+  "fields": {
+    "restaurant_text": "Le Grand Bistro Americain",
+    "category": 46,
+    "state": 5,
+    "city": "Kirkland",
+    "location": "Kirkland, WA 98033-7446",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58541-d2292707-Reviews-Le_Grand_Bistro_Americain-Kirkland_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/77.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 78,
+  "fields": {
+    "restaurant_text": "Daniel",
+    "category": 47,
+    "state": 3,
+    "city": "New York City",
+    "location": "New York City, NY 10065-7056",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60763-d457808-Reviews-Daniel-New_York_City_New_York.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/78.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 79,
+  "fields": {
+    "restaurant_text": "Poppa Rollo's Pizza",
+    "category": 5,
+    "state": 4,
+    "city": "Waco",
+    "location": "Waco, TX 76710-4848",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56833-d1955079-Reviews-Poppa_Rollo_s_Pizza-Waco_Texas.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/79.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 80,
+  "fields": {
+    "restaurant_text": "Lobster Shop",
+    "category": 23,
+    "state": 5,
+    "city": "Tacoma",
+    "location": "Tacoma, WA 98402-5315",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58775-d495879-Reviews-Lobster_Shop-Tacoma_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/80.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 81,
+  "fields": {
+    "restaurant_text": "Ola Mexican Kitchen",
+    "category": 16,
+    "state": 1,
+    "city": "Huntington Beach",
+    "location": "Huntington Beach, CA 92648-5383",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32513-d9782237-Reviews-Ola_Mexican_Kitchen-Huntington_Beach_California.html",
+    "menu_link": "https://olamexicankitchen.com/menu/",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/81.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 82,
+  "fields": {
+    "restaurant_text": "Novellis Italian Restaurant",
+    "category": 18,
+    "state": 2,
+    "city": "Wayne",
+    "location": "Wayne, NJ 07470-6226",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46905-d2624819-Reviews-Novellis_Italian_Restaurant-Wayne_New_Jersey.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/82.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 83,
+  "fields": {
+    "restaurant_text": "Andale Mexican Restaurant & Cantina",
+    "category": 35,
+    "state": 4,
+    "city": "El Paso",
+    "location": "El Paso, TX 79925-7039",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60768-d2651692-Reviews-Andale_Mexican_Restaurant_Cantina-El_Paso_Texas.html",
+    "menu_link": "http://www.andalemexicanrestaurant.com/#menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/83.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 84,
+  "fields": {
+    "restaurant_text": "Artisans",
+    "category": 46,
+    "state": 4,
+    "city": "Houston",
+    "location": "Houston, TX 77006-6644",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56003-d2550468-Reviews-Artisans-Houston_Texas.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/84.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 85,
+  "fields": {
+    "restaurant_text": "Gandolfo's New York Deli",
+    "category": 34,
+    "state": 5,
+    "city": "Bellingham",
+    "location": "Bellingham, WA 98226-8196",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58350-d2555861-Reviews-Gandolfo_s_New_York_Deli-Bellingham_Washington.html",
+    "menu_link": "https://gandolfosdeli.com/store-menus/",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/85.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 86,
+  "fields": {
+    "restaurant_text": "The Capital Grille",
+    "category": 25,
+    "state": 4,
+    "city": "Houston",
+    "location": "Houston, TX 77056-5402",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56003-d442191-Reviews-The_Capital_Grille-Houston_Texas.html",
+    "menu_link": "https://www.thecapitalgrille.com/menu-listing?cmpid=br:tcg_ag:ie_ch:dry_ca:TCGQ120LOCURL_dt:20190530_sn:tripadvisor_gt:houston-tx-8007_pl:menu_rd:1008",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/86.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 87,
+  "fields": {
+    "restaurant_text": "Brazos Bar & Bistro",
+    "category": 8,
+    "state": 4,
+    "city": "Waco",
+    "location": "Waco, TX 76706-1039",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g56833-d3247299-Reviews-Brazos_Bar_Bistro-Waco_Texas.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/87.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 88,
+  "fields": {
+    "restaurant_text": "Bahari Estiatorio",
+    "category": 45,
+    "state": 3,
+    "city": "Astoria",
+    "location": "Astoria, NY 11106-2585",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g29837-d599674-Reviews-Bahari_Estiatorio-Astoria_Queens_New_York.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/88.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 89,
+  "fields": {
+    "restaurant_text": "618",
+    "category": 11,
+    "state": 2,
+    "city": "Freehold",
+    "location": "Freehold, NJ 07728-2352",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46453-d11802438-Reviews-618-Freehold_New_Jersey.html",
+    "menu_link": "http://618nj.com/menus/",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/89.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 90,
+  "fields": {
+    "restaurant_text": "Wool Growers",
+    "category": 48,
+    "state": 1,
+    "city": "Bakersfield",
+    "location": "Bakersfield, CA 93305-5619",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32037-d1077872-Reviews-Wool_Growers-Bakersfield_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/90.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 91,
+  "fields": {
+    "restaurant_text": "Antonello Ristorante",
+    "category": 18,
+    "state": 1,
+    "city": "Santa Ana",
+    "location": "Santa Ana, CA 92704",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g33043-d341601-Reviews-Antonello_Ristorante-Santa_Ana_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/91.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 92,
+  "fields": {
+    "restaurant_text": "Cafe Beach Club",
+    "category": 26,
+    "state": 2,
+    "city": "Ocean City",
+    "location": "Ocean City, NJ 08226-3241",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46696-d475191-Reviews-Cafe_Beach_Club-Ocean_City_Cape_May_County_New_Jersey.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/92.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 93,
+  "fields": {
+    "restaurant_text": "Six Seven Restaurant",
+    "category": 1,
+    "state": 5,
+    "city": "Seattle",
+    "location": "Seattle, WA 98121-1313",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g60878-d433088-Reviews-Six_Seven_Restaurant-Seattle_Washington.html",
+    "menu_link": "https://www.edgewaterhotel.com/seattle-six-seven-restaurant.aspx",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/93.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 94,
+  "fields": {
+    "restaurant_text": "Ready's Coffee Shop & Restaurant",
+    "category": 26,
+    "state": 2,
+    "city": "Ocean City",
+    "location": "Ocean City, NJ 08226-3769",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46696-d448297-Reviews-Ready_s_Coffee_Shop_Restaurant-Ocean_City_Cape_May_County_New_Jersey.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Cheap",
+    "image": "https://thanidacwn.github.io/veggie-data/images/94.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 95,
+  "fields": {
+    "restaurant_text": "Triangle Diner",
+    "category": 3,
+    "state": 3,
+    "city": "Saratoga Springs",
+    "location": "Saratoga Springs, NY 12866-5527",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48562-d413799-Reviews-Triangle_Diner-Saratoga_Springs_New_York.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Cheap",
+    "image": "https://thanidacwn.github.io/veggie-data/images/95.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 96,
+  "fields": {
+    "restaurant_text": "15 Church Restaurant",
+    "category": 11,
+    "state": 3,
+    "city": "Saratoga Springs",
+    "location": "Saratoga Springs, NY 12866-2108",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g48562-d6541699-Reviews-15_Church_Restaurant-Saratoga_Springs_New_York.html",
+    "menu_link": "https://www.15churchrestaurant.com/saratoga-springs/dinner-menu/",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/96.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 97,
+  "fields": {
+    "restaurant_text": "President Thai Restaurant",
+    "category": 24,
+    "state": 1,
+    "city": "Pasadena",
+    "location": "Pasadena, CA 91107-4940",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g32859-d343380-Reviews-President_Thai_Restaurant-Pasadena_California.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/97.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 98,
+  "fields": {
+    "restaurant_text": "NAAN-N-CURRY",
+    "category": 49,
+    "state": 5,
+    "city": "Renton",
+    "location": "Renton, WA 98057-2543",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g58704-d512405-Reviews-NAAN_N_CURRY-Renton_Washington.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/98.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 99,
+  "fields": {
+    "restaurant_text": "Mediterra Restaurant",
+    "category": 50,
+    "state": 2,
+    "city": "Princeton",
+    "location": "Princeton, NJ 08542-3741",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g46756-d513535-Reviews-Mediterra_Restaurant-Princeton_New_Jersey.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Moderate",
+    "image": "https://thanidacwn.github.io/veggie-data/images/99.jpeg"
+  }
+},
+{
+  "model": "veggie.restaurant",
+  "pk": 100,
+  "fields": {
+    "restaurant_text": "Reata Restaurant",
+    "category": 32,
+    "state": 4,
+    "city": "Fort Worth",
+    "location": "Fort Worth, TX 76102-7404",
+    "restaurant_link": "https://www.tripadvisor.com//Restaurant_Review-g55857-d464826-Reviews-Reata_Restaurant-Fort_Worth_Texas.html",
+    "menu_link": "Check The Website for a Menu",
+    "price_rate": "Expensive",
+    "image": "https://thanidacwn.github.io/veggie-data/images/100.jpeg"
+  }
+},
+{
+  "model": "veggie.review",
+  "pk": 5,
+  "fields": {
+    "restaurant": 1,
+    "review_user": 7,
+    "review_title": "Good service and yummy!",
+    "review_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",
+    "review_rate": 4,
+    "review_date": "2023-11-01T15:48:59Z"
+  }
+},
+{
+  "model": "veggie.review",
+  "pk": 6,
+  "fields": {
+    "restaurant": 2,
+    "review_user": 7,
+    "review_title": "Very good choice for lunch",
+    "review_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",
+    "review_rate": 4,
+    "review_date": "2023-11-01T15:50:24Z"
+  }
+},
+{
+  "model": "veggie.review",
+  "pk": 7,
+  "fields": {
+    "restaurant": 36,
+    "review_user": 7,
+    "review_title": "Very delicious Thai food ever!!",
+    "review_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",
+    "review_rate": 5,
+    "review_date": "2023-11-01T15:50:55Z"
+  }
+},
+{
+  "model": "veggie.bookmark",
+  "pk": 2,
+  "fields": {
+    "bookmark_user": 1,
+    "restaurant": 1,
+    "bookmark_date": "2023-11-10T02:29:49.390Z"
+  }
+},
+{
+  "model": "veggie.bookmark",
+  "pk": 3,
+  "fields": {
+    "bookmark_user": 1,
+    "restaurant": 2,
+    "bookmark_date": "2023-11-10T02:31:47.002Z"
+  }
+},
+{
+  "model": "veggie.bookmark",
+  "pk": 4,
+  "fields": {
+    "bookmark_user": 1,
+    "restaurant": 36,
+    "bookmark_date": "2023-11-10T02:32:52.211Z"
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 1,
+  "fields": {
+    "user": 6,
+    "email": "preawpan.t@ku.th",
+    "verified": true,
+    "primary": true
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 2,
+  "fields": {
+    "user": 7,
+    "email": "thanida.chai@ku.th",
+    "verified": true,
+    "primary": true
+  }
+},
+{
+  "model": "socialaccount.socialapp",
+  "pk": 1,
+  "fields": {
+    "provider": "github",
+    "provider_id": "",
+    "name": "github",
+    "client_id": "746b670581fc568122fb",
+    "secret": "43f92db6be75782f22b4248a66d09d20b2c99a90",
+    "key": "",
+    "settings": {},
+    "sites": [
+      2
+    ]
+  }
+},
+{
+  "model": "socialaccount.socialapp",
+  "pk": 2,
+  "fields": {
+    "provider": "google",
+    "provider_id": "",
+    "name": "google",
+    "client_id": "615564316883-i3us8moppbo3usiu57o166rlm1re7ti2.apps.googleusercontent.com",
+    "secret": "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",
+    "key": "",
+    "settings": {},
+    "sites": [
+      2
+    ]
+  }
+},
+{
+  "model": "socialaccount.socialapp",
+  "pk": 3,
+  "fields": {
+    "provider": "line",
+    "provider_id": "",
+    "name": "line",
+    "client_id": "2001290458",
+    "secret": "46aebce1823b002d6066d5ad0097ed81",
+    "key": "",
+    "settings": {},
+    "sites": [
+      2
+    ]
+  }
+},
+{
+  "model": "socialaccount.socialaccount",
+  "pk": 1,
+  "fields": {
+    "user": 6,
+    "provider": "google",
+    "uid": "102104040772931581028",
+    "last_login": "2023-10-24T02:46:18.178Z",
+    "date_joined": "2023-10-24T02:46:18.178Z",
+    "extra_data": "{\"iss\": \"https://accounts.google.com\", \"azp\": \"615564316883-i3us8moppbo3usiu57o166rlm1re7ti2.apps.googleusercontent.com\", \"aud\": \"615564316883-i3us8moppbo3usiu57o166rlm1re7ti2.apps.googleusercontent.com\", \"sub\": \"102104040772931581028\", \"hd\": \"ku.th\", \"email\": \"preawpan.t@ku.th\", \"email_verified\": true, \"at_hash\": \"f9fdGFP3OeuNrQWE5-LmTA\", \"name\": \"Preawpan THAMAPIPOL\", \"picture\": \"https://lh3.googleusercontent.com/a/ACg8ocIgv9Jbog4CHVrQK9Boq4ju4W745GuWKAA3XUcb_VadXOs=s96-c\", \"given_name\": \"Preawpan\", \"family_name\": \"THAMAPIPOL\", \"locale\": \"en\", \"iat\": 1698115578, \"exp\": 1698119178}"
+  }
+},
+{
+  "model": "socialaccount.socialaccount",
+  "pk": 2,
+  "fields": {
+    "user": 7,
+    "provider": "google",
+    "uid": "100738132176527297656",
+    "last_login": "2023-11-01T15:52:24.016Z",
+    "date_joined": "2023-10-24T03:36:53.052Z",
+    "extra_data": "{\"iss\": \"https://accounts.google.com\", \"azp\": \"615564316883-i3us8moppbo3usiu57o166rlm1re7ti2.apps.googleusercontent.com\", \"aud\": \"615564316883-i3us8moppbo3usiu57o166rlm1re7ti2.apps.googleusercontent.com\", \"sub\": \"100738132176527297656\", \"hd\": \"ku.th\", \"email\": \"thanida.chai@ku.th\", \"email_verified\": true, \"at_hash\": \"ZjY-kIcyisHwlnBOypKAIg\", \"name\": \"Thanida CHAIWONGNON\", \"picture\": \"https://lh3.googleusercontent.com/a/ACg8ocI9C5qOhWEpADoG5DnDgaXUuLY8ye10tJrRiCqQ9ltNEw=s96-c\", \"given_name\": \"Thanida\", \"family_name\": \"CHAIWONGNON\", \"locale\": \"en\", \"iat\": 1698853944, \"exp\": 1698857544}"
+  }
+}
+]
