@@ -198,6 +198,20 @@ class ReviewTestCase(TestCase):
         self.assertContains(response, review.review_description)
         self.assertContains(response, review.review_rate)
 
-    def test_cannot_show_my_reviews_if_not_logged_in(self):
-        """If user is not logged in, they can not see my_reviews page."""
-        pass
+    def test_review_more_than_one(self):
+        """If user already reviewed more than one, it is added to my_reviews page."""
+        user = create_user(self)
+        self.client.force_login(user)
+        restaurant = create_restaurant("")
+        review = create_review(restaurant, user, "Test Review", "This is a test review.", 4)
+        review2 = create_review(restaurant, user, "Test Review 2", "This is a test review 2.", 3)
+        url = reverse('veggie:my_reviews', args=(restaurant.id,))
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
+        # check that the review is in the response
+        self.assertContains(response, review.review_title)
+        self.assertContains(response, review.review_description)
+        self.assertContains(response, review.review_rate)
+        self.assertContains(response, review2.review_title)
+        self.assertContains(response, review2.review_description)
+        self.assertContains(response, review2.review_rate)
