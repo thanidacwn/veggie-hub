@@ -1,13 +1,12 @@
 {% load socialaccount %}
 {% load static %}
+{% load static tailwind_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block head_title %} {% endblock head_title%}</title>
-    <link rel="stylesheet" href="{% static 'veggie/login.css' %}">
-
     {% block extra_head %}
     {% endblock extra_head %}
 </head>

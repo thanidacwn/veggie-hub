@@ -3,10 +3,11 @@
 
 {% block content %}
 
+<body class="bg-yellow-50">
     <div style="font-family: Inter; hi">
-        <div class="flex flex-col h-[150px] w-[100%] border-b-[2px] border-gray-300 items-center justify-center">
-            <form method="get" action="{% url 'veggie:filtered_category_state' %}" class="flex items-center">
-                <label for="category" class="px-4 text-xl">Category:</label>
+        <div class="flex flex-col h-[130px] w-[100%] items-center justify-center">
+            <form method="get" action="{% url 'veggie:filtered_category_state' %}" class="flex items-center ">
+                <label for="category" class="px-4 text-xl ">Category:</label>
                 <select name="category" id="category" class="rounded-md">
                     {% for category in all_categories %}
                         <option value="{{ category }}" {% if category == selected_category %}selected{% endif %}>{{ category }}</option>
@@ -18,23 +19,25 @@
                         <option value="{{ state }}" {% if state == selected_state %}selected{% endif %}>{{ state }}</option>
                     {% endfor %}
                 </select>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-4 py-2 px-4 rounded-md">
+                <button class="bg-green-500 hover:bg-yellow-400 text-white hover:text-gray-700 font-bold mx-4 py-2 px-4 rounded-md">
                     Filter
                 </button>
             </form>
             {% if messages %}
+            <div class="text-center mt-5 mx-6">
                 {% for message in messages %}
-                    <p class="text-red-600 text-center mt-5"><strong>{{ message }}</strong></p>
+                    <span class="text-red-600"><strong>{{ message }}</strong></span>
                 {% endfor %}
+            </div>
             {% else %}
                 {% if selected_category == None and selected_state == None %}
                     <p></p>
                 {% elif selected_category != 'All' and selected_state != 'All' %}
-                    <p class="text-xl mt-5">Category: {{selected_category}} State: {{selected_state}}</p>
+                    <p class="text-xl mt-5 text-yellow-600">Category: {{selected_category}} State: {{selected_state}}</p>
                 {% elif selected_category != 'All' and selected_state == 'All' %}
-                    <p class="text-xl mt-5">Category: {{selected_category}}</p>
+                    <p class="text-xl mt-5 text-yellow-600">Category: {{selected_category}}</p>
                 {% elif selected_category == 'All' and selected_state != 'All' %}
-                    <p class="text-xl mt-5">State: {{selected_state}}</p>
+                    <p class="text-xl mt-5 text-yellow-600">State: {{selected_state}}</p>
                 {% endif %}
             {% endif %}
         </div>
@@ -51,17 +54,17 @@
                 return stars;
             }
         </script>
-        <div class="grid grid-cols-4 gap-5 text-center pt-10 pb-10 pl-5 pr-5">
+        <div class="grid grid-cols-4 gap-5 text-center pt-5 pb-10 pl-5 pr-5">
             {% for restaurant in all_restaurants %}
-                <span class="inline-block mx-5 my-5 aspect-[1/1] rounded-xl shadow-lg">
+                <span class="inline-block mx-5 my-5 aspect-[1/1] rounded-xl shadow-lg bg-white">
                     <a href="{% url 'veggie:detail' restaurant.pk %}">
                         <img src="{{ restaurant.image }}" alt="{{ restaurant.restaurant_text }}" class="rounded-t-xl w-[100%] h-[65%]">
                         <div class="pt-[3vh] pb-[2vh]">
-                            <p class="text-xl font-semibold mb-3">{{ restaurant.restaurant_text }}</p>
+                            <p class="text-xl font-semibold mb-3 text-yellow-700">{{ restaurant.restaurant_text }}</p>
                             <div class="flex justify-center gap-5">
                                 <div id="{{restaurant.pk}}">
                                 </div>
-                                <p class="text-lg">({{restaurant.get_reviews_amount}} review{{ restaurant.get_reviews_amount|pluralize }})</p>
+                                <p class="text-lg text-yellow-700">({{restaurant.get_reviews_amount}} review{{ restaurant.get_reviews_amount|pluralize }})</p>
                             </div>
                         </div>
                     </a>
@@ -77,5 +80,6 @@
             {% endfor %}
         </div>
     </div>
+</body>
 
 {% endblock %}
