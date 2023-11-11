@@ -5,7 +5,7 @@ from django.utils import timezone
 
 class Category(models.Model):
     """Category model"""
-    category_text = models.CharField(verbose_name="category_text", max_length=255)
+    category_text = models.CharField(verbose_name="category_text", max_length=255, null=True, blank=True)
 
     def get_restaurants(self):
         """Return all restaurants in this category."""
