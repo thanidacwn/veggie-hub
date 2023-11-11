@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<body class="" style="font-family: Inter; hi">
+<body class="bg-yellow-50" style="font-family: Inter; hi" >
     <link rel="stylesheet" href="output-style.css">
     <script>
         function createStarRating(restaurant) {
@@ -18,15 +18,15 @@
         }
     </script>
     
-    <h1 class="text-5xl font-bold p-10 text-center">My Reviews</h1>
+    <h1 class="text-5xl font-bold p-10 text-center text-yellow-700">My Reviews</h1>
     {% if reviews_list %}
     <section class="parent-section ">
         {% for review in reviews_list %}
         <div class="card flex flex-col lg:flex-row mx-10 md:mx-20 lg:mx-52 rounded-lg bg-yellow-100">
-            <img src="{{review.restaurant.image}}" alt="thumbnail" height="250" width="300" class="thumbnail mx-10 my-10"></img>
+            <img src="{{review.restaurant.image}}" alt="thumbnail" height="250" width="300" class="thumbnail mx-10 my-10 rounded-lg"></img>
 
             <div class="card-details mt-6">
-                <div class="top flex flex-row justify-between ml-2 mt-2 mb-4 font-semibold text-gray-800">
+                <div class="top flex flex-row justify-between ml-2 mt-2 mb-4 font-semibold text-yellow-700">
                     <div class="restaurant text-3xl"><a href="{% url 'veggie:detail' review.restaurant.id %}">{{review.restaurant.restaurant_text}}</a></div>
                     <div class="delete mt-1 mx-4">
                         <a href="{% url 'veggie:delete' review.restaurant.pk %}">
@@ -35,12 +35,12 @@
                     </div>
                 </div>
                 <div class="middle">
-                    <h2 class="title text-xl font-bold mx-2 mt-2 text-gray-700">{{ review.review_title }}</h2>
+                    <h2 class="title text-xl font-bold mx-2 mt-2">{{ review.review_title }}</h2>
                     <p class="excerpt mt-2 mx-2">{{ review.review_description }}</p>
                 </div>
-                <div class="top flex flex-row justify-between ml-2 mt-2 mb-4 font-semibold text-gray-600">
+                <div class="top flex flex-row justify-between ml-2 mt-2 mb-4 text-gray-800">
                     <div class="star text-3xl mt-2" id="{{review.pk}}"></div>
-                    <div class="date mt-4 mx-4">{{ review.review_date }}</div>
+                    <div class="date mt-4 mx-4 text-sm">{{ review.review_date }}</div>
                     <script>
                         function renderStar() {
                             let outputResult = document.getElementById('{{review.pk}}');
