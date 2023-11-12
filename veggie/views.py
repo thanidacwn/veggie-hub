@@ -129,7 +129,7 @@ class GetRestaurantByCategoryAndState(generic.ListView):
 
 
 def get_data(request):
-    """Get data from csv file and save to database."""
+    """Get data from github and save to database."""
     ssl._create_default_https_context = ssl._create_unverified_context
     df = pd.read_csv('https://raw.githubusercontent.com/thanidacwn/veggie-data/master/last_data.csv')
     for index, row in df.iterrows():
