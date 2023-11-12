@@ -30,23 +30,26 @@
                 </a>
                 {% if not bookmarks %}
                     <a href="{% url 'veggie:add_bookmark' restaurant.pk %}">
-                        <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
+                        {% comment %} <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
                             Bookmark
-                        </button>
+                        </button> {% endcomment %}
+                        <img src="{% static 'veggie/images/unsaved.png' %}" class='absolute w-[50px] h-[40px] right-0 bottom-0'>
                     </a>
                 {% else %}
                     {% for bookmark in bookmarks %}
                         {% if bookmark.restaurant.restaurant_text != restaurant.restaurant_text %}
                             <a href="{% url 'veggie:add_bookmark' restaurant.pk %}">
-                                <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
+                                {% comment %} <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
                                     Bookmark
-                                </button>
+                                </button> {% endcomment %}
+                                <img src="{% static 'veggie/images/unsaved.png' %}" class='absolute w-[50px] h-[40px] right-0 bottom-0'>
                             </a>
                         {% else %}
                             <a href="{% url 'veggie:delete_bookmark' restaurant.pk %}">
-                                <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
+                                {% comment %} <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
                                     Remove
-                                </button>
+                                </button> {% endcomment %}
+                                <img src="{% static 'veggie/images/saved.png' %}" class='absolute w-[50px] h-[40px] right-0 bottom-0'>
                             </a>
                         {% endif %}
                     {% endfor %}
