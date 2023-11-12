@@ -43,6 +43,32 @@
                         Back to Home
                     </button>
                 </a>
+                {% if not bookmarks %}
+                    <a href="{% url 'veggie:add_bookmark' restaurant.pk %}">
+                        {% comment %} <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
+                            Bookmark
+                        </button> {% endcomment %}
+                        <img src="{% static 'veggie/images/unsaved.png' %}" class='absolute w-[50px] h-[40px] right-0 bottom-0'>
+                    </a>
+                {% else %}
+                    {% for bookmark in bookmarks %}
+                        {% if bookmark.restaurant.restaurant_text != restaurant.restaurant_text %}
+                            <a href="{% url 'veggie:add_bookmark' restaurant.pk %}">
+                                {% comment %} <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
+                                    Bookmark
+                                </button> {% endcomment %}
+                                <img src="{% static 'veggie/images/unsaved.png' %}" class='absolute w-[50px] h-[40px] right-0 bottom-0'>
+                            </a>
+                        {% else %}
+                            <a href="{% url 'veggie:delete_bookmark' restaurant.pk %}">
+                                {% comment %} <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
+                                    Remove
+                                </button> {% endcomment %}
+                                <img src="{% static 'veggie/images/saved.png' %}" class='absolute w-[50px] h-[40px] right-0 bottom-0'>
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
             </div>
             <script>
                 function createStarRating(restaurant) {
@@ -70,7 +96,6 @@
                         <div class="relative border border-gray-100 rounded-md ml-[2vw] mr-[2vw] mt-[3vh] pl-[2vw] pr-[2vw] bg-white">
                             <img src="{% static 'veggie/images/users.png' %}" alt="" class="absolute w-11 mt-[2.5vh] mb-[2.5vh]">
                             <p class="absolute right-0 mt-[3vh] mr-[2vw]" id="{{review.pk}}"></p>
-                            {% comment %} <p>Rating: {{ review.review_rate }}</p> {% endcomment %}
                             <script>
                                 function renderStar() {
                                     let outputResult = document.getElementById('{{review.pk}}');

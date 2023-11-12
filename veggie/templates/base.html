@@ -23,6 +23,7 @@
                     <a href="{% url "account_signup" %}">Sign-up</a>
                 {% else %}
                     <a href="{% url "veggie:my_reviews" user.id %}">My reviews</a>
+                    <a href="{% url "veggie:my_bookmarks" user.id %}">My Bookmarks</a>
                     <a href="#">{{user.username}}</a>
                     <a href="{% url "account_logout" %}">Logout</a>
                 {% endif %}
