@@ -1,6 +1,4 @@
-from typing import Any
-from django.db.models.query import QuerySet
-from django.http import HttpResponse, HttpResponseRedirect, HttpRequest, HttpResponseBadRequest
+from django.http import HttpResponse, HttpResponseRedirect, HttpRequest, HttpResponseBadRequest, Http404
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
@@ -158,7 +156,7 @@ class DetailView(generic.DetailView):
         """Redirect user to corresponding pages"""
         try:
             restaurant = get_object_or_404(Restaurant, pk=kwargs["pk"])
-        except (KeyError, Restaurant.DoesNotExist):
+        except (KeyError, Http404, Restaurant.DoesNotExist):
             messages.error(request, 'Requested restaurant does not exist')
             return HttpResponseRedirect(reverse('veggie:index'))
         try:
