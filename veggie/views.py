@@ -1,10 +1,10 @@
-from django.http import HttpResponse, HttpResponseRedirect, HttpRequest, HttpResponseBadRequest
+from django.http import HttpResponse, HttpResponseRedirect, HttpRequest, HttpResponseBadRequest, Http404
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.urls import reverse
 from django.views import generic
-from .models import Category, State, Restaurant, Review
+from .models import Category, State, Restaurant, Review, BookMark
 from .forms import ReviewForm
 import pandas as pd
 import ssl
@@ -127,7 +127,7 @@ class GetRestaurantByCategoryAndState(generic.ListView):
 
 
 def get_data(request):
-    """Get data from csv file and save to database."""
+    """Get data from github and save to database."""
     ssl._create_default_https_context = ssl._create_unverified_context
     df = pd.read_csv('https://raw.githubusercontent.com/thanidacwn/veggie-data/master/last_data.csv')
     for index, row in df.iterrows():
@@ -147,7 +147,6 @@ def get_data(request):
     return HttpResponse("Hello, world. You got the data!")
 
 
-
 class DetailView(generic.DetailView):
     """Detail view page of this application."""
     model = Restaurant
@@ -157,7 +156,7 @@ class DetailView(generic.DetailView):
         """Redirect user to corresponding pages"""
         try:
             restaurant = get_object_or_404(Restaurant, pk=kwargs["pk"])
-        except (KeyError, Restaurant.DoesNotExist):
+        except (KeyError, Http404, Restaurant.DoesNotExist):
             messages.error(request, 'Requested restaurant does not exist')
             return HttpResponseRedirect(reverse('veggie:index'))
         try:
@@ -165,7 +164,10 @@ class DetailView(generic.DetailView):
         except Review.DoesNotExist:
             reviews = []
         return render(request, 'veggie/detail.html', {
-            'restaurant': restaurant, 'reviews': reviews})
+            'restaurant': restaurant, 
+            'reviews': reviews,
+            'bookmarks': BookMark.objects.filter(restaurant=restaurant)
+        })
 
 
 class MyReviews(generic.ListView):
@@ -178,6 +180,7 @@ class MyReviews(generic.ListView):
         Return all votes.
         """
         return Review.objects.filter(review_user_id=self.request.user).order_by('-review_date')
+    
 
 @login_required
 def add_review(request, pk):
@@ -242,3 +245,40 @@ def delete_review(request: HttpRequest, pk):
     user_review.delete()
     messages.info(request, f"Your review at {restaurant.restaurant_text} has been deleted.")
     return redirect(redirect_url)
+
+
+class MyBookMarks(generic.ListView):
+    """Show all restaurants user bookmark"""
+    template_name = 'veggie/my_bookmarks.html'
+    context_object_name = 'all_bookmarks'
+
+    def get_queryset(self):
+        return BookMark.objects.filter(bookmark_user_id=self.request.user).order_by('-bookmark_date')
+
+
+@login_required
+def add_bookmark(request: HttpRequest, pk):
+    restaurant = get_object_or_404(Restaurant, pk=pk)
+    
+    this_user = request.user
+    try:
+        bookmark = BookMark.objects.create(bookmark_user=this_user, restaurant=restaurant)
+        bookmark.save()
+    except BookMark.DoesNotExist:
+        messages.error(request, 'This restaurant is not in My Bookmarks')
+        return HttpResponseRedirect(reverse('veggie:detail', args=(restaurant.pk, )))
+    return HttpResponseRedirect(reverse('veggie:detail', args=(restaurant.pk, )))
+
+
+
+@login_required
+def delete_bookmark(request: HttpRequest, pk):
+    restaurant = get_object_or_404(Restaurant, pk=pk)
+    
+    this_user = request.user
+    try:
+        bookmark = BookMark.objects.get(bookmark_user=this_user, restaurant=restaurant)
+        bookmark.delete()
+    except BookMark.DoesNotExist:
+        messages.error(request, 'This restaurant is not in My Bookmarks')
+    return HttpResponseRedirect(reverse('veggie:detail', args=(restaurant.pk, )))

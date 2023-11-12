@@ -5,7 +5,7 @@ from django.utils import timezone
 
 class Category(models.Model):
     """Category model"""
-    category_text = models.CharField(verbose_name="category_text", max_length=255)
+    category_text = models.CharField(verbose_name="category_text", max_length=255, null=True, blank=True)
 
     def get_restaurants(self):
         """Return all restaurants in this category."""
@@ -73,3 +73,13 @@ class Review(models.Model):
 
     def __str__(self):
         return f"{self.review_title} - {self.restaurant.restaurant_text} by {self.review_user.username}"
+
+
+class BookMark(models.Model):
+    """BookMark model"""
+    bookmark_user = models.ForeignKey(User, on_delete=models.CASCADE)
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
+    bookmark_date = models.DateTimeField(verbose_name="bookmark_date", default=timezone.now)
+
+    def __str__(self):
+        return f"{self.restaurant} saved by {self.bookmark_user}"
