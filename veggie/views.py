@@ -227,10 +227,6 @@ def delete_review(request: HttpRequest, pk):
     Returns:
         HttpResponse: The redirected HTTP response.
     """
-    try:
-        restaurant = Restaurant.objects.get(pk=pk)
-    except (Restaurant.DoesNotExist, ValueError):
-        return HttpResponseBadRequest(f"{pk} does not exist!")
 
     try:
         redirect_url = reverse('veggie:my_reviews', kwargs={'pk': pk})
@@ -238,12 +234,14 @@ def delete_review(request: HttpRequest, pk):
         redirect_url = request.META.get('HTTP_REFERER', reverse('veggie:index'))
         return HttpResponseBadRequest("Review does not exist.")
 
-    user_review = Review.objects.get(restaurant=restaurant, review_user=request.user)
+    # get the user's review for this restaurant
+    user_review = Review.objects.filter(review_user=request.user, pk=pk)
+    print(user_review)
     if not user_review:
         messages.error(request, "You did not review this restaurant yet!")
         return redirect(redirect_url)
     user_review.delete()
-    messages.info(request, f"Your review at {restaurant.restaurant_text} has been deleted.")
+    messages.info(request, "Your review has been deleted.")
     return redirect(redirect_url)
 
 
