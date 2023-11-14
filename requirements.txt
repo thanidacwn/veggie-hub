@@ -5,3 +5,5 @@ pandas
 django-tailwind
 django_browser_reload
 django-allauth
+django-heroku
+gunicorn
