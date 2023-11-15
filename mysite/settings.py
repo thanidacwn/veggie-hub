@@ -16,12 +16,8 @@ import os
 import django_heroku
 
 
-# Activate Django-Heroku.
-TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-django_heroku.settings(locals())
 
 
 # Quick-start development settings - unsuitable for production
