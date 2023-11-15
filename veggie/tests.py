@@ -58,12 +58,14 @@ class RestaurantModelTest(TestCase):
 
 class UserAuthenticationTest(TestCase):
     def setUp(self):
-        self.username = "testuser"
-        self.password = "testpassword"
-        self.user = User.objects.create_user(username=self.username, password=self.password)
+        self.credentials = {
+            'username': 'testuser',
+            'password': 'testpassword'
+        }
+        User.objects.create_user(**self.credentials)
 
     def test_user_login_redirect(self):
-        self.client.login(username=self.username, password=self.password)
+        self.client.login(**self.credentials)
         response = self.client.get(reverse("veggie:index"))
         self.assertEqual(response.status_code, 200)
 
