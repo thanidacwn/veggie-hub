@@ -205,4 +205,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # INTERNAL_IPS = ["127.0.0.1", "*"]
 CSRF_TRUSTED_ORIGINS = ["https://veggie-hub.herokuapp.com", "http://127.0.0.1"]
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
