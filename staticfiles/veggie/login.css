@@ -1,0 +1,92 @@
+/* login.css */
+body {
+    background: white url("images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Inter, hi;
+}
+
+
+/* Center container */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Overall styling for the login container */
+.login-container {
+    width: 400px; /* Adjust the width as needed */
+    padding: 30px; /* Adjust the padding as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the form elements */
+.form-container {
+    width: 100%;
+}
+
+form table tr {
+    margin-bottom: 10px;
+}
+
+form table td {
+    text-align: left;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Style for the Login button */
+form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #FFCC00;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #24a257;
+    color: white;
+}
+
+p {
+    text-align: left;
+    margin-top: 15px;
+}
+
+p a button[type="button"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+p a button[type="button"]:hover {
+    background-color: #2273ff;
+    color: white;
+}
+
