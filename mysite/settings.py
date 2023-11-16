@@ -78,7 +78,7 @@ ROOT_URLCONF = "mysite.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -94,7 +94,7 @@ TEMPLATES = [
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, "templates"),
     # Add to this list all the locations containing your static files
-    os.path.join(BASE_DIR, "WePay"),
+    os.path.join(BASE_DIR, "veggie"),
 )
 
 AUTHENTICATION_BACKENDS = [
@@ -202,6 +202,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+# INTERNAL_IPS = ["127.0.0.1", "*"]
 CSRF_TRUSTED_ORIGINS = ["https://veggie-hub.herokuapp.com", "http://127.0.0.1"]
 
 django_heroku.settings(locals())
