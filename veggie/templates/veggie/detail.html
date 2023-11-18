@@ -11,7 +11,7 @@
         {% endif %}
         <div class="grid grid-cols-2 gap-2 mt-10">
             <div class="relative inline-grid relative justify-center ml-[3vw] h-[80vh] w-[40vw]">
-                <div class="relative justify-center ml-10 h-[73vh] w-[40vw] bg-yellow-100 rounded-md">
+                <div class="relative justify-center ml-10 h-[73vh] w-[40vw] bg-yellow-100 rounded-md shadow-xl">
                     <div class="absolute flex right-0 mt-4 bg-gray-300 rounded-3xl w-[20vw] h-[5vh] text-lg justify-center items-center mr-[1vw] bg-white">
                         <p class="text-yellow-700 mx-4"><strong>Average rating:</strong></p>
                         <div id="{{restaurant.pk}}" class="mr-4"></div>
@@ -84,15 +84,15 @@
                 }
             </script>
             
-            <div class="relative mr-10 h-[82vh] w-[45vw] overflow-y-scroll bg-yellow-700 rounded-md">
+            <div class="relative mr-10 h-[82vh] w-[45vw] overflow-y-scroll bg-yellow-700 rounded-md shadow-xl">
                 <a href="{% url 'veggie:add_review' pk=restaurant.pk  %}">
                     <button class="absolute right-0 bg-yellow-400 hover:bg-gray-600 hover:text-white text-xl py-2 px-4 rounded-full w-[12vw] h-[5vh] mt-[2vh] mr-[1.5vw]">
                         Add review
                     </button>
                 </a>
                 <h1 class="text-2xl mt-[2.5vh] ml-[2vw] text-white">Reviews ({{ restaurant.get_reviews_amount }} reviews)</h1>
-                {% for review in reviews %}
-                    {% if review %}
+                {% if reviews %}
+                    {% for review in reviews %}
                         <div class="relative border border-gray-100 rounded-md ml-[2vw] mr-[2vw] mt-[3vh] pl-[2vw] pr-[2vw] bg-white">
                             <img src="{% static 'veggie/images/users.png' %}" alt="" class="absolute w-11 mt-[2.5vh] mb-[2.5vh]">
                             <p class="absolute right-0 mt-[3vh] mr-[2vw]" id="{{review.pk}}"></p>
@@ -109,21 +109,21 @@
                             <h3 class="font-bold mt-[2vh] mb-[2vh] text-xl">{{ review.review_title }}</h3>
                             <p class="mb-[2vh]">{{ review.review_description }}</p>
                         </div>
-                    {% else %}
-                        <h2>
-                            There are currently no review for this restaurant,
-                            <a href="{% url 'veggie:add_review' pk=restaurant.pk  %}">Be first!</a>
-                        </h2>
-                    {% endif %}
-                    <script>
-                        function renderStar() {
-                            let outputResult = document.getElementById('{{restaurant.pk}}');
-                            outputResult.innerHTML = createStarRating({{restaurant.get_average_rate}}).join('');
-                            console.log(createStarRating());
-                        }
-                        renderStar()
-                    </script>
-                {% endfor %}
+                    {% endfor %}
+                {% else %}
+                    <h2 class="flex text-xl justify-center mt-[40%] mb-[35%]">
+                        There are currently no review for this restaurant,
+                        <a href="{% url 'veggie:add_review' pk=restaurant.pk  %}" class="text-yellow-500 underline">Be first!</a>
+                    </h2>
+                {% endif %}
+                <script>
+                    function renderStar() {
+                        let outputResult = document.getElementById('{{restaurant.pk}}');
+                        outputResult.innerHTML = createStarRating({{restaurant.get_average_rate}}).join('');
+                        console.log(createStarRating());
+                    }
+                    renderStar()
+                </script>
             </div>
         </div>
     </body>
