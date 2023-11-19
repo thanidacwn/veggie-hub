@@ -1,9 +1,7 @@
 from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate, login, logout
 from .models import Category, State, Restaurant, Review
-from .forms import ReviewForm
 
 
 def create_restaurant(restaurant_text):
@@ -20,6 +18,7 @@ def create_restaurant(restaurant_text):
         menu_link="https://example.com/menu",
         price_rate="expensive"
     )
+
 
 def create_review(restaurant, review_user, review_title, review_description, review_rate):
     """Create a review with given text"""
@@ -264,7 +263,6 @@ class RestaurantDetailViewTest(TestCase):
         self.assertEqual(self.restaurants[1].get_reviews_amount, 0)
 
 
-
 class ReviewTestCase(TestCase):
     def setUp(self):
         self.client = Client()
@@ -273,7 +271,7 @@ class ReviewTestCase(TestCase):
         self.other_user, _ = User.objects.get_or_create(username='otheruser', password='testpassword')
         self.user.save()
         self.client.login(username='testuser', password='testpass')
-    
+
     def test_add_review_is_valid(self):
         """Test add review, form is valid and after submit, review is added. then redirect to restaurant detail page."""
         restaurant = create_restaurant("")  # Assuming create_restaurant is a valid function
@@ -312,7 +310,6 @@ class ReviewTestCase(TestCase):
         self.client.logout()
         restaurant = create_restaurant("")
         response = self.client.get(reverse('veggie:add_review', args=(restaurant.id,)))
-        url = reverse('veggie:add_review', args=(restaurant.id,))
 
         self.assertEqual(response.status_code, 302)
         # check that the user is redirected to the login page
@@ -333,7 +330,6 @@ class ReviewTestCase(TestCase):
         self.assertIn(reverse('account_login'), response.url)
         # review amount is not reduced
         self.assertEqual(restaurant.get_reviews_amount, 1)
-
 
     def test_can_delete_review_if_reviewed(self):
         """If user is logged in and they have reviewed, they can delete review."""
@@ -384,4 +380,3 @@ class ReviewTestCase(TestCase):
         self.assertContains(response, review2.review_title)
         self.assertContains(response, review2.review_description)
         self.assertContains(response, review2.review_rate)
-

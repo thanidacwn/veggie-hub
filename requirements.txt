@@ -7,3 +7,4 @@ django_browser_reload
 django-allauth
 django-heroku
 gunicorn
+flake8

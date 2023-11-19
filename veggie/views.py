@@ -16,7 +16,7 @@ def filtered_categories() -> list:
     """
     all_categories = ["All"]
     for category in Category.objects.all():
-        # print([category.strip() for category in category.category_text.split(', ')]) 
+        # print([category.strip() for category in category.category_text.split(', ')])
         for cat in [category.strip() for category in category.category_text.split(', ')]:
             if cat not in all_categories:
                 all_categories.append(cat)
@@ -164,7 +164,7 @@ class DetailView(generic.DetailView):
         except Review.DoesNotExist:
             reviews = []
         return render(request, 'veggie/detail.html', {
-            'restaurant': restaurant, 
+            'restaurant': restaurant,
             'reviews': reviews,
             'bookmarks': BookMark.objects.filter(restaurant=restaurant)
         })
@@ -180,7 +180,7 @@ class MyReviews(generic.ListView):
         Return all votes.
         """
         return Review.objects.filter(review_user_id=self.request.user).order_by('-review_date')
-    
+
 
 @login_required
 def add_review(request, pk):
@@ -188,7 +188,7 @@ def add_review(request, pk):
 
     if request.method == "POST":
         form = ReviewForm(request.POST)
-        
+
         if form.is_valid():
             # Create a new review instance, set its fields, and save it
             review = form.save(commit=False)
@@ -254,7 +254,7 @@ class MyBookMarks(generic.ListView):
 @login_required
 def add_bookmark(request: HttpRequest, pk):
     restaurant = get_object_or_404(Restaurant, pk=pk)
-    
+
     this_user = request.user
     try:
         bookmark = BookMark.objects.create(bookmark_user=this_user, restaurant=restaurant)
@@ -265,11 +265,10 @@ def add_bookmark(request: HttpRequest, pk):
     return HttpResponseRedirect(reverse('veggie:detail', args=(restaurant.pk, )))
 
 
-
 @login_required
 def delete_bookmark(request: HttpRequest, pk):
     restaurant = get_object_or_404(Restaurant, pk=pk)
-    
+
     this_user = request.user
     try:
         bookmark = BookMark.objects.get(bookmark_user=this_user, restaurant=restaurant)
