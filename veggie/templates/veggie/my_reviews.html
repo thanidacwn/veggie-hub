@@ -44,7 +44,7 @@
                     <script>
                         function renderStar() {
                             let outputResult = document.getElementById('{{review.pk}}');
-                            outputResult.innerHTML = createStarRating({{review.restaurant.get_average_rate}}).join('');
+                            outputResult.innerHTML = createStarRating({{review.review_rate}}).join('');
                             console.log(createStarRating());
                         }
                         renderStar()
