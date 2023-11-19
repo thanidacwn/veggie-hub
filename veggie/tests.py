@@ -176,8 +176,8 @@ class RestaurantIndexViewTest(TestCase):
         base_url = reverse('veggie:filtered_category_state')
         category = 'TestCategory1'
         state = 'All'
-        response = self.client.get(f"{base_url}\
-            ?category={category}&state={state}")
+        response = self.client.get(
+            f"{base_url}?category={category}&state={state}")
         self.assertQuerysetEqual(list(response.context['all_restaurants']),
                                  [self.restaurants[0], self.restaurants[2]],
                                  ordered=False)
@@ -187,19 +187,19 @@ class RestaurantIndexViewTest(TestCase):
         base_url = reverse('veggie:filtered_category_state')
         category = 'All'
         state = 'TestState2'
-        response = self.client.get(f"{base_url}\
-            ?category={category}&state={state}")
-        self.assertQuerysetEqual(list(response.context['all_restaurants']),
-                                 [self.restaurants[1], self.restaurants[2]],
-                                 ordered=False)
+        response = self.client.get(
+            f"{base_url}?category={category}&state={state}")
+        self.assertQuerysetEqual(
+            list(response.context['all_restaurants']),
+            [self.restaurants[1], self.restaurants[2]], ordered=False)
 
     def test_sort_by_both_category_and_state(self):
         """Test sorting restaurant by both category and state in Home page"""
         base_url = reverse('veggie:filtered_category_state')
         category = 'TestCategory1'
         state = 'TestState2'
-        response = self.client.get(f"{base_url}\
-            ?category={category}&state={state}")
+        response = self.client.get(
+            f"{base_url}?category={category}&state={state}")
         self.assertQuerysetEqual(list(response.context['all_restaurants']),
                                  [self.restaurants[2]], ordered=False)
 
