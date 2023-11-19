@@ -1,4 +1,5 @@
-from django.http import HttpResponse, HttpResponseRedirect, HttpRequest, HttpResponseBadRequest, Http404
+from django.http import HttpResponse, HttpResponseRedirect, \
+    HttpRequest, HttpResponseBadRequest, Http404
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
@@ -16,8 +17,8 @@ def filtered_categories() -> list:
     """
     all_categories = ["All"]
     for category in Category.objects.all():
-        # print([category.strip() for category in category.category_text.split(', ')]) 
-        for cat in [category.strip() for category in category.category_text.split(', ')]:
+        for cat in [category.strip() for category in
+                    category.category_text.split(', ')]:
             if cat not in all_categories:
                 all_categories.append(cat)
     return all_categories
@@ -65,11 +66,14 @@ class RestaurantsView(generic.ListView):
 
 class GetRestaurantByCategoryAndState(generic.ListView):
     """
-    A view for retrieving and rendering restaurants based on selected category and state.
+    A view for retrieving and rendering restaurants
+    based on selected category and state.
 
     This view extends the generic ListView provided by Django.
-    It retrieves the selected category and state from the request's GET parameters.
-    It filters the restaurants based on the selected category and state, and renders the 'veggie/home.html' template
+    It retrieves the selected category and state from
+    the request's GET parameters. It filters the restaurants
+    based on the selected category and state,
+    and renders the 'veggie/home.html' template
     with the filtered restaurants and other necessary context data.
 
     Args:
@@ -83,13 +87,17 @@ class GetRestaurantByCategoryAndState(generic.ListView):
 
     def get(self, request):
         """
-        Handles the GET request for retrieving and rendering restaurants based on selected category and state.
+        Handles the GET request for retrieving and rendering
+        restaurants based on selected category and state.
 
-        This method retrieves the selected category and state from the request's GET parameters.
+        This method retrieves the selected category and state
+        from the request's GET parameters.
         It filters the restaurants based on the selected category and state.
-        If there are no restaurants matching the selected category and state, it displays a message to the user.
-        If both the category and state are set to "All", it redirects to the 'veggie:index' URL.
-        Otherwise, it renders the 'veggie/home.html' template with the filtered restaurants and other necessary context data.
+        If there are no restaurants matching the selected category and state,
+        it displays a message to the user. If both the category and
+        state are set to "All", it redirects to the 'veggie:index' URL.
+        Otherwise, it renders the 'veggie/home.html' template with the
+        filtered restaurants and other necessary context data.
 
         Args:
             request: The HTTP request object.
@@ -103,14 +111,18 @@ class GetRestaurantByCategoryAndState(generic.ListView):
         all_restaurants = Restaurant.objects.all()
 
         if selected_category != "All":
-            all_restaurants = all_restaurants.filter(category__category_text__icontains=selected_category)
+            all_restaurants = all_restaurants.filter(
+                category__category_text__icontains=selected_category)
 
         if selected_state != "All":
-            all_restaurants = all_restaurants.filter(state__state_text__icontains=selected_state)
+            all_restaurants = all_restaurants.filter(
+                state__state_text__icontains=selected_state)
 
         if not all_restaurants:
             messages.info(request,
-                          f'There are no restaurants in {selected_category} Category and {selected_state} State.')
+                          f'There are no restaurants in\
+                          {selected_category} Category and\
+                          {selected_state} State.')
 
         if selected_category == "All" and selected_state == "All":
             return HttpResponseRedirect(reverse('veggie:index'))
@@ -129,11 +141,14 @@ class GetRestaurantByCategoryAndState(generic.ListView):
 def get_data(request):
     """Get data from github and save to database."""
     ssl._create_default_https_context = ssl._create_unverified_context
-    df = pd.read_csv('https://raw.githubusercontent.com/thanidacwn/veggie-data/master/last_data.csv')
+    df = pd.read_csv(
+        'https://raw.githubusercontent.com/\
+        thanidacwn/veggie-data/master/last_data.csv')
     for index, row in df.iterrows():
         all_category = row["category"].split(", ")
         for cate in all_category:
-            category = Category.objects.get_or_create(category_text=row["category"])[0]
+            category = Category.objects.get_or_create(
+                category_text=row["category"])[0]
         state = State.objects.get_or_create(state_text=row["state"])[0]
         restaurant = Restaurant(restaurant_text=row["restaurant_text"],
                                 category=category,
@@ -164,7 +179,7 @@ class DetailView(generic.DetailView):
         except Review.DoesNotExist:
             reviews = []
         return render(request, 'veggie/detail.html', {
-            'restaurant': restaurant, 
+            'restaurant': restaurant,
             'reviews': reviews,
             'bookmarks': BookMark.objects.filter(restaurant=restaurant)
         })
@@ -179,8 +194,9 @@ class MyReviews(generic.ListView):
         """
         Return all votes.
         """
-        return Review.objects.filter(review_user_id=self.request.user).order_by('-review_date')
-    
+        return Review.objects.filter(
+            review_user_id=self.request.user).order_by('-review_date')
+
 
 @login_required
 def add_review(request, pk):
@@ -188,18 +204,21 @@ def add_review(request, pk):
 
     if request.method == "POST":
         form = ReviewForm(request.POST)
-        
+
         if form.is_valid():
-            # Create a new review instance, set its fields, and save it
+            # Create a new review instance,
+            # set its fields, and save it
             review = form.save(commit=False)
             review.restaurant = restaurant
-            review.review_user = request.user  # Assuming you want to associate the current user
+            review.review_user = request.user
             review.save()
 
             messages.success(request, "Review saved!")
-            return HttpResponseRedirect(reverse("veggie:detail", kwargs={'pk': pk}))
+            return HttpResponseRedirect(reverse("veggie:detail",
+                                                kwargs={'pk': pk}))
         else:
-            messages.error(request, 'Review form is not valid. Please check your input.')
+            messages.error(request, 'Review form is not valid.\
+                           Please check your input.')
     else:
         form = ReviewForm()
 
@@ -212,12 +231,17 @@ def delete_review(request: HttpRequest, pk):
     """
     Deletes a review for a restaurant.
 
-    This view function is decorated with `@login_required` to ensure that only authenticated users can delete reviews.
+    This view function is decorated with `@login_required` to
+    ensure that only authenticated users can delete reviews.
     It retrieves the restaurant object based on the provided primary key.
-    If the restaurant does not exist or the primary key is invalid, it returns a bad request response.
+    If the restaurant does not exist or the primary key is invalid,
+    it returns a bad request response.
     It then attempts to retrieve the redirect URL for the user's reviews page.
-    If the redirect URL cannot be obtained or the user's review for the restaurant does not exist, it returns a bad request response.
-    If the user's review exists, it deletes the review and displays a success message.
+    If the redirect URL cannot be obtained or
+    the user's review for the restaurant does not exist,
+    it returns a bad request response.
+    If the user's review exists,
+    it deletes the review and displays a success message.
     Finally, it redirects the user to the appropriate page.
 
     Args:
@@ -230,12 +254,15 @@ def delete_review(request: HttpRequest, pk):
     try:
         redirect_url = reverse('veggie:my_reviews', kwargs={'pk': pk})
     except (Review.DoesNotExist, ValueError):
-        redirect_url = request.META.get('HTTP_REFERER', reverse('veggie:index'))
+        redirect_url = request.META.get('HTTP_REFERER',
+                                        reverse('veggie:index'))
         return HttpResponseBadRequest("Review does not exist.")
 
-    user_review = Review.objects.filter(review_user=request.user, pk=pk)
+    user_review = Review.objects.filter(
+        review_user=request.user, pk=pk)
     if not user_review:
-        messages.error(request, "You did not review this restaurant yet!")
+        messages.error(request,
+                       "You did not review this restaurant yet!")
         return redirect(redirect_url)
     user_review.delete()
     messages.info(request, "Your review has been deleted.")
@@ -248,32 +275,39 @@ class MyBookMarks(generic.ListView):
     context_object_name = 'all_bookmarks'
 
     def get_queryset(self):
-        return BookMark.objects.filter(bookmark_user_id=self.request.user).order_by('-bookmark_date')
+        return BookMark.objects.filter(
+            bookmark_user_id=self.request.user).order_by('-bookmark_date')
 
 
 @login_required
 def add_bookmark(request: HttpRequest, pk):
     restaurant = get_object_or_404(Restaurant, pk=pk)
-    
+
     this_user = request.user
     try:
-        bookmark = BookMark.objects.create(bookmark_user=this_user, restaurant=restaurant)
+        bookmark = BookMark.objects.create(
+            bookmark_user=this_user, restaurant=restaurant)
         bookmark.save()
     except BookMark.DoesNotExist:
-        messages.error(request, 'This restaurant is not in My Bookmarks')
-        return HttpResponseRedirect(reverse('veggie:detail', args=(restaurant.pk, )))
-    return HttpResponseRedirect(reverse('veggie:detail', args=(restaurant.pk, )))
-
+        messages.error(request,
+                       'This restaurant is not in My Bookmarks')
+        return HttpResponseRedirect(reverse('veggie:detail',
+                                            args=(restaurant.pk, )))
+    return HttpResponseRedirect(reverse('veggie:detail',
+                                        args=(restaurant.pk, )))
 
 
 @login_required
 def delete_bookmark(request: HttpRequest, pk):
     restaurant = get_object_or_404(Restaurant, pk=pk)
-    
+
     this_user = request.user
     try:
-        bookmark = BookMark.objects.get(bookmark_user=this_user, restaurant=restaurant)
+        bookmark = BookMark.objects.get(
+            bookmark_user=this_user, restaurant=restaurant)
         bookmark.delete()
     except BookMark.DoesNotExist:
-        messages.error(request, 'This restaurant is not in My Bookmarks')
-    return HttpResponseRedirect(reverse('veggie:detail', args=(restaurant.pk, )))
+        messages.error(request,
+                       'This restaurant is not in My Bookmarks')
+    return HttpResponseRedirect(reverse('veggie:detail',
+                                        args=(restaurant.pk, )))
