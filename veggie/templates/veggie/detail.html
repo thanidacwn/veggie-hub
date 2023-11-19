@@ -15,7 +15,6 @@
                     <div class="absolute flex right-0 mt-4 bg-gray-300 rounded-3xl w-[20vw] h-[5vh] text-lg justify-center items-center mr-[1vw] bg-white">
                         <p class="text-yellow-700 mx-4"><strong>Average rating:</strong></p>
                         <div id="{{restaurant.pk}}" class="mr-4"></div>
-                        {% comment %} <p class="text-gray-600"><strong>{{ restaurant.get_average_rate }}/5</strong></p> {% endcomment %}
                     </div>
                     <h1 class="text-3xl font-bold mt-[10vh] mb-[2vh] ml-[3vw]">{{ restaurant.restaurant_text }}</h1>
                     <img src="{{ restaurant.image }}" alt="Restaurant Image" class="w-[35vw] h-[35vh] ml-auto mr-auto rounded-xl">
@@ -45,25 +44,16 @@
                 </a>
                 {% if not bookmarks %}
                     <a href="{% url 'veggie:add_bookmark' restaurant.pk %}">
-                        {% comment %} <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
-                            Bookmark
-                        </button> {% endcomment %}
                         <img src="{% static 'veggie/images/unsaved.png' %}" class='absolute w-[50px] h-[40px] right-0 bottom-0'>
                     </a>
                 {% else %}
                     {% for bookmark in bookmarks %}
                         {% if bookmark.restaurant.restaurant_text != restaurant.restaurant_text %}
                             <a href="{% url 'veggie:add_bookmark' restaurant.pk %}">
-                                {% comment %} <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
-                                    Bookmark
-                                </button> {% endcomment %}
                                 <img src="{% static 'veggie/images/unsaved.png' %}" class='absolute w-[50px] h-[40px] right-0 bottom-0'>
                             </a>
                         {% else %}
                             <a href="{% url 'veggie:delete_bookmark' restaurant.pk %}">
-                                {% comment %} <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
-                                    Remove
-                                </button> {% endcomment %}
                                 <img src="{% static 'veggie/images/saved.png' %}" class='absolute w-[50px] h-[40px] right-0 bottom-0'>
                             </a>
                         {% endif %}
