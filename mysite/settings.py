@@ -208,3 +208,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CSRF_TRUSTED_ORIGINS = ["https://veggie-hub-824607ea4d79.herokuapp.com", "http://127.0.0.1"]
 
 # django_heroku.settings(locals())
+if not DEBUG and config("HTTPS", cast=bool, default=False):
+    ACCOUNT_DEFAULT_HTTP_PROTOCOL = "https"
