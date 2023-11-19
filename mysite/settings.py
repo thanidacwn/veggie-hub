@@ -129,6 +129,9 @@ SOCIALACCOUNT_PROVIDERS = {
     },
 }
 
+ON_HEROKU = config('LIVE', cast=bool, default=False)
+
+
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/accounts/login/"
 
@@ -149,7 +152,8 @@ DATABASES = {
     }
 }
 
-DATABASES["default"].update(dj_database_url.config(conn_max_age=500, ssl_require=True))
+if ON_HEROKU:
+    DATABASES["default"].update(dj_database_url.config(conn_max_age=500, ssl_require=True))
 
 
 # Password validation
@@ -188,6 +192,7 @@ INTERNAL_IPS = [
     "127.0.0.1",
     "*",
 ]
+CSRF_TRUSTED_ORIGINS = ["https://veggie-hub-824607ea4d79.herokuapp.com", "http://127.0.0.1"]
 
 NPM_BIN_PATH = config('NPM_BIN_PATH', cast=str, default='/usr/local/bin/npm')
 
@@ -202,7 +207,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# INTERNAL_IPS = ["127.0.0.1", "*"]
-CSRF_TRUSTED_ORIGINS = ["https://veggie-hub.herokuapp.com", "http://127.0.0.1"]
-
-# django_heroku.settings(locals())
+if ON_HEROKU:
+    import django_heroku
+    django_heroku.settings(locals())
