@@ -8,3 +8,4 @@ django-allauth
 django-heroku
 gunicorn
 flake8
+pep8

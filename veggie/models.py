@@ -5,7 +5,8 @@ from django.utils import timezone
 
 class Category(models.Model):
     """Category model"""
-    category_text = models.CharField(verbose_name="category_text", max_length=255, null=True, blank=True)
+    category_text = models.CharField(verbose_name="category_text",
+                                     max_length=255, null=True, blank=True)
 
     def get_restaurants(self):
         """Return all restaurants in this category."""
@@ -29,12 +30,14 @@ class State(models.Model):
 
 class Restaurant(models.Model):
     """Restaurant model"""
-    restaurant_text = models.CharField(verbose_name="restaurant_text", max_length=255)
+    restaurant_text = models.CharField(verbose_name="restaurant_text",
+                                       max_length=255)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     state = models.ForeignKey(State, on_delete=models.CASCADE)
     city = models.CharField(verbose_name="city", max_length=255)
     location = models.CharField(verbose_name="location", max_length=255)
-    restaurant_link = models.CharField(verbose_name="restaurant_link", max_length=255)
+    restaurant_link = models.CharField(verbose_name="restaurant_link",
+                                       max_length=255)
     menu_link = models.CharField(verbose_name="menu_link", max_length=255)
     price_rate = models.CharField(verbose_name="price_rate", max_length=255)
     image = models.URLField(verbose_name="image", max_length=255)
@@ -66,20 +69,25 @@ class Review(models.Model):
     """Review model"""
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
     review_user = models.ForeignKey(User, on_delete=models.CASCADE)
-    review_title = models.CharField(verbose_name="review_title", max_length=255)
-    review_description = models.CharField(verbose_name="review_description", max_length=255)
+    review_title = models.CharField(verbose_name="review_title",
+                                    max_length=255)
+    review_description = models.CharField(verbose_name="review_description",
+                                          max_length=255)
     review_rate = models.IntegerField(verbose_name="review_rate", default=0)
-    review_date = models.DateTimeField(verbose_name="review_date", default=timezone.now)
+    review_date = models.DateTimeField(verbose_name="review_date",
+                                       default=timezone.now)
 
     def __str__(self):
-        return f"{self.review_title} - {self.restaurant.restaurant_text} by {self.review_user.username}"
+        return f"{self.review_title} \
+            {self.restaurant.restaurant_text} by {self.review_user.username}"
 
 
 class BookMark(models.Model):
     """BookMark model"""
     bookmark_user = models.ForeignKey(User, on_delete=models.CASCADE)
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
-    bookmark_date = models.DateTimeField(verbose_name="bookmark_date", default=timezone.now)
+    bookmark_date = models.DateTimeField(verbose_name="bookmark_date",
+                                         default=timezone.now)
 
     def __str__(self):
         return f"{self.restaurant} saved by {self.bookmark_user}"
