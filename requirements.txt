@@ -6,6 +6,7 @@ django-tailwind
 django_browser_reload
 django-allauth
 django-heroku
+whitenoise
 gunicorn
 flake8
 pep8

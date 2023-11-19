@@ -62,6 +62,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -194,6 +195,7 @@ NPM_BIN_PATH = config('NPM_BIN_PATH', cast=str, default='/usr/local/bin/npm')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
@@ -203,6 +205,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # INTERNAL_IPS = ["127.0.0.1", "*"]
-CSRF_TRUSTED_ORIGINS = ["https://veggie-hub.herokuapp.com", "http://127.0.0.1"]
+CSRF_TRUSTED_ORIGINS = ["https://veggie-hub-824607ea4d79.herokuapp.com", "http://127.0.0.1"]
 
 # django_heroku.settings(locals())
+if not DEBUG and config("HTTPS", cast=bool, default=False):
+    ACCOUNT_DEFAULT_HTTP_PROTOCOL = "https"
