@@ -1,4 +1,4 @@
-
+[![Unit Test](https://github.com/thanidacwn/veggie-hub/actions/workflows/python-publish.yml/badge.svg)](https://github.com/thanidacwn/veggie-hub/actions/workflows/python-publish.yml)
 
 # VeggieHub
 VeggieHub is a web app designed to assist users to make informed choices about their vegetarian dining. It allows users to review and rate various vegetarian restaurants, creating a platform where they can share their dining experiences, preferences, and opinions.
