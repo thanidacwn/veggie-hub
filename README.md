@@ -28,19 +28,19 @@ pip install -r requirements.txt
 ```
 4.Run migrations
 ```sh
-python3 manage.py migrate
+python manage.py migrate
 ```
 5.Run tests
 ```sh
-python3 manage.py test
+python manage.py test
 ```
 6.Install data from the data fixtures
 ```sh
-python3 manage.py loaddata data/all_data.json
+python manage.py loaddata data/all_data_v2.json
 ```
 7.Run the application
 ```sh
-python3 manage.py runserver
+python manage.py runserver
 ```
 Then, go to `http://127.0.0.1:8000/` or `localhost:8000/` for application.
 
