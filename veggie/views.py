@@ -284,15 +284,9 @@ def add_bookmark(request: HttpRequest, pk):
     restaurant = get_object_or_404(Restaurant, pk=pk)
 
     this_user = request.user
-    try:
-        bookmark = BookMark.objects.create(
-            bookmark_user=this_user, restaurant=restaurant)
-        bookmark.save()
-    except BookMark.DoesNotExist:
-        messages.error(request,
-                       'This restaurant is not in My Bookmarks')
-        return HttpResponseRedirect(reverse('veggie:detail',
-                                            args=(restaurant.pk, )))
+    bookmark = BookMark.objects.create(
+        bookmark_user=this_user, restaurant=restaurant)
+    bookmark.save()
     return HttpResponseRedirect(reverse('veggie:detail',
                                         args=(restaurant.pk, )))
 
