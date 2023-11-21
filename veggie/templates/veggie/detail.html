@@ -52,7 +52,7 @@
                     </a>
                 {% else %}
                     {% for bookmark in bookmarks %}
-                        {% if bookmark.restaurant.restaurant_text != restaurant.restaurant_text %}
+                        {% if bookmark.bookmark_user != user %}
                             <a href="{% url 'veggie:add_bookmark' restaurant.pk %}">
                                 {% comment %} <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
                                     Bookmark
