@@ -4,7 +4,21 @@ from django.utils import timezone
 
 
 class Category(models.Model):
-    """Category model"""
+    """
+    Represents a category.
+
+    Args:
+        category_text (str): The text of the category.
+
+    Methods:
+        get_restaurants(): Return all restaurants in this category.
+
+    Attributes:
+        category_text (str): The text of the category.
+
+    Returns:
+        str: The text of the category.
+    """
     category_text = models.CharField(verbose_name="category_text",
                                      max_length=255, null=True, blank=True)
 
@@ -17,7 +31,21 @@ class Category(models.Model):
 
 
 class State(models.Model):
-    """State model"""
+    """
+    Represents a state.
+
+    Args:
+        state_text (str): The text of the state.
+
+    Methods:
+        get_restaurants(): Return all restaurants in this state.
+
+    Attributes:
+        state_text (str): The text of the state.
+
+    Returns:
+        str: The text of the state.
+    """
     state_text = models.CharField(verbose_name="state_text", max_length=255)
 
     def get_restaurants(self):
@@ -29,7 +57,38 @@ class State(models.Model):
 
 
 class Restaurant(models.Model):
-    """Restaurant model"""
+    """
+    Represents a restaurant.
+
+    Args:
+        restaurant_text (str): The text of the restaurant.
+        category (Category): The category of the restaurant.
+        state (State): The state of the restaurant.
+        city (str): The city of the restaurant.
+        location (str): The location of the restaurant.
+        restaurant_link (str): The link to the restaurant.
+        menu_link (str): The link to the restaurant's menu.
+        price_rate (str): The price rate of the restaurant.
+        image (str): The URL of the restaurant's image.
+
+    Properties:
+        get_average_rate: Return the average rate for this restaurant.
+        get_reviews_amount: Return the amount of reviews for this restaurant.
+
+    Attributes:
+        restaurant_text (str): The text of the restaurant.
+        category (Category): The category of the restaurant.
+        state (State): The state of the restaurant.
+        city (str): The city of the restaurant.
+        location (str): The location of the restaurant.
+        restaurant_link (str): The link to the restaurant.
+        menu_link (str): The link to the restaurant's menu.
+        price_rate (str): The price rate of the restaurant.
+        image (str): The URL of the restaurant's image.
+
+    Returns:
+        str: The text of the restaurant.
+    """
     restaurant_text = models.CharField(verbose_name="restaurant_text",
                                        max_length=255)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
@@ -66,7 +125,28 @@ class Restaurant(models.Model):
 
 
 class Review(models.Model):
-    """Review model"""
+    """
+    Represents a review.
+
+    Args:
+        restaurant (Restaurant): The restaurant being reviewed.
+        review_user (User): The user who wrote the review.
+        review_title (str): The title of the review.
+        review_description (str): The description of the review.
+        review_rate (int): The rating given in the review.
+        review_date (datetime): The date and time the review was created.
+
+    Attributes:
+        restaurant (Restaurant): The restaurant being reviewed.
+        review_user (User): The user who wrote the review.
+        review_title (str): The title of the review.
+        review_description (str): The description of the review.
+        review_rate (int): The rating given in the review.
+        review_date (datetime): The date and time the review was created.
+
+    Returns:
+        str: The formatted string representation of the review.
+    """
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
     review_user = models.ForeignKey(User, on_delete=models.CASCADE)
     review_title = models.CharField(verbose_name="review_title",
@@ -83,7 +163,22 @@ class Review(models.Model):
 
 
 class BookMark(models.Model):
-    """BookMark model"""
+    """
+    Represents a bookmark.
+
+    Args:
+        bookmark_user (User): The user who bookmarked the restaurant.
+        restaurant (Restaurant): The restaurant being bookmarked.
+        bookmark_date (datetime): The date and time the bookmark was created.
+
+    Attributes:
+        bookmark_user (User): The user who bookmarked the restaurant.
+        restaurant (Restaurant): The restaurant being bookmarked.
+        bookmark_date (datetime): The date and time the bookmark was created.
+
+    Returns:
+        str: The formatted string representation of the bookmark.
+    """
     bookmark_user = models.ForeignKey(User, on_delete=models.CASCADE)
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
     bookmark_date = models.DateTimeField(verbose_name="bookmark_date",
