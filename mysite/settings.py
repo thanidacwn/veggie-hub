@@ -147,6 +147,11 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
+        "USER": 'gdlpcpqvrtoaxe',
+        "PASSWORD": '6e239821429c7743f1b85f86dddc4fe4a93658beaab4b4ed3d2f3369e3bca00d',
+        "HOST": 'ec2-18-213-255-35.compute-1.amazonaws.com',
+        "PORT": '5432',
+        'CONN_MAX_AGE': 600,
     }
 }
 
