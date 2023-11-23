@@ -1,10 +1,26 @@
+"""Models for the veggie app."""
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
 
 
 class Category(models.Model):
-    """Category model"""
+    """
+    Represents a category.
+
+    Args:
+        category_text (str): The text of the category.
+
+    Methods:
+        get_restaurants: Return all restaurants in this category.
+
+    Attributes:
+        category_text (str): The text of the category.
+
+    Returns:
+        str: The text of the category.
+
+    """
     category_text = models.CharField(verbose_name="category_text",
                                      max_length=255, null=True, blank=True)
 
@@ -17,7 +33,22 @@ class Category(models.Model):
 
 
 class State(models.Model):
-    """State model"""
+    """
+    Represents a state.
+
+    Args:
+        state_text (str): The text of the state.
+
+    Methods:
+        get_restaurants: Return all restaurants in this state.
+
+    Attributes:
+        state_text (str): The text of the state.
+
+    Returns:
+        str: The text of the state.
+
+    """
     state_text = models.CharField(verbose_name="state_text", max_length=255)
 
     def get_restaurants(self):
@@ -25,11 +56,50 @@ class State(models.Model):
         return self.restaurant_set.all()
 
     def __str__(self):
+        """
+        Return a string representation of the object.
+
+        Returns:
+            str: The string representation of the object.
+
+        """
         return self.state_text
 
 
 class Restaurant(models.Model):
-    """Restaurant model"""
+    """
+    Represents a restaurant.
+
+    Args:
+        restaurant_text (str): The text of the restaurant.
+        category (Category): The category of the restaurant.
+        state (State): The state of the restaurant.
+        city (str): The city of the restaurant.
+        location (str): The location of the restaurant.
+        restaurant_link (str): The link to the restaurant.
+        menu_link (str): The link to the menu.
+        price_rate (str): The price rate of the restaurant.
+        image (str): The URL of the restaurant image.
+
+    Properties:
+        get_average_rate: Return the average rate for this restaurant.
+        get_reviews_amount: Return the amount of reviews for this restaurant.
+
+    Attributes:
+        restaurant_text (str): The text of the restaurant.
+        category (Category): The category of the restaurant.
+        state (State): The state of the restaurant.
+        city (str): The city of the restaurant.
+        location (str): The location of the restaurant.
+        restaurant_link (str): The link to the restaurant.
+        menu_link (str): The link to the menu.
+        price_rate (str): The price rate of the restaurant.
+        image (str): The URL of the restaurant image.
+
+    Returns:
+        str: The text of the restaurant.
+
+    """
     restaurant_text = models.CharField(verbose_name="restaurant_text",
                                        max_length=255)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
@@ -62,11 +132,40 @@ class Restaurant(models.Model):
         return self.review_set.count()
 
     def __str__(self):
+        """
+        Return a string representation of the object.
+
+        Returns:
+            str: The string representation of the object.
+
+        """
         return self.restaurant_text
 
 
 class Review(models.Model):
-    """Review model"""
+    """
+    Represents a review.
+
+    Args:
+        restaurant (Restaurant): The restaurant being reviewed.
+        review_user (User): The user who wrote the review.
+        review_title (str): The title of the review.
+        review_description (str): The description of the review.
+        review_rate (int): The rating given in the review.
+        review_date (datetime): The date and time the review was created.
+
+    Attributes:
+        restaurant (Restaurant): The restaurant being reviewed.
+        review_user (User): The user who wrote the review.
+        review_title (str): The title of the review.
+        review_description (str): The description of the review.
+        review_rate (int): The rating given in the review.
+        review_date (datetime): The date and time the review was created.
+
+    Returns:
+        str: A string representation of the review.
+
+    """
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
     review_user = models.ForeignKey(User, on_delete=models.CASCADE)
     review_title = models.CharField(verbose_name="review_title",
@@ -78,16 +177,46 @@ class Review(models.Model):
                                        default=timezone.now)
 
     def __str__(self):
+        """
+        Return a string representation of the object.
+
+        Returns:
+            str: A string representation of the object.
+
+        """
         return f"{self.review_title} \
             {self.restaurant.restaurant_text} by {self.review_user.username}"
 
 
 class BookMark(models.Model):
-    """BookMark model"""
+    """
+    Represents a bookmark.
+
+    Args:
+        bookmark_user (User): The user who created the bookmark.
+        restaurant (Restaurant): The restaurant being bookmarked.
+        bookmark_date (datetime): The date and time the bookmark was created.
+
+    Attributes:
+        bookmark_user (User): The user who created the bookmark.
+        restaurant (Restaurant): The restaurant being bookmarked.
+        bookmark_date (datetime): The date and time the bookmark was created.
+
+    Returns:
+        str: A string representation of the bookmark.
+
+    """
     bookmark_user = models.ForeignKey(User, on_delete=models.CASCADE)
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
     bookmark_date = models.DateTimeField(verbose_name="bookmark_date",
                                          default=timezone.now)
 
     def __str__(self):
+        """
+        Return a string representation of the bookmark.
+
+        Returns:
+            str: A string representation of the bookmark.
+
+        """
         return f"{self.restaurant} saved by {self.bookmark_user}"

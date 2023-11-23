@@ -1,3 +1,4 @@
+""""Views for the veggie app."""
 from django.http import HttpResponse, HttpResponseRedirect, \
     HttpRequest, HttpResponseBadRequest, Http404
 from django.shortcuts import render, get_object_or_404, redirect
@@ -12,8 +13,12 @@ import ssl
 
 
 def filtered_categories() -> list:
-    """Returns
-        assert  list: A list of filtered categories.
+    """
+    Return a list of filtered categories.
+
+    Returns:
+        list: A list of filtered categories.
+
     """
     all_categories = ["All"]
     for category in Category.objects.all():
@@ -139,7 +144,16 @@ class GetRestaurantByCategoryAndState(generic.ListView):
 
 
 def get_data(request):
-    """Get data from github and save to database."""
+    """
+    Fetch and save data from a remote CSV file to the database.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The HTTP response indicating the success of the operation.
+
+    """
     ssl._create_default_https_context = ssl._create_unverified_context
     df = pd.read_csv(
         'https://raw.githubusercontent.com/\
@@ -163,12 +177,34 @@ def get_data(request):
 
 
 class DetailView(generic.DetailView):
-    """Detail view page of this application."""
+    """
+    A view for displaying the details of a restaurant.
+
+    Attributes:
+        model (Restaurant): The model associated with the view.
+        template_name (str): The name of the template
+        to be used for rendering the view.
+
+    Methods:
+        get: Handle GET requests for the view.
+
+    """
     model = Restaurant
     template_name = 'veggie/detail.html'
 
     def get(self, request, *args, **kwargs):
-        """Redirect user to corresponding pages"""
+        """
+        Handle GET requests for the view.
+
+        Args:
+            request (HttpRequest): The HTTP request object.
+            *args: Variable length argument list.
+            **kwargs: Arbitrary keyword arguments.
+
+        Returns:
+            HttpResponse: The HTTP response.
+
+        """
         try:
             restaurant = get_object_or_404(Restaurant, pk=kwargs["pk"])
         except (KeyError, Http404, Restaurant.DoesNotExist):
@@ -186,13 +222,28 @@ class DetailView(generic.DetailView):
 
 
 class MyReviews(generic.ListView):
-    """Show a list of user's votes."""
+    """
+    A view for displaying the reviews of the current user.
+
+    Attributes:
+        template_name (str): The name of the template
+        to be used for rendering the view.
+        context_object_name (str): The name of the
+        context variable containing the reviews.
+
+    Methods:
+        get_queryset: Return the queryset of reviews.
+
+    """
     template_name = 'veggie/my_reviews.html'
     context_object_name = 'reviews_list'
 
     def get_queryset(self):
         """
-        Return all votes.
+        Return the queryset of reviews.
+
+        Returns:
+            QuerySet: The queryset of reviews.
         """
         return Review.objects.filter(
             review_user_id=self.request.user).order_by('-review_date')
@@ -200,6 +251,17 @@ class MyReviews(generic.ListView):
 
 @login_required
 def add_review(request, pk):
+    """
+    Handle the addition of a review for a restaurant.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+        pk (int): The primary key of the restaurant.
+
+    Returns:
+        HttpResponse: The HTTP response.
+
+    """
     restaurant = get_object_or_404(Restaurant, pk=pk)
 
     if request.method == "POST":
@@ -270,17 +332,47 @@ def delete_review(request: HttpRequest, pk):
 
 
 class MyBookMarks(generic.ListView):
-    """Show all restaurants user bookmark"""
+    """
+    A view for displaying the bookmarks of the current user.
+
+    Attributes:
+        template_name (str): The name of the template
+        to be used for rendering the view.
+        context_object_name (str): The name of the context
+        variable containing the bookmarks.
+
+    Methods:
+        get_queryset: Return the queryset of bookmarks.
+
+    """
     template_name = 'veggie/my_bookmarks.html'
     context_object_name = 'all_bookmarks'
 
     def get_queryset(self):
+        """
+        Return the queryset of bookmarks for the current user.
+
+        Returns:
+            QuerySet: The queryset of bookmarks.
+
+        """
         return BookMark.objects.filter(
             bookmark_user_id=self.request.user).order_by('-bookmark_date')
 
 
 @login_required
 def add_bookmark(request: HttpRequest, pk):
+    """
+    Add a bookmark for a restaurant.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+        pk (int): The primary key of the restaurant.
+
+    Returns:
+        HttpResponseRedirect: The HTTP redirect response.
+
+    """
     restaurant = get_object_or_404(Restaurant, pk=pk)
 
     this_user = request.user
@@ -293,6 +385,17 @@ def add_bookmark(request: HttpRequest, pk):
 
 @login_required
 def delete_bookmark(request: HttpRequest, pk):
+    """
+    Delete a bookmark for a restaurant.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+        pk (int): The primary key of the restaurant.
+
+    Returns:
+        HttpResponseRedirect: The HTTP redirect response.
+
+    """
     restaurant = get_object_or_404(Restaurant, pk=pk)
 
     this_user = request.user
