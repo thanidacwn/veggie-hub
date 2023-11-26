@@ -248,7 +248,7 @@ def edit_review(request, pk):
             review.save()
 
             messages.success(request, "Review edited!")
-            return HttpResponseRedirect(reverse("veggie:detail",
+            return HttpResponseRedirect(reverse("veggie:my_reviews",
                                     kwargs={'pk': review.restaurant.pk}))
         else:
             messages.error(request, 'Review form is not valid.\

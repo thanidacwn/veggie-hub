@@ -96,13 +96,6 @@
                             <p class="mt-[2.2vh] ml-[8vh]">{{ review.review_user }}</p>
                             <i class="mt-[2.2vh] ml-[8vh] text-sm">Reviewed on {{ review.review_date }}</i>
                             <h3 class="font-bold mt-[2vh] mb-[2vh] text-xl">{{ review.review_title }}</h3>
-                            {% if review.review_user == user %}
-                                <a href="{% url 'veggie:edit_review' pk=review.pk  %}">
-                                    <button class="absolute right-0 bg-yellow-400 hover:bg-gray-600 hover:text-white text-xl py-2 px-4 rounded-full w-[12vw] h-[5vh] mt-[2vh] mr-[1.5vw]">
-                                        Edit review
-                                    </button>
-                                </a>
-                            {% endif %}
                             <p class="mb-[2vh]">{{ review.review_description }}</p>
                         </div>
                     {% endfor %}
