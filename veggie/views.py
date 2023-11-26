@@ -201,6 +201,13 @@ class MyReviews(generic.ListView):
 @login_required
 def add_review(request, pk):
     restaurant = get_object_or_404(Restaurant, pk=pk)
+    review = Review.objects.filter(restaurant=restaurant, review_user=request.user).first()
+
+    if review:
+        # User already has a review for this restaurant
+        messages.error(request, 'You have already submitted a review for this restaurant.')
+        return HttpResponseRedirect(reverse("veggie:detail", 
+                                            kwargs={'pk': pk}))
 
     if request.method == "POST":
         form = ReviewForm(request.POST)
@@ -222,7 +229,7 @@ def add_review(request, pk):
     else:
         form = ReviewForm()
 
-    context = {'restaurant': restaurant, 'form': form}
+    context = {'restaurant': restaurant, 'review': review, 'form': form}
     return render(request, 'veggie/add_review.html', context)
 
 
