@@ -4,9 +4,18 @@
 {% block content %}
     <body style="font-family: Inter; hi" class="bg-yellow-50">
         {% if messages %}
-            {% for message in messages %}
-                <p style="color: orangered;"><strong>{{ message }}</strong></p>
-            {% endfor %}
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    {% for message in messages %}
+                        Swal.fire({
+                            icon: '{{ message.tags }}',  // Use the message tags as icons (success, error, warning, etc.)
+                            title: '{{ message.tags|capfirst }}',  // Use the message tags as titles with the first letter capitalized
+                            text: '{{ message }}',
+                        });
+                    {% endfor %}
+                });
+            </script>
+            {% comment %} <p style="color: orangered;"><strong>{{ message }}</strong></p> {% endcomment %}
         {% endif %}
         <div class="grid grid-cols-2 gap-2 mt-10">
             <div class="relative inline-grid relative justify-center ml-[3vw] h-[80vh] w-[40vw]">
