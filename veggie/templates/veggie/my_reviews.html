@@ -27,20 +27,23 @@
 
             <div class="card-details mt-6">
                 <div class="top flex flex-row justify-between ml-2 mt-2 mb-4 font-semibold text-yellow-700 items-center">
-                    <div class="restaurant text-3xl"><a href="{% url 'veggie:detail' review.restaurant.id %}">{{review.restaurant.restaurant_text}}</a></div>
-                    {% if review.review_user == user %}
-                        <a href="{% url 'veggie:edit_review' pk=review.pk  %}">
-                            <button class="absolute right-0 bg-yellow-400 hover:bg-gray-600 hover:text-white text-xl py-2 px-4 rounded-full w-[12vw] h-[5vh] mt-[2vh] mr-[1.5vw]">
-                                Edit review
-                            </button>
+                    <div class="restaurant text-3xl underline">
+                        <a href="{% url 'veggie:detail' review.restaurant.id %}">{{review.restaurant.restaurant_text}}</a>
+                    </div>
+                    <div class="actions mt-1 mx-8 flex">
+                        {% if review.review_user == user %}
+                        <a href="{% url 'veggie:edit_review' pk=review.pk %}" class="ml-2 mx-6">
+                            <img src="{% static 'veggie/images/edit.png' %}" alt="edit" height="20" width="25"></img>
                         </a>
-                    {% endif %}
-                    <div class="delete mt-1 mx-4">
+                        {% endif %}
+                    
                         <a href="{% url 'veggie:delete' review.pk %}">
-                        <img src="{% static 'veggie/images/delete.png' %}" alt="delete" height="20" width="25"></img>
+                            <img src="{% static 'veggie/images/delete.png' %}" alt="delete" height="20" width="25"></img>
                         </a>
                     </div>
+                    
                 </div>
+                
                 <div class="middle">
                     <h2 class="title text-xl font-bold mx-2 mt-2">{{ review.review_title }}</h2>
                     <p class="excerpt mt-2 mx-2">{{ review.review_description }}</p>
