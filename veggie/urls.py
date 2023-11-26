@@ -1,3 +1,4 @@
+""""Path for the veggie app"""""
 from django.urls import path
 from . import views
 

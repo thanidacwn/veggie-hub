@@ -1,3 +1,4 @@
+"""Set up admin for veggie app."""
 from django.contrib import admin
 from .models import Category, State, Restaurant, Review, BookMark
 
