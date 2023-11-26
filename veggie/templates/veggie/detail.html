@@ -3,11 +3,18 @@
 
 {% block content %}
     <body style="font-family: Inter; hi" class="bg-yellow-50">
-        {% comment %} <link rel="stylesheet" href="{% static 'veggie/detail.css' %}"> {% endcomment %}
         {% if messages %}
-            {% for message in messages %}
-                <p style="color: orangered;"><strong>{{ message }}</strong></p>
-            {% endfor %}
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    {% for message in messages %}
+                        Swal.fire({
+                            icon: '{{ message.tags }}',  // Use the message tags as icons (success, error, warning, etc.)
+                            title: '{{ message.tags|capfirst }}',  // Use the message tags as titles with the first letter capitalized
+                            text: '{{ message }}',
+                        });
+                    {% endfor %}
+                });
+            </script>
         {% endif %}
         <div class="grid grid-cols-2 gap-2 mt-10">
             <div class="relative inline-grid relative justify-center ml-[3vw] h-[80vh] w-[40vw]">
@@ -15,7 +22,6 @@
                     <div class="absolute flex right-0 mt-4 bg-gray-300 rounded-3xl w-[20vw] h-[5vh] text-lg justify-center items-center mr-[1vw] bg-white">
                         <p class="text-yellow-700 mx-4"><strong>Average rating:</strong></p>
                         <div id="{{restaurant.pk}}" class="mr-4"></div>
-                        {% comment %} <p class="text-gray-600"><strong>{{ restaurant.get_average_rate }}/5</strong></p> {% endcomment %}
                     </div>
                     <h1 class="text-3xl font-bold mt-[10vh] mb-[2vh] ml-[3vw]">{{ restaurant.restaurant_text }}</h1>
                     <img src="{{ restaurant.image }}" alt="Restaurant Image" class="w-[35vw] h-[35vh] ml-auto mr-auto rounded-xl">
@@ -34,7 +40,7 @@
                         </p>
                         <p class="mb-2">
                             <img src="{% static 'veggie/images/link.png' %}" alt="delete" height="15" width="20" style="display: inline-block; vertical-align: middle;">
-                            Link: <a href={{restaurant.restaurant_link}} class="text-blue-700 underline">Tripadvisor</a>
+                            Link: <a href={{restaurant.restaurant_link}} class="text-blue-700 underline">Click</a>
                         </p>
                     </div>
                 </div>
@@ -45,25 +51,16 @@
                 </a>
                 {% if not bookmarks %}
                     <a href="{% url 'veggie:add_bookmark' restaurant.pk %}">
-                        {% comment %} <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
-                            Bookmark
-                        </button> {% endcomment %}
                         <img src="{% static 'veggie/images/unsaved.png' %}" class='absolute w-[50px] h-[40px] right-0 bottom-0'>
                     </a>
                 {% else %}
                     {% for bookmark in bookmarks %}
                         {% if bookmark.bookmark_user != user %}
                             <a href="{% url 'veggie:add_bookmark' restaurant.pk %}">
-                                {% comment %} <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
-                                    Bookmark
-                                </button> {% endcomment %}
                                 <img src="{% static 'veggie/images/unsaved.png' %}" class='absolute w-[50px] h-[40px] right-0 bottom-0'>
                             </a>
                         {% else %}
                             <a href="{% url 'veggie:delete_bookmark' restaurant.pk %}">
-                                {% comment %} <button class="absolute right-0 bottom-0 bg-gray-300 hover:bg-gray-400 text-xl py-2 px-4 rounded-full w-[30vh] h-[5.5vh] ml-5 mt-5">
-                                    Remove
-                                </button> {% endcomment %}
                                 <img src="{% static 'veggie/images/saved.png' %}" class='absolute w-[50px] h-[40px] right-0 bottom-0'>
                             </a>
                         {% endif %}
@@ -120,7 +117,6 @@
                     function renderStar() {
                         let outputResult = document.getElementById('{{restaurant.pk}}');
                         outputResult.innerHTML = createStarRating({{restaurant.get_average_rate}}).join('');
-                        console.log(createStarRating());
                     }
                     renderStar()
                 </script>

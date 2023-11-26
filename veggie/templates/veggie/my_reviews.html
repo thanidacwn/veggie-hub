@@ -17,6 +17,20 @@
             return stars;
         }
     </script>
+
+    {% if messages %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            {% for message in messages %}
+                Swal.fire({
+                    icon: '{{ message.tags }}',
+                    title: '{{ message.tags|capfirst }}', 
+                    text: '{{ message }}',
+                });
+            {% endfor %}
+        });
+    </script>
+    {% endif %}
     
     <h1 class="text-5xl font-bold p-10 text-center text-yellow-700">My Reviews</h1>
     {% if reviews_list %}
@@ -26,14 +40,24 @@
             <img src="{{review.restaurant.image}}" alt="thumbnail" height="250" width="300" class="thumbnail mx-10 my-10 rounded-lg"></img>
 
             <div class="card-details mt-6">
-                <div class="top flex flex-row justify-between ml-2 mt-2 mb-4 font-semibold text-yellow-700">
-                    <div class="restaurant text-3xl"><a href="{% url 'veggie:detail' review.restaurant.id %}">{{review.restaurant.restaurant_text}}</a></div>
-                    <div class="delete mt-1 mx-4">
+                <div class="top flex flex-row justify-between ml-2 mt-2 mb-4 font-semibold text-yellow-700 items-center">
+                    <div class="restaurant text-3xl underline">
+                        <a href="{% url 'veggie:detail' review.restaurant.id %}">{{review.restaurant.restaurant_text}}</a>
+                    </div>
+                    <div class="actions mt-1 mx-8 flex">
+                        {% if review.review_user == user %}
+                        <a href="{% url 'veggie:edit_review' pk=review.pk %}" class="ml-2 mx-6">
+                            <img src="{% static 'veggie/images/edit.png' %}" alt="edit" height="20" width="25"></img>
+                        </a>
+                        {% endif %}
+                    
                         <a href="{% url 'veggie:delete' review.pk %}">
-                        <img src="{% static 'veggie/images/delete.png' %}" alt="delete" height="20" width="25"></img>
+                            <img src="{% static 'veggie/images/delete.png' %}" alt="delete" height="20" width="25"></img>
                         </a>
                     </div>
+                    
                 </div>
+                
                 <div class="middle">
                     <h2 class="title text-xl font-bold mx-2 mt-2">{{ review.review_title }}</h2>
                     <p class="excerpt mt-2 mx-2">{{ review.review_description }}</p>

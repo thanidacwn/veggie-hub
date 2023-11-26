@@ -11,6 +11,8 @@ urlpatterns = [
     path("", views.RestaurantsView.as_view(), name="index"),
     path("restaurant/<int:pk>/add_review", views.add_review,
          name="add_review"),
+    path('restaurant/<int:pk>/edit_review', views.edit_review,
+         name='edit_review'),
     path('<int:pk>/my_reviews/', views.MyReviews.as_view(),
          name='my_reviews'),
     path('filter/', views.GetRestaurantByCategoryAndState.as_view(),
