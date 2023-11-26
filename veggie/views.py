@@ -156,8 +156,7 @@ def get_data(request):
     """
     ssl._create_default_https_context = ssl._create_unverified_context
     df = pd.read_csv(
-        'https://raw.githubusercontent.com/\
-        thanidacwn/veggie-data/master/last_data.csv')
+        'https://raw.githubusercontent.com/thanidacwn/veggie-data/master/test_data.csv')
     for index, row in df.iterrows():
         all_category = row["category"].split(", ")
         for cate in all_category:
