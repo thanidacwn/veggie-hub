@@ -227,6 +227,33 @@ def add_review(request, pk):
 
 
 @login_required
+def edit_review(request, pk):
+    # restaurant = get_object_or_404(Restaurant, pk=pk)
+    review = get_object_or_404(Review, pk=pk)
+
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            review.review_user = request.user
+            review.review_rate = form.cleaned_data['review_rate']
+            review.review_title = form.cleaned_data['review_title']
+            review.review_description = form.cleaned_data['review_description']
+            review.save()
+
+            messages.success(request, "Review edited!")
+            return HttpResponseRedirect(reverse("veggie:detail",
+                                    kwargs={'pk': review.restaurant.pk}))
+        else:
+            messages.error(request, 'Review form is not valid.\
+                           Please check your input.')
+    else:
+        form = ReviewForm()
+
+    context = {'restaurant': review.restaurant, 'review': review, 'form': form}
+    return render(request, 'veggie/edit_review.html', context)
+
+
+@login_required
 def delete_review(request: HttpRequest, pk):
     """
     Deletes a review for a restaurant.
