@@ -73,7 +73,6 @@
                     function renderStar() {
                         let outputResult = document.getElementById('{{restaurant.pk}}');
                         outputResult.innerHTML = createStarRating({{restaurant.get_average_rate}}).join('');
-                        console.log(createStarRating());
                     }
                     renderStar()
                 </script>
