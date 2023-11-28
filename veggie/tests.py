@@ -423,3 +423,16 @@ class ReviewTestCase(TestCase):
         self.assertContains(response, review2.review_title)
         self.assertContains(response, review2.review_description)
         self.assertContains(response, review2.review_rate)
+
+    def test_user_cannot_review_twice(self):
+        """If user already reviewed, they cannot review again."""
+        user = create_user(self)
+        self.client.force_login(user)
+        restaurant = create_restaurant("")
+        review = create_review(restaurant, user,
+                               "Test Review", "This is a test review.", 4)
+        url = reverse('veggie:add_review', args=(restaurant.id,))
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 302)
+        # review amount is not added
+        self.assertEqual(restaurant.get_reviews_amount, 1)
