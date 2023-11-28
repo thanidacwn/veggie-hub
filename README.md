@@ -36,7 +36,7 @@ python manage.py test
 ```
 6.Install data from the data fixtures
 ```sh
-python manage.py loaddata data/all_data_v2.json
+python manage.py loaddata data/all_data_v3.json
 ```
 7.Run the application
 ```sh
