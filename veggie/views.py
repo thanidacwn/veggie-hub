@@ -210,13 +210,13 @@ class DetailView(generic.DetailView):
             messages.error(request, 'Requested restaurant does not exist')
             return HttpResponseRedirect(reverse('veggie:index'))
         try:
-            reviews = Review.objects.filter(restaurant=restaurant)
+            reviews = Review.objects.filter(restaurant=restaurant).order_by('-review_date')
         except Review.DoesNotExist:
             reviews = []
         return render(request, 'veggie/detail.html', {
             'restaurant': restaurant,
             'reviews': reviews,
-            'bookmarks': BookMark.objects.filter(restaurant=restaurant)
+            'bookmarks': BookMark.objects.filter(restaurant=restaurant).order_by('-bookmark_date')
         })
 
 
